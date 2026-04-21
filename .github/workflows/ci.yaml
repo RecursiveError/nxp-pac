@@ -1,8 +1,9 @@
 name: ci
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
+  merge_group:
 
 env:
   CARGO_TERM_COLOR: always
@@ -26,7 +27,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+      - name: Get Submodule commit
+        id: get-submodule-commit
+        run: |
+          echo "commit=$(git submodule status -- data/mcux-soc-svd/ | cut -c2- | cut -f 1 -d " ")" >> $GITHUB_OUTPUT
+        shell: bash
+      - name: Cache submodules
+        id: cache-submodules
+        uses: actions/cache@v5
+        with:
+          path: data/mcux-soc-svd/
+          key: ${{ steps.get-submodule-commit.outputs.commit }}-mcux-soc-svd
+        # Checkout of submodules can take 90 seconds, so we try to cache
       - name: Checkout submodules
+        if: steps.cache-submodules.outputs.cache-hit != 'true'
         run: |
           git submodule update --init --force --depth=1 --checkout
       - name: Cache Dependencies

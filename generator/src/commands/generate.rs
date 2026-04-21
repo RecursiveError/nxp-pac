@@ -49,6 +49,8 @@ pub fn generate(args: Generate) -> anyhow::Result<()> {
         bail!("Failed to generate chips {:?}", error);
     }
 
+    info!("Generate command completed successfully");
+
     Ok(())
 }
 
