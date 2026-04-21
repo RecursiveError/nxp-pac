@@ -42,7 +42,8 @@ pub fn generate_meta_peripherals(current: &Path) -> anyhow::Result<()> {
             let driver_name = {
                 let mut path = relative_entry_path.to_path_buf();
                 path.set_extension(""); // Remove extension
-                path.to_string_lossy().to_string()
+                path.to_string_lossy()
+                    .replace(std::path::MAIN_SEPARATOR_STR, "/") // Use consistent separators
             };
 
             let mut output_path = pac_peri_dir.join(relative_entry_path);
