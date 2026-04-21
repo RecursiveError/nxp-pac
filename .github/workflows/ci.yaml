@@ -1,8 +1,9 @@
 name: ci
 on:
   push:
-    branches: ["main"]
+    branches: [ "main" ]
   pull_request:
+  merge_group:
 
 env:
   CARGO_TERM_COLOR: always
