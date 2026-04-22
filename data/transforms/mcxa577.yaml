@@ -8,7 +8,6 @@ includes:
   - mcxa/mcxa5/i3c.yaml
   - mcxa/mcxa5/port.yaml
   - mcxa/mcxa5/rtc.yaml
-  - mcxa/mcxa5/ahbsc.yaml
   - mcxa/mcxa5/scg.yaml
   - mcxa/mcxa5/trng.yaml
 
