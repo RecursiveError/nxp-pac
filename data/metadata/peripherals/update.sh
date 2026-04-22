@@ -21,12 +21,12 @@ pushd $CURRENT_DIR
 # Manually curated, do not change
 # cp raw/MCXA577/DMA.yaml mcxa/DMA.yaml
 # cp raw/MCXA577/EDMA_TCD.yaml mcxa/EDMA_TCD.yaml
+# cp raw/MCXA577/AHBSC.yaml mcxa/AHBSC.yaml
 
 cp raw/MCXA256/FLEXPWM.yaml mcxa/FLEXPWM.yaml
 cp raw/MCXA256/SPC.yaml mcxa/SPC.yaml
 
 cp raw/MCXA577/ADC.yaml mcxa/ADC.yaml
-cp raw/MCXA577/AHBSC.yaml mcxa/AHBSC.yaml
 cp raw/MCXA577/CDOG.yaml mcxa/CDOG.yaml
 cp raw/MCXA577/CMC.yaml mcxa/CMC.yaml
 cp raw/MCXA577/CRC.yaml mcxa/CRC.yaml
