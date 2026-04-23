@@ -203,12 +203,15 @@ pub const CTIMER2: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40006000
 pub const CTIMER3: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40007000 as _) };
 pub const CTIMER4: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40008000 as _) };
 pub const WWDT0: wwdt::Wwdt = unsafe { wwdt::Wwdt::from_ptr(0x4000C000 as _) };
-pub const DMA0: dma::Dma = unsafe { dma::Dma::from_ptr(0x40080000 as _) };
+pub const DMA0: dma::Dma8 = unsafe { dma::Dma8::from_ptr(0x40080000 as _) };
+pub const EDMA_0_TCD0: edma_tcd::Tcd8 = unsafe { edma_tcd::Tcd8::from_ptr(0x40081000 as _) };
 pub const CRC0: crc::Crc = unsafe { crc::Crc::from_ptr(0x4008A000 as _) };
 pub const CMC: cmc::Cmc = unsafe { cmc::Cmc::from_ptr(0x4008B000 as _) };
 pub const MBC0: mbc::Mbc = unsafe { mbc::Mbc::from_ptr(0x4008E000 as _) };
 pub const SCG0: scg::Scg = unsafe { scg::Scg::from_ptr(0x4008F000 as _) };
 pub const SPC0: spc::Spc = unsafe { spc::Spc::from_ptr(0x40090000 as _) };
+pub const MRCC0: mrcc2xx::Mrcc = unsafe { mrcc2xx::Mrcc::from_ptr(0x40091000 as _) };
+pub const SYSCON: syscon1xx::Syscon = unsafe { syscon1xx::Syscon::from_ptr(0x40091000 as _) };
 pub const VBAT0: vbat::Vbat = unsafe { vbat::Vbat::from_ptr(0x40093000 as _) };
 pub const FMU0: fmu::Fmu = unsafe { fmu::Fmu::from_ptr(0x40095000 as _) };
 pub const LPI2C0: lpi2c::Lpi2c = unsafe { lpi2c::Lpi2c::from_ptr(0x4009A000 as _) };
@@ -251,6 +254,8 @@ pub mod crc;
 pub mod ctimer;
 #[path = "../../meta_peripherals/mcxa/DMA.rs"]
 pub mod dma;
+#[path = "../../meta_peripherals/mcxa/EDMA_TCD.rs"]
+pub mod edma_tcd;
 #[path = "../../meta_peripherals/mcxa/FLEXPWM.rs"]
 pub mod flexpwm;
 #[path = "../../meta_peripherals/mcxa/FMU.rs"]
@@ -269,6 +274,8 @@ pub mod lpspi;
 pub mod lpuart;
 #[path = "../../meta_peripherals/mcxa/MBC.rs"]
 pub mod mbc;
+#[path = "../../meta_peripherals/mcxa/MRCC2xx.rs"]
+pub mod mrcc2xx;
 #[path = "../../meta_peripherals/mcxa/OSTIMER.rs"]
 pub mod ostimer;
 #[path = "../../meta_peripherals/mcxa/PORT.rs"]
@@ -277,6 +284,8 @@ pub mod port;
 pub mod scg;
 #[path = "../../meta_peripherals/mcxa/SPC.rs"]
 pub mod spc;
+#[path = "../../meta_peripherals/mcxa/SYSCON1xx.rs"]
+pub mod syscon1xx;
 #[path = "../../meta_peripherals/mcxa/VBAT.rs"]
 pub mod vbat;
 #[path = "../../meta_peripherals/mcxa/WWDT.rs"]
