@@ -904,13 +904,13 @@
     {
       "name": "DMA0",
       "address": "0x40080000",
-      "block": "mcxa/DMA",
+      "block": "mcxa/DMA::DMA8",
       "signals": []
     },
     {
       "name": "EDMA_0_TCD0",
       "address": "0x40081000",
-      "block": "mcxa/EDMA_0_TCD",
+      "block": "mcxa/EDMA_TCD::TCD8",
       "signals": []
     },
     {
@@ -970,13 +970,13 @@
     {
       "name": "MRCC0",
       "address": "0x40091000",
-      "block": "mcxa/MRCC",
+      "block": "mcxa/MRCC2xx::MRCC",
       "signals": []
     },
     {
       "name": "SYSCON",
       "address": "0x40091000",
-      "block": "mcxa/SYSCON",
+      "block": "mcxa/SYSCON1xx::SYSCON",
       "signals": []
     },
     {
