@@ -970,7 +970,7 @@
     {
       "name": "MRCC0",
       "address": "0x40091000",
-      "block": "mcxa/MRCC2xx::MRCC",
+      "block": "mcxa/MRCC1xx::MRCC",
       "signals": []
     },
     {

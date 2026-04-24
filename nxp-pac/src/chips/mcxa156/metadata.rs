@@ -1032,7 +1032,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "MRCC0",
         address: 0x40091000,
-        driver_name: "mcxa/MRCC2xx::MRCC",
+        driver_name: "mcxa/MRCC1xx::MRCC",
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
