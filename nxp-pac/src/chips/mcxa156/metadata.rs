@@ -3747,69 +3747,12 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/GPIO",
         signals: &[
             Signal {
-                name: "CMP0_IN0",
-                pins: &[SignalPin {
-                    pin: "P2_2",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "OPAMP0_INP0",
-                pins: &[SignalPin {
-                    pin: "P2_12",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "OPAMP0_INN",
-                pins: &[SignalPin {
-                    pin: "P2_13",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "OPAMP0_OUT",
-                pins: &[SignalPin {
-                    pin: "P2_15",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
                 name: "0",
                 pins: &[SignalPin {
                     pin: "P0_0",
                     alt: 0u8,
                     iomuxc_daisy: None,
                 }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP0",
-                pins: &[
-                    SignalPin {
-                        pin: "P0_0",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_20",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P1_2",
-                        alt: 5u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
                 iomuxc_daisy: None,
             },
             Signal {
@@ -3831,37 +3774,12 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "UTICK_CAP0",
-                pins: &[SignalPin {
-                    pin: "P0_2",
-                    alt: 5u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
                 name: "3",
                 pins: &[SignalPin {
                     pin: "P0_3",
                     alt: 0u8,
                     iomuxc_daisy: None,
                 }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP0_OUT",
-                pins: &[
-                    SignalPin {
-                        pin: "P0_3",
-                        alt: 8u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_18",
-                        alt: 8u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
                 iomuxc_daisy: None,
             },
             Signal {
@@ -3945,33 +3863,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 }],
                 iomuxc_daisy: None,
             },
-            Signal {
-                name: "CMP0_IN3",
-                pins: &[SignalPin {
-                    pin: "P1_0",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP0_IN1",
-                pins: &[SignalPin {
-                    pin: "P1_3",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP0_IN2",
-                pins: &[SignalPin {
-                    pin: "P1_4",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
         ],
         flexcomm: None,
         dma_muxing: &[DmaMux {
@@ -4049,35 +3940,10 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "CT_INP10",
-                pins: &[
-                    SignalPin {
-                        pin: "P1_14",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_22",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
                 name: "15",
                 pins: &[SignalPin {
                     pin: "P1_15",
                     alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP11",
-                pins: &[SignalPin {
-                    pin: "P1_15",
-                    alt: 4u8,
                     iomuxc_daisy: None,
                 }],
                 iomuxc_daisy: None,
@@ -4101,27 +3967,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "CT_INP16",
-                pins: &[
-                    SignalPin {
-                        pin: "P1_30",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P2_0",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_0",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
                 name: "31",
                 pins: &[SignalPin {
                     pin: "P1_31",
@@ -4131,171 +3976,9 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "CT_INP17",
-                pins: &[
-                    SignalPin {
-                        pin: "P1_31",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P2_1",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_1",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP12",
-                pins: &[
-                    SignalPin {
-                        pin: "P2_2",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_28",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP1_IN0",
-                pins: &[SignalPin {
-                    pin: "P2_3",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP13",
-                pins: &[
-                    SignalPin {
-                        pin: "P2_3",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_27",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP14",
-                pins: &[SignalPin {
-                    pin: "P2_4",
-                    alt: 4u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP15",
-                pins: &[SignalPin {
-                    pin: "P2_5",
-                    alt: 4u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP18",
-                pins: &[SignalPin {
-                    pin: "P2_6",
-                    alt: 4u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP19",
-                pins: &[SignalPin {
-                    pin: "P2_7",
-                    alt: 4u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP1",
-                pins: &[
-                    SignalPin {
-                        pin: "P0_1",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_21",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P1_3",
-                        alt: 5u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP1_IN1",
-                pins: &[SignalPin {
-                    pin: "P0_3",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "UTICK_CAP1",
-                pins: &[SignalPin {
-                    pin: "P0_3",
-                    alt: 5u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP1_OUT",
-                pins: &[
-                    SignalPin {
-                        pin: "P0_6",
-                        alt: 8u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_19",
-                        alt: 8u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
                 name: "0",
                 pins: &[SignalPin {
                     pin: "P1_0",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP1_IN3",
-                pins: &[SignalPin {
-                    pin: "P1_1",
                     alt: 0u8,
                     iomuxc_daisy: None,
                 }],
@@ -4332,15 +4015,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 name: "4",
                 pins: &[SignalPin {
                     pin: "P1_4",
-                    alt: 0u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CMP1_IN2",
-                pins: &[SignalPin {
-                    pin: "P1_5",
                     alt: 0u8,
                     iomuxc_daisy: None,
                 }],
@@ -4557,31 +4231,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 }],
                 iomuxc_daisy: None,
             },
-            Signal {
-                name: "CT_INP2",
-                pins: &[
-                    SignalPin {
-                        pin: "P0_6",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_22",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "UTICK_CAP2",
-                pins: &[SignalPin {
-                    pin: "P0_16",
-                    alt: 5u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
         ],
         flexcomm: None,
         dma_muxing: &[DmaMux {
@@ -4620,22 +4269,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                     alt: 0u8,
                     iomuxc_daisy: None,
                 }],
-                iomuxc_daisy: None,
-            },
-            Signal {
-                name: "CT_INP3",
-                pins: &[
-                    SignalPin {
-                        pin: "P3_29",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P0_23",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
                 iomuxc_daisy: None,
             },
             Signal {
@@ -4836,15 +4469,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 }],
                 iomuxc_daisy: None,
             },
-            Signal {
-                name: "UTICK_CAP3",
-                pins: &[SignalPin {
-                    pin: "P0_17",
-                    alt: 5u8,
-                    iomuxc_daisy: None,
-                }],
-                iomuxc_daisy: None,
-            },
         ],
         flexcomm: None,
         dma_muxing: &[DmaMux {
@@ -4912,22 +4536,6 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 }],
                 iomuxc_daisy: None,
             },
-            Signal {
-                name: "CT_INP4",
-                pins: &[
-                    SignalPin {
-                        pin: "P3_8",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P1_0",
-                        alt: 4u8,
-                        iomuxc_daisy: None,
-                    },
-                ],
-                iomuxc_daisy: None,
-            },
         ],
         flexcomm: None,
         dma_muxing: &[DmaMux {
@@ -4980,14 +4588,14 @@ pub const PERIPHERALS: &[Peripheral] = &[
 pub const INTERRUPTS: &[(&str, u32)] = &[
     ("RESERVED16", 0u32),
     ("CMC", 1u32),
-    ("DMA_CH0", 2u32),
-    ("DMA_CH1", 3u32),
-    ("DMA_CH2", 4u32),
-    ("DMA_CH3", 5u32),
-    ("DMA_CH4", 6u32),
-    ("DMA_CH5", 7u32),
-    ("DMA_CH6", 8u32),
-    ("DMA_CH7", 9u32),
+    ("DMA0_CH0", 2u32),
+    ("DMA0_CH1", 3u32),
+    ("DMA0_CH2", 4u32),
+    ("DMA0_CH3", 5u32),
+    ("DMA0_CH4", 6u32),
+    ("DMA0_CH5", 7u32),
+    ("DMA0_CH6", 8u32),
+    ("DMA0_CH7", 9u32),
     ("ERM0_SINGLE_BIT", 10u32),
     ("ERM0_MULTI_BIT", 11u32),
     ("FMU0", 12u32),

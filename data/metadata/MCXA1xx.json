@@ -367,14 +367,14 @@
   "interrupts": {
     "RESERVED16": 0,
     "CMC": 1,
-    "DMA_CH0": 2,
-    "DMA_CH1": 3,
-    "DMA_CH2": 4,
-    "DMA_CH3": 5,
-    "DMA_CH4": 6,
-    "DMA_CH5": 7,
-    "DMA_CH6": 8,
-    "DMA_CH7": 9,
+    "DMA0_CH0": 2,
+    "DMA0_CH1": 3,
+    "DMA0_CH2": 4,
+    "DMA0_CH3": 5,
+    "DMA0_CH4": 6,
+    "DMA0_CH5": 7,
+    "DMA0_CH6": 8,
+    "DMA0_CH7": 9,
     "ERM0_SINGLE_BIT": 10,
     "ERM0_MULTI_BIT": 11,
     "FMU0": 12,
@@ -3357,64 +3357,11 @@
       "block": "mcxa/GPIO",
       "signals": [
         {
-          "name": "CMP0_IN0",
-          "pins": [
-            {
-              "pin": "P2_2",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "OPAMP0_INP0",
-          "pins": [
-            {
-              "pin": "P2_12",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "OPAMP0_INN",
-          "pins": [
-            {
-              "pin": "P2_13",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "OPAMP0_OUT",
-          "pins": [
-            {
-              "pin": "P2_15",
-              "alt": 0
-            }
-          ]
-        },
-        {
           "name": "0",
           "pins": [
             {
               "pin": "P0_0",
               "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CT_INP0",
-          "pins": [
-            {
-              "pin": "P0_0",
-              "alt": 4
-            },
-            {
-              "pin": "P0_20",
-              "alt": 4
-            },
-            {
-              "pin": "P1_2",
-              "alt": 5
             }
           ]
         },
@@ -3437,33 +3384,11 @@
           ]
         },
         {
-          "name": "UTICK_CAP0",
-          "pins": [
-            {
-              "pin": "P0_2",
-              "alt": 5
-            }
-          ]
-        },
-        {
           "name": "3",
           "pins": [
             {
               "pin": "P0_3",
               "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CMP0_OUT",
-          "pins": [
-            {
-              "pin": "P0_3",
-              "alt": 8
-            },
-            {
-              "pin": "P0_18",
-              "alt": 8
             }
           ]
         },
@@ -3547,33 +3472,6 @@
               "alt": 0
             }
           ]
-        },
-        {
-          "name": "CMP0_IN3",
-          "pins": [
-            {
-              "pin": "P1_0",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CMP0_IN1",
-          "pins": [
-            {
-              "pin": "P1_3",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CMP0_IN2",
-          "pins": [
-            {
-              "pin": "P1_4",
-              "alt": 0
-            }
-          ]
         }
       ],
       "dma_muxing": [
@@ -3653,33 +3551,11 @@
           ]
         },
         {
-          "name": "CT_INP10",
-          "pins": [
-            {
-              "pin": "P1_14",
-              "alt": 4
-            },
-            {
-              "pin": "P3_22",
-              "alt": 4
-            }
-          ]
-        },
-        {
           "name": "15",
           "pins": [
             {
               "pin": "P1_15",
               "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CT_INP11",
-          "pins": [
-            {
-              "pin": "P1_15",
-              "alt": 4
             }
           ]
         },
@@ -3702,23 +3578,6 @@
           ]
         },
         {
-          "name": "CT_INP16",
-          "pins": [
-            {
-              "pin": "P1_30",
-              "alt": 4
-            },
-            {
-              "pin": "P2_0",
-              "alt": 4
-            },
-            {
-              "pin": "P3_0",
-              "alt": 4
-            }
-          ]
-        },
-        {
           "name": "31",
           "pins": [
             {
@@ -3728,155 +3587,10 @@
           ]
         },
         {
-          "name": "CT_INP17",
-          "pins": [
-            {
-              "pin": "P1_31",
-              "alt": 4
-            },
-            {
-              "pin": "P2_1",
-              "alt": 4
-            },
-            {
-              "pin": "P3_1",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP12",
-          "pins": [
-            {
-              "pin": "P2_2",
-              "alt": 4
-            },
-            {
-              "pin": "P3_28",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CMP1_IN0",
-          "pins": [
-            {
-              "pin": "P2_3",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CT_INP13",
-          "pins": [
-            {
-              "pin": "P2_3",
-              "alt": 4
-            },
-            {
-              "pin": "P3_27",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP14",
-          "pins": [
-            {
-              "pin": "P2_4",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP15",
-          "pins": [
-            {
-              "pin": "P2_5",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP18",
-          "pins": [
-            {
-              "pin": "P2_6",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP19",
-          "pins": [
-            {
-              "pin": "P2_7",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "CT_INP1",
-          "pins": [
-            {
-              "pin": "P0_1",
-              "alt": 4
-            },
-            {
-              "pin": "P0_21",
-              "alt": 4
-            },
-            {
-              "pin": "P1_3",
-              "alt": 5
-            }
-          ]
-        },
-        {
-          "name": "CMP1_IN1",
-          "pins": [
-            {
-              "pin": "P0_3",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "UTICK_CAP1",
-          "pins": [
-            {
-              "pin": "P0_3",
-              "alt": 5
-            }
-          ]
-        },
-        {
-          "name": "CMP1_OUT",
-          "pins": [
-            {
-              "pin": "P0_6",
-              "alt": 8
-            },
-            {
-              "pin": "P0_19",
-              "alt": 8
-            }
-          ]
-        },
-        {
           "name": "0",
           "pins": [
             {
               "pin": "P1_0",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CMP1_IN3",
-          "pins": [
-            {
-              "pin": "P1_1",
               "alt": 0
             }
           ]
@@ -3913,15 +3627,6 @@
           "pins": [
             {
               "pin": "P1_4",
-              "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CMP1_IN2",
-          "pins": [
-            {
-              "pin": "P1_5",
               "alt": 0
             }
           ]
@@ -4137,28 +3842,6 @@
               "alt": 0
             }
           ]
-        },
-        {
-          "name": "CT_INP2",
-          "pins": [
-            {
-              "pin": "P0_6",
-              "alt": 4
-            },
-            {
-              "pin": "P0_22",
-              "alt": 4
-            }
-          ]
-        },
-        {
-          "name": "UTICK_CAP2",
-          "pins": [
-            {
-              "pin": "P0_16",
-              "alt": 5
-            }
-          ]
         }
       ],
       "dma_muxing": [
@@ -4198,19 +3881,6 @@
             {
               "pin": "P3_29",
               "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CT_INP3",
-          "pins": [
-            {
-              "pin": "P3_29",
-              "alt": 4
-            },
-            {
-              "pin": "P0_23",
-              "alt": 4
             }
           ]
         },
@@ -4411,15 +4081,6 @@
               "alt": 0
             }
           ]
-        },
-        {
-          "name": "UTICK_CAP3",
-          "pins": [
-            {
-              "pin": "P0_17",
-              "alt": 5
-            }
-          ]
         }
       ],
       "dma_muxing": [
@@ -4486,19 +4147,6 @@
             {
               "pin": "P4_7",
               "alt": 0
-            }
-          ]
-        },
-        {
-          "name": "CT_INP4",
-          "pins": [
-            {
-              "pin": "P3_8",
-              "alt": 4
-            },
-            {
-              "pin": "P1_0",
-              "alt": 4
             }
           ]
         }
