@@ -2360,15 +2360,10 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "B",
+                name: "RTS_B",
                 pins: &[
                     SignalPin {
                         pin: "P2_2",
-                        alt: 2u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P2_3",
                         alt: 2u8,
                         iomuxc_daisy: None,
                     },
@@ -2378,13 +2373,24 @@ pub const PERIPHERALS: &[Peripheral] = &[
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P0_1",
+                        pin: "P0_22",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "CTS_B",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
                         alt: 2u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P0_22",
-                        alt: 3u8,
+                        pin: "P0_1",
+                        alt: 2u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
@@ -2468,15 +2474,10 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "B",
+                name: "RTS_B",
                 pins: &[
                     SignalPin {
                         pin: "P1_10",
-                        alt: 2u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P1_11",
                         alt: 2u8,
                         iomuxc_daisy: None,
                     },
@@ -2491,22 +2492,33 @@ pub const PERIPHERALS: &[Peripheral] = &[
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P2_17",
-                        alt: 3u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
                         pin: "P3_22",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P3_11",
+                        pin: "P3_10",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "CTS_B",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_11",
+                        alt: 2u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_17",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P3_10",
+                        pin: "P3_11",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
@@ -2596,13 +2608,34 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "B",
+                name: "RTS_B",
                 pins: &[
                     SignalPin {
                         pin: "P1_14",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
+                    SignalPin {
+                        pin: "P2_5",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_12",
+                        alt: 2u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "CTS_B",
+                pins: &[
                     SignalPin {
                         pin: "P1_15",
                         alt: 3u8,
@@ -2614,23 +2647,8 @@ pub const PERIPHERALS: &[Peripheral] = &[
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P2_5",
-                        alt: 3u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
                         pin: "P3_13",
                         alt: 2u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_12",
-                        alt: 2u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P1_6",
-                        alt: 3u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
@@ -2704,20 +2722,10 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "B",
+                name: "CTS_B",
                 pins: &[
                     SignalPin {
                         pin: "P4_6",
-                        alt: 3u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P4_7",
-                        alt: 3u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P3_15",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
@@ -2728,6 +2736,22 @@ pub const PERIPHERALS: &[Peripheral] = &[
                     },
                     SignalPin {
                         pin: "P3_7",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "RTS_B",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 3u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
@@ -2812,15 +2836,10 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "B",
+                name: "CTS_B",
                 pins: &[
                     SignalPin {
                         pin: "P2_0",
-                        alt: 3u8,
-                        iomuxc_daisy: None,
-                    },
-                    SignalPin {
-                        pin: "P2_1",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
@@ -2830,13 +2849,24 @@ pub const PERIPHERALS: &[Peripheral] = &[
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P3_30",
+                        pin: "P3_17",
+                        alt: 2u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "RTS_B",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_1",
                         alt: 3u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
-                        pin: "P3_17",
-                        alt: 2u8,
+                        pin: "P3_30",
+                        alt: 3u8,
                         iomuxc_daisy: None,
                     },
                     SignalPin {
@@ -2867,7 +2897,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         address: 0x400A4000,
         driver_name: "mcxa/USB",
         signals: &[Signal {
-            name: "DET",
+            name: "VBUS_DET",
             pins: &[SignalPin {
                 pin: "P2_12",
                 alt: 1u8,
