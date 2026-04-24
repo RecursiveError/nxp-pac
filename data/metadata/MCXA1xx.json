@@ -908,7 +908,7 @@
       "signals": []
     },
     {
-      "name": "EDMA_0_TCD0",
+      "name": "EDMA_0_TCD",
       "address": "0x40081000",
       "block": "mcxa/EDMA_TCD::TCD8",
       "signals": []
@@ -3340,7 +3340,7 @@
       ]
     },
     {
-      "name": "CDOG",
+      "name": "CDOG0",
       "address": "0x40100000",
       "block": "mcxa/CDOG",
       "signals": []
@@ -3355,7 +3355,227 @@
       "name": "GPIO0",
       "address": "0x40102000",
       "block": "mcxa/GPIO",
-      "signals": [],
+      "signals": [
+        {
+          "name": "CMP0_IN0",
+          "pins": [
+            {
+              "pin": "P2_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "OPAMP0_INP0",
+          "pins": [
+            {
+              "pin": "P2_12",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "OPAMP0_INN",
+          "pins": [
+            {
+              "pin": "P2_13",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "OPAMP0_OUT",
+          "pins": [
+            {
+              "pin": "P2_15",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "0",
+          "pins": [
+            {
+              "pin": "P0_0",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP0",
+          "pins": [
+            {
+              "pin": "P0_0",
+              "alt": 4
+            },
+            {
+              "pin": "P0_20",
+              "alt": 4
+            },
+            {
+              "pin": "P1_2",
+              "alt": 5
+            }
+          ]
+        },
+        {
+          "name": "1",
+          "pins": [
+            {
+              "pin": "P0_1",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "pins": [
+            {
+              "pin": "P0_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "UTICK_CAP0",
+          "pins": [
+            {
+              "pin": "P0_2",
+              "alt": 5
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "pins": [
+            {
+              "pin": "P0_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP0_OUT",
+          "pins": [
+            {
+              "pin": "P0_3",
+              "alt": 8
+            },
+            {
+              "pin": "P0_18",
+              "alt": 8
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "pins": [
+            {
+              "pin": "P0_6",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "16",
+          "pins": [
+            {
+              "pin": "P0_16",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "17",
+          "pins": [
+            {
+              "pin": "P0_17",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "18",
+          "pins": [
+            {
+              "pin": "P0_18",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "19",
+          "pins": [
+            {
+              "pin": "P0_19",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "20",
+          "pins": [
+            {
+              "pin": "P0_20",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "21",
+          "pins": [
+            {
+              "pin": "P0_21",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "22",
+          "pins": [
+            {
+              "pin": "P0_22",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "23",
+          "pins": [
+            {
+              "pin": "P0_23",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP0_IN3",
+          "pins": [
+            {
+              "pin": "P1_0",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP0_IN1",
+          "pins": [
+            {
+              "pin": "P1_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP0_IN2",
+          "pins": [
+            {
+              "pin": "P1_4",
+              "alt": 0
+            }
+          ]
+        }
+      ],
       "dma_muxing": [
         {
           "signal": "GPIO0PinEvent0",
@@ -3368,7 +3588,372 @@
       "name": "GPIO1",
       "address": "0x40103000",
       "block": "mcxa/GPIO",
-      "signals": [],
+      "signals": [
+        {
+          "name": "8",
+          "pins": [
+            {
+              "pin": "P1_8",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "9",
+          "pins": [
+            {
+              "pin": "P1_9",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "10",
+          "pins": [
+            {
+              "pin": "P1_10",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "11",
+          "pins": [
+            {
+              "pin": "P1_11",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "12",
+          "pins": [
+            {
+              "pin": "P1_12",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "13",
+          "pins": [
+            {
+              "pin": "P1_13",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "14",
+          "pins": [
+            {
+              "pin": "P1_14",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP10",
+          "pins": [
+            {
+              "pin": "P1_14",
+              "alt": 4
+            },
+            {
+              "pin": "P3_22",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "15",
+          "pins": [
+            {
+              "pin": "P1_15",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP11",
+          "pins": [
+            {
+              "pin": "P1_15",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "29",
+          "pins": [
+            {
+              "pin": "P1_29",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "30",
+          "pins": [
+            {
+              "pin": "P1_30",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP16",
+          "pins": [
+            {
+              "pin": "P1_30",
+              "alt": 4
+            },
+            {
+              "pin": "P2_0",
+              "alt": 4
+            },
+            {
+              "pin": "P3_0",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "31",
+          "pins": [
+            {
+              "pin": "P1_31",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP17",
+          "pins": [
+            {
+              "pin": "P1_31",
+              "alt": 4
+            },
+            {
+              "pin": "P2_1",
+              "alt": 4
+            },
+            {
+              "pin": "P3_1",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP12",
+          "pins": [
+            {
+              "pin": "P2_2",
+              "alt": 4
+            },
+            {
+              "pin": "P3_28",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CMP1_IN0",
+          "pins": [
+            {
+              "pin": "P2_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP13",
+          "pins": [
+            {
+              "pin": "P2_3",
+              "alt": 4
+            },
+            {
+              "pin": "P3_27",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP14",
+          "pins": [
+            {
+              "pin": "P2_4",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP15",
+          "pins": [
+            {
+              "pin": "P2_5",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP18",
+          "pins": [
+            {
+              "pin": "P2_6",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP19",
+          "pins": [
+            {
+              "pin": "P2_7",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "CT_INP1",
+          "pins": [
+            {
+              "pin": "P0_1",
+              "alt": 4
+            },
+            {
+              "pin": "P0_21",
+              "alt": 4
+            },
+            {
+              "pin": "P1_3",
+              "alt": 5
+            }
+          ]
+        },
+        {
+          "name": "CMP1_IN1",
+          "pins": [
+            {
+              "pin": "P0_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "UTICK_CAP1",
+          "pins": [
+            {
+              "pin": "P0_3",
+              "alt": 5
+            }
+          ]
+        },
+        {
+          "name": "CMP1_OUT",
+          "pins": [
+            {
+              "pin": "P0_6",
+              "alt": 8
+            },
+            {
+              "pin": "P0_19",
+              "alt": 8
+            }
+          ]
+        },
+        {
+          "name": "0",
+          "pins": [
+            {
+              "pin": "P1_0",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP1_IN3",
+          "pins": [
+            {
+              "pin": "P1_1",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "1",
+          "pins": [
+            {
+              "pin": "P1_1",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "pins": [
+            {
+              "pin": "P1_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "pins": [
+            {
+              "pin": "P1_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "4",
+          "pins": [
+            {
+              "pin": "P1_4",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CMP1_IN2",
+          "pins": [
+            {
+              "pin": "P1_5",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "5",
+          "pins": [
+            {
+              "pin": "P1_5",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "pins": [
+            {
+              "pin": "P1_6",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "7",
+          "pins": [
+            {
+              "pin": "P1_7",
+              "alt": 0
+            }
+          ]
+        }
+      ],
       "dma_muxing": [
         {
           "signal": "GPIO1PinEvent0",
@@ -3381,7 +3966,201 @@
       "name": "GPIO2",
       "address": "0x40104000",
       "block": "mcxa/GPIO",
-      "signals": [],
+      "signals": [
+        {
+          "name": "0",
+          "pins": [
+            {
+              "pin": "P2_0",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "1",
+          "pins": [
+            {
+              "pin": "P2_1",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "pins": [
+            {
+              "pin": "P2_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "pins": [
+            {
+              "pin": "P2_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "4",
+          "pins": [
+            {
+              "pin": "P2_4",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "5",
+          "pins": [
+            {
+              "pin": "P2_5",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "pins": [
+            {
+              "pin": "P2_6",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "7",
+          "pins": [
+            {
+              "pin": "P2_7",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "10",
+          "pins": [
+            {
+              "pin": "P2_10",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "11",
+          "pins": [
+            {
+              "pin": "P2_11",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "12",
+          "pins": [
+            {
+              "pin": "P2_12",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "13",
+          "pins": [
+            {
+              "pin": "P2_13",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "15",
+          "pins": [
+            {
+              "pin": "P2_15",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "16",
+          "pins": [
+            {
+              "pin": "P2_16",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "17",
+          "pins": [
+            {
+              "pin": "P2_17",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "19",
+          "pins": [
+            {
+              "pin": "P2_19",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "20",
+          "pins": [
+            {
+              "pin": "P2_20",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "21",
+          "pins": [
+            {
+              "pin": "P2_21",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "23",
+          "pins": [
+            {
+              "pin": "P2_23",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP2",
+          "pins": [
+            {
+              "pin": "P0_6",
+              "alt": 4
+            },
+            {
+              "pin": "P0_22",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "UTICK_CAP2",
+          "pins": [
+            {
+              "pin": "P0_16",
+              "alt": 5
+            }
+          ]
+        }
+      ],
       "dma_muxing": [
         {
           "signal": "GPIO2PinEvent0",
@@ -3394,7 +4173,255 @@
       "name": "GPIO3",
       "address": "0x40105000",
       "block": "mcxa/GPIO",
-      "signals": [],
+      "signals": [
+        {
+          "name": "31",
+          "pins": [
+            {
+              "pin": "P3_31",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "30",
+          "pins": [
+            {
+              "pin": "P3_30",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "29",
+          "pins": [
+            {
+              "pin": "P3_29",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP3",
+          "pins": [
+            {
+              "pin": "P3_29",
+              "alt": 4
+            },
+            {
+              "pin": "P0_23",
+              "alt": 4
+            }
+          ]
+        },
+        {
+          "name": "28",
+          "pins": [
+            {
+              "pin": "P3_28",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "27",
+          "pins": [
+            {
+              "pin": "P3_27",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "22",
+          "pins": [
+            {
+              "pin": "P3_22",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "21",
+          "pins": [
+            {
+              "pin": "P3_21",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "20",
+          "pins": [
+            {
+              "pin": "P3_20",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "19",
+          "pins": [
+            {
+              "pin": "P3_19",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "18",
+          "pins": [
+            {
+              "pin": "P3_18",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "17",
+          "pins": [
+            {
+              "pin": "P3_17",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "16",
+          "pins": [
+            {
+              "pin": "P3_16",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "15",
+          "pins": [
+            {
+              "pin": "P3_15",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "14",
+          "pins": [
+            {
+              "pin": "P3_14",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "13",
+          "pins": [
+            {
+              "pin": "P3_13",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "12",
+          "pins": [
+            {
+              "pin": "P3_12",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "11",
+          "pins": [
+            {
+              "pin": "P3_11",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "10",
+          "pins": [
+            {
+              "pin": "P3_10",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "9",
+          "pins": [
+            {
+              "pin": "P3_9",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "8",
+          "pins": [
+            {
+              "pin": "P3_8",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "7",
+          "pins": [
+            {
+              "pin": "P3_7",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "pins": [
+            {
+              "pin": "P3_6",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "2",
+          "pins": [
+            {
+              "pin": "P3_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "1",
+          "pins": [
+            {
+              "pin": "P3_1",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "0",
+          "pins": [
+            {
+              "pin": "P3_0",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "UTICK_CAP3",
+          "pins": [
+            {
+              "pin": "P0_17",
+              "alt": 5
+            }
+          ]
+        }
+      ],
       "dma_muxing": [
         {
           "signal": "GPIO3PinEvent0",
@@ -3407,7 +4434,75 @@
       "name": "GPIO4",
       "address": "0x40106000",
       "block": "mcxa/GPIO",
-      "signals": [],
+      "signals": [
+        {
+          "name": "2",
+          "pins": [
+            {
+              "pin": "P4_2",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "pins": [
+            {
+              "pin": "P4_3",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "4",
+          "pins": [
+            {
+              "pin": "P4_4",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "5",
+          "pins": [
+            {
+              "pin": "P4_5",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "6",
+          "pins": [
+            {
+              "pin": "P4_6",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "7",
+          "pins": [
+            {
+              "pin": "P4_7",
+              "alt": 0
+            }
+          ]
+        },
+        {
+          "name": "CT_INP4",
+          "pins": [
+            {
+              "pin": "P3_8",
+              "alt": 4
+            },
+            {
+              "pin": "P1_0",
+              "alt": 4
+            }
+          ]
+        }
+      ],
       "dma_muxing": [
         {
           "signal": "GPIO4PinEvent0",

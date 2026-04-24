@@ -213,12 +213,12 @@ block/Mrcc:
     description: OSTIMER0 clock selection control.
     byte_offset: 312
     fieldset: OstimerClksel
-  - name: mrcc_adc0_clksel
+  - name: mrcc_adc_clksel
     description: ADC0 clock selection control.
     byte_offset: 320
     fieldset: AdcClksel
-  - name: mrcc_adc0_clkdiv
-    description: ADC0 clock divider control.
+  - name: mrcc_adc_clkdiv
+    description: ADCx clock divider control.
     byte_offset: 324
     fieldset: Clkdiv
   - name: mrcc_adc1_clksel
