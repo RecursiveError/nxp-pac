@@ -4584,6 +4584,39 @@ pub const PERIPHERALS: &[Peripheral] = &[
         flexcomm: None,
         dma_muxing: &[],
     },
+    Peripheral {
+        name: "CLKOUT",
+        address: 0,
+        driver_name: "",
+        signals: &[Signal {
+            name: "IN",
+            pins: &[
+                SignalPin {
+                    pin: "P4_2",
+                    alt: 1u8,
+                    iomuxc_daisy: None,
+                },
+                SignalPin {
+                    pin: "P3_8",
+                    alt: 12u8,
+                    iomuxc_daisy: None,
+                },
+                SignalPin {
+                    pin: "P3_6",
+                    alt: 1u8,
+                    iomuxc_daisy: None,
+                },
+                SignalPin {
+                    pin: "P0_6",
+                    alt: 12u8,
+                    iomuxc_daisy: None,
+                },
+            ],
+            iomuxc_daisy: None,
+        }],
+        flexcomm: None,
+        dma_muxing: &[],
+    },
 ];
 pub const INTERRUPTS: &[(&str, u32)] = &[
     ("RESERVED16", 0u32),

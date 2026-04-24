@@ -4190,6 +4190,32 @@
       "address": "0xE000EDD0",
       "block": "mcxa/SAU",
       "signals": []
+    },
+    {
+      "name": "CLKOUT",
+      "signals": [
+        {
+          "name": "IN",
+          "pins": [
+            {
+              "pin": "P4_2",
+              "alt": 1
+            },
+            {
+              "pin": "P3_8",
+              "alt": 12
+            },
+            {
+              "pin": "P3_6",
+              "alt": 1
+            },
+            {
+              "pin": "P0_6",
+              "alt": 12
+            }
+          ]
+        }
+      ]
     }
   ]
 }
