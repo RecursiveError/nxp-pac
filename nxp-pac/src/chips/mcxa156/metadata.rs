@@ -424,7 +424,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/INPUTMUX",
         signals: &[
             Signal {
-                name: "out2",
+                name: "OUT2",
                 pins: &[
                     SignalPin {
                         pin: "P1_11",
@@ -440,7 +440,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in3",
+                name: "IN3",
                 pins: &[
                     SignalPin {
                         pin: "P1_13",
@@ -456,7 +456,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out3",
+                name: "OUT3",
                 pins: &[
                     SignalPin {
                         pin: "P1_30",
@@ -472,7 +472,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in4",
+                name: "IN4",
                 pins: &[
                     SignalPin {
                         pin: "P1_31",
@@ -498,7 +498,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in5",
+                name: "IN5",
                 pins: &[
                     SignalPin {
                         pin: "P4_7",
@@ -519,7 +519,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in6",
+                name: "IN6",
                 pins: &[
                     SignalPin {
                         pin: "P2_0",
@@ -540,7 +540,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in7",
+                name: "IN7",
                 pins: &[
                     SignalPin {
                         pin: "P2_1",
@@ -556,7 +556,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out4",
+                name: "OUT4",
                 pins: &[
                     SignalPin {
                         pin: "P2_6",
@@ -572,7 +572,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out5",
+                name: "OUT5",
                 pins: &[
                     SignalPin {
                         pin: "P2_10",
@@ -593,7 +593,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in8",
+                name: "IN8",
                 pins: &[
                     SignalPin {
                         pin: "P2_13",
@@ -609,7 +609,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in9",
+                name: "IN9",
                 pins: &[
                     SignalPin {
                         pin: "P2_17",
@@ -625,7 +625,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in10",
+                name: "IN10",
                 pins: &[SignalPin {
                     pin: "P3_31",
                     alt: 1u8,
@@ -634,7 +634,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out6",
+                name: "OUT6",
                 pins: &[SignalPin {
                     pin: "P3_30",
                     alt: 1u8,
@@ -643,7 +643,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in11",
+                name: "IN11",
                 pins: &[SignalPin {
                     pin: "P3_28",
                     alt: 1u8,
@@ -652,7 +652,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out7",
+                name: "OUT7",
                 pins: &[SignalPin {
                     pin: "P3_27",
                     alt: 1u8,
@@ -661,7 +661,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out1",
+                name: "OUT1",
                 pins: &[
                     SignalPin {
                         pin: "P3_21",
@@ -677,7 +677,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out0",
+                name: "OUT0",
                 pins: &[
                     SignalPin {
                         pin: "P3_20",
@@ -693,7 +693,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in2",
+                name: "IN2",
                 pins: &[
                     SignalPin {
                         pin: "P3_7",
@@ -709,7 +709,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in1",
+                name: "IN1",
                 pins: &[
                     SignalPin {
                         pin: "P3_1",
@@ -725,7 +725,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in0",
+                name: "IN0",
                 pins: &[
                     SignalPin {
                         pin: "P3_0",
@@ -750,7 +750,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/I3C",
         signals: &[
             Signal {
-                name: "sda",
+                name: "SDA",
                 pins: &[
                     SignalPin {
                         pin: "P1_8",
@@ -771,7 +771,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scl",
+                name: "SCL",
                 pins: &[
                     SignalPin {
                         pin: "P1_9",
@@ -792,7 +792,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pur",
+                name: "PUR",
                 pins: &[
                     SignalPin {
                         pin: "P1_11",
@@ -1095,7 +1095,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/FLEXIO",
         signals: &[
             Signal {
-                name: "d16",
+                name: "D16",
                 pins: &[
                     SignalPin {
                         pin: "P1_8",
@@ -1111,7 +1111,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d17",
+                name: "D17",
                 pins: &[
                     SignalPin {
                         pin: "P1_9",
@@ -1127,7 +1127,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d18",
+                name: "D18",
                 pins: &[
                     SignalPin {
                         pin: "P1_10",
@@ -1148,7 +1148,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d19",
+                name: "D19",
                 pins: &[
                     SignalPin {
                         pin: "P1_11",
@@ -1169,7 +1169,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d20",
+                name: "D20",
                 pins: &[
                     SignalPin {
                         pin: "P1_12",
@@ -1190,7 +1190,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d21",
+                name: "D21",
                 pins: &[
                     SignalPin {
                         pin: "P1_13",
@@ -1211,7 +1211,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d22",
+                name: "D22",
                 pins: &[
                     SignalPin {
                         pin: "P1_14",
@@ -1227,7 +1227,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d23",
+                name: "D23",
                 pins: &[
                     SignalPin {
                         pin: "P1_15",
@@ -1248,7 +1248,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d30",
+                name: "D30",
                 pins: &[
                     SignalPin {
                         pin: "P1_30",
@@ -1269,7 +1269,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d31",
+                name: "D31",
                 pins: &[
                     SignalPin {
                         pin: "P1_31",
@@ -1290,7 +1290,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d10",
+                name: "D10",
                 pins: &[
                     SignalPin {
                         pin: "P4_2",
@@ -1316,7 +1316,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d11",
+                name: "D11",
                 pins: &[
                     SignalPin {
                         pin: "P4_3",
@@ -1337,7 +1337,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d12",
+                name: "D12",
                 pins: &[
                     SignalPin {
                         pin: "P4_4",
@@ -1358,7 +1358,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d13",
+                name: "D13",
                 pins: &[
                     SignalPin {
                         pin: "P4_5",
@@ -1379,7 +1379,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d14",
+                name: "D14",
                 pins: &[
                     SignalPin {
                         pin: "P4_6",
@@ -1405,7 +1405,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d15",
+                name: "D15",
                 pins: &[
                     SignalPin {
                         pin: "P4_7",
@@ -1431,7 +1431,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d8",
+                name: "D8",
                 pins: &[
                     SignalPin {
                         pin: "P2_0",
@@ -1452,7 +1452,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d9",
+                name: "D9",
                 pins: &[
                     SignalPin {
                         pin: "P2_1",
@@ -1473,7 +1473,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d24",
+                name: "D24",
                 pins: &[
                     SignalPin {
                         pin: "P2_16",
@@ -1489,7 +1489,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d25",
+                name: "D25",
                 pins: &[
                     SignalPin {
                         pin: "P2_17",
@@ -1505,7 +1505,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d27",
+                name: "D27",
                 pins: &[
                     SignalPin {
                         pin: "P2_19",
@@ -1526,7 +1526,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d28",
+                name: "D28",
                 pins: &[
                     SignalPin {
                         pin: "P2_20",
@@ -1547,7 +1547,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d29",
+                name: "D29",
                 pins: &[
                     SignalPin {
                         pin: "P2_21",
@@ -1568,7 +1568,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d26",
+                name: "D26",
                 pins: &[SignalPin {
                     pin: "P3_18",
                     alt: 6u8,
@@ -1577,7 +1577,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d0",
+                name: "D0",
                 pins: &[
                     SignalPin {
                         pin: "P0_0",
@@ -1593,7 +1593,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d1",
+                name: "D1",
                 pins: &[
                     SignalPin {
                         pin: "P0_1",
@@ -1609,7 +1609,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d2",
+                name: "D2",
                 pins: &[
                     SignalPin {
                         pin: "P0_2",
@@ -1625,7 +1625,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d3",
+                name: "D3",
                 pins: &[
                     SignalPin {
                         pin: "P0_3",
@@ -1641,7 +1641,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d6",
+                name: "D6",
                 pins: &[
                     SignalPin {
                         pin: "P0_6",
@@ -1657,7 +1657,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d4",
+                name: "D4",
                 pins: &[SignalPin {
                     pin: "P0_20",
                     alt: 6u8,
@@ -1666,7 +1666,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d5",
+                name: "D5",
                 pins: &[SignalPin {
                     pin: "P0_21",
                     alt: 6u8,
@@ -1675,7 +1675,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "d7",
+                name: "D7",
                 pins: &[SignalPin {
                     pin: "P0_23",
                     alt: 6u8,
@@ -1714,7 +1714,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPI2C",
         signals: &[
             Signal {
-                name: "sda",
+                name: "SDA",
                 pins: &[
                     SignalPin {
                         pin: "P1_30",
@@ -1730,7 +1730,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scl",
+                name: "SCL",
                 pins: &[
                     SignalPin {
                         pin: "P1_31",
@@ -1746,7 +1746,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "hreq",
+                name: "HREQ",
                 pins: &[SignalPin {
                     pin: "P0_6",
                     alt: 2u8,
@@ -1755,7 +1755,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scls",
+                name: "SCLS",
                 pins: &[SignalPin {
                     pin: "P0_18",
                     alt: 2u8,
@@ -1764,7 +1764,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdas",
+                name: "SDAS",
                 pins: &[SignalPin {
                     pin: "P0_19",
                     alt: 2u8,
@@ -1793,7 +1793,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPI2C",
         signals: &[
             Signal {
-                name: "sda",
+                name: "SDA",
                 pins: &[
                     SignalPin {
                         pin: "P1_12",
@@ -1809,7 +1809,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scl",
+                name: "SCL",
                 pins: &[
                     SignalPin {
                         pin: "P1_13",
@@ -1825,7 +1825,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scls",
+                name: "SCLS",
                 pins: &[
                     SignalPin {
                         pin: "P1_14",
@@ -1841,7 +1841,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdas",
+                name: "SDAS",
                 pins: &[
                     SignalPin {
                         pin: "P1_15",
@@ -1877,7 +1877,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPI2C",
         signals: &[
             Signal {
-                name: "sda",
+                name: "SDA",
                 pins: &[
                     SignalPin {
                         pin: "P1_8",
@@ -1893,7 +1893,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scl",
+                name: "SCL",
                 pins: &[
                     SignalPin {
                         pin: "P1_9",
@@ -1909,7 +1909,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdas",
+                name: "SDAS",
                 pins: &[
                     SignalPin {
                         pin: "P1_10",
@@ -1925,7 +1925,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scls",
+                name: "SCLS",
                 pins: &[
                     SignalPin {
                         pin: "P1_11",
@@ -1941,7 +1941,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "hreq",
+                name: "HREQ",
                 pins: &[SignalPin {
                     pin: "P4_6",
                     alt: 2u8,
@@ -1970,7 +1970,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPI2C",
         signals: &[
             Signal {
-                name: "sdas",
+                name: "SDAS",
                 pins: &[SignalPin {
                     pin: "P3_31",
                     alt: 2u8,
@@ -1979,7 +1979,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scls",
+                name: "SCLS",
                 pins: &[SignalPin {
                     pin: "P3_30",
                     alt: 2u8,
@@ -1988,7 +1988,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "hreq",
+                name: "HREQ",
                 pins: &[SignalPin {
                     pin: "P3_29",
                     alt: 2u8,
@@ -1997,7 +1997,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sda",
+                name: "SDA",
                 pins: &[
                     SignalPin {
                         pin: "P3_28",
@@ -2013,7 +2013,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "scl",
+                name: "SCL",
                 pins: &[
                     SignalPin {
                         pin: "P3_27",
@@ -2049,7 +2049,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPSPI",
         signals: &[
             Signal {
-                name: "pcs0",
+                name: "PCS0",
                 pins: &[
                     SignalPin {
                         pin: "P0_0",
@@ -2065,7 +2065,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdi",
+                name: "SDI",
                 pins: &[
                     SignalPin {
                         pin: "P0_1",
@@ -2081,7 +2081,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sck",
+                name: "SCK",
                 pins: &[
                     SignalPin {
                         pin: "P0_2",
@@ -2097,7 +2097,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdo",
+                name: "SDO",
                 pins: &[
                     SignalPin {
                         pin: "P0_3",
@@ -2113,7 +2113,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs1",
+                name: "PCS1",
                 pins: &[
                     SignalPin {
                         pin: "P0_6",
@@ -2129,7 +2129,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs2",
+                name: "PCS2",
                 pins: &[
                     SignalPin {
                         pin: "P0_16",
@@ -2145,7 +2145,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs3",
+                name: "PCS3",
                 pins: &[
                     SignalPin {
                         pin: "P0_17",
@@ -2181,7 +2181,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPSPI",
         signals: &[
             Signal {
-                name: "pcs1",
+                name: "PCS1",
                 pins: &[
                     SignalPin {
                         pin: "P2_6",
@@ -2197,7 +2197,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sck",
+                name: "SCK",
                 pins: &[
                     SignalPin {
                         pin: "P2_12",
@@ -2213,7 +2213,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdo",
+                name: "SDO",
                 pins: &[
                     SignalPin {
                         pin: "P2_13",
@@ -2229,7 +2229,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "sdi",
+                name: "SDI",
                 pins: &[
                     SignalPin {
                         pin: "P2_15",
@@ -2250,7 +2250,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs0",
+                name: "PCS0",
                 pins: &[
                     SignalPin {
                         pin: "P2_17",
@@ -2266,7 +2266,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs2",
+                name: "PCS2",
                 pins: &[
                     SignalPin {
                         pin: "P2_20",
@@ -2282,7 +2282,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "pcs3",
+                name: "PCS3",
                 pins: &[
                     SignalPin {
                         pin: "P2_21",
@@ -2318,7 +2318,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPUART",
         signals: &[
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P2_0",
@@ -2339,7 +2339,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P2_1",
@@ -2360,7 +2360,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "b",
+                name: "B",
                 pins: &[
                     SignalPin {
                         pin: "P2_2",
@@ -2416,7 +2416,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPUART",
         signals: &[
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_8",
@@ -2442,7 +2442,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_9",
@@ -2468,7 +2468,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "b",
+                name: "B",
                 pins: &[
                     SignalPin {
                         pin: "P1_10",
@@ -2534,7 +2534,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPUART",
         signals: &[
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_12",
@@ -2565,7 +2565,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_13",
@@ -2596,7 +2596,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "b",
+                name: "B",
                 pins: &[
                     SignalPin {
                         pin: "P1_14",
@@ -2662,7 +2662,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPUART",
         signals: &[
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P4_2",
@@ -2683,7 +2683,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P4_5",
@@ -2704,7 +2704,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "b",
+                name: "B",
                 pins: &[
                     SignalPin {
                         pin: "P4_6",
@@ -2760,7 +2760,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/LPUART",
         signals: &[
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P4_3",
@@ -2786,7 +2786,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P4_4",
@@ -2812,7 +2812,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "b",
+                name: "B",
                 pins: &[
                     SignalPin {
                         pin: "P2_0",
@@ -2867,7 +2867,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         address: 0x400A4000,
         driver_name: "mcxa/USB",
         signals: &[Signal {
-            name: "det",
+            name: "DET",
             pins: &[SignalPin {
                 pin: "P2_12",
                 alt: 1u8,
@@ -3014,7 +3014,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/ADC",
         signals: &[
             Signal {
-                name: "a0",
+                name: "A0",
                 pins: &[SignalPin {
                     pin: "P2_0",
                     alt: 0u8,
@@ -3023,7 +3023,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a1",
+                name: "A1",
                 pins: &[SignalPin {
                     pin: "P2_1",
                     alt: 0u8,
@@ -3032,7 +3032,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a4",
+                name: "A4",
                 pins: &[SignalPin {
                     pin: "P2_2",
                     alt: 0u8,
@@ -3041,7 +3041,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a7",
+                name: "A7",
                 pins: &[SignalPin {
                     pin: "P2_7",
                     alt: 0u8,
@@ -3050,7 +3050,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a5",
+                name: "A5",
                 pins: &[SignalPin {
                     pin: "P2_12",
                     alt: 0u8,
@@ -3059,7 +3059,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a2",
+                name: "A2",
                 pins: &[SignalPin {
                     pin: "P2_15",
                     alt: 0u8,
@@ -3068,7 +3068,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a6",
+                name: "A6",
                 pins: &[SignalPin {
                     pin: "P2_16",
                     alt: 0u8,
@@ -3077,7 +3077,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a14",
+                name: "A14",
                 pins: &[SignalPin {
                     pin: "P0_3",
                     alt: 0u8,
@@ -3086,7 +3086,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a15",
+                name: "A15",
                 pins: &[SignalPin {
                     pin: "P0_6",
                     alt: 0u8,
@@ -3095,7 +3095,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a8",
+                name: "A8",
                 pins: &[SignalPin {
                     pin: "P0_18",
                     alt: 0u8,
@@ -3104,7 +3104,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a9",
+                name: "A9",
                 pins: &[SignalPin {
                     pin: "P0_19",
                     alt: 0u8,
@@ -3113,7 +3113,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a10",
+                name: "A10",
                 pins: &[SignalPin {
                     pin: "P0_20",
                     alt: 0u8,
@@ -3122,7 +3122,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a11",
+                name: "A11",
                 pins: &[SignalPin {
                     pin: "P0_21",
                     alt: 0u8,
@@ -3131,7 +3131,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a12",
+                name: "A12",
                 pins: &[SignalPin {
                     pin: "P0_22",
                     alt: 0u8,
@@ -3140,7 +3140,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a13",
+                name: "A13",
                 pins: &[SignalPin {
                     pin: "P0_23",
                     alt: 0u8,
@@ -3149,7 +3149,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a16",
+                name: "A16",
                 pins: &[SignalPin {
                     pin: "P1_0",
                     alt: 0u8,
@@ -3158,7 +3158,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a17",
+                name: "A17",
                 pins: &[SignalPin {
                     pin: "P1_1",
                     alt: 0u8,
@@ -3167,7 +3167,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a18",
+                name: "A18",
                 pins: &[SignalPin {
                     pin: "P1_2",
                     alt: 0u8,
@@ -3176,7 +3176,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a19",
+                name: "A19",
                 pins: &[SignalPin {
                     pin: "P1_3",
                     alt: 0u8,
@@ -3185,7 +3185,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a20",
+                name: "A20",
                 pins: &[SignalPin {
                     pin: "P1_4",
                     alt: 0u8,
@@ -3194,7 +3194,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a21",
+                name: "A21",
                 pins: &[SignalPin {
                     pin: "P1_5",
                     alt: 0u8,
@@ -3203,7 +3203,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a22",
+                name: "A22",
                 pins: &[SignalPin {
                     pin: "P1_6",
                     alt: 0u8,
@@ -3212,7 +3212,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a23",
+                name: "A23",
                 pins: &[SignalPin {
                     pin: "P1_7",
                     alt: 0u8,
@@ -3234,7 +3234,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/ADC",
         signals: &[
             Signal {
-                name: "a8",
+                name: "A8",
                 pins: &[SignalPin {
                     pin: "P1_10",
                     alt: 0u8,
@@ -3243,7 +3243,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a9",
+                name: "A9",
                 pins: &[SignalPin {
                     pin: "P1_11",
                     alt: 0u8,
@@ -3252,7 +3252,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a10",
+                name: "A10",
                 pins: &[SignalPin {
                     pin: "P1_12",
                     alt: 0u8,
@@ -3261,7 +3261,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a11",
+                name: "A11",
                 pins: &[SignalPin {
                     pin: "P1_13",
                     alt: 0u8,
@@ -3270,7 +3270,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a12",
+                name: "A12",
                 pins: &[SignalPin {
                     pin: "P1_14",
                     alt: 0u8,
@@ -3279,7 +3279,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a13",
+                name: "A13",
                 pins: &[SignalPin {
                     pin: "P1_15",
                     alt: 0u8,
@@ -3288,7 +3288,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a4",
+                name: "A4",
                 pins: &[SignalPin {
                     pin: "P2_3",
                     alt: 0u8,
@@ -3297,7 +3297,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a0",
+                name: "A0",
                 pins: &[SignalPin {
                     pin: "P2_4",
                     alt: 0u8,
@@ -3306,7 +3306,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a1",
+                name: "A1",
                 pins: &[SignalPin {
                     pin: "P2_5",
                     alt: 0u8,
@@ -3315,7 +3315,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a3",
+                name: "A3",
                 pins: &[SignalPin {
                     pin: "P2_6",
                     alt: 0u8,
@@ -3324,7 +3324,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a7",
+                name: "A7",
                 pins: &[SignalPin {
                     pin: "P2_7",
                     alt: 0u8,
@@ -3333,7 +3333,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a5",
+                name: "A5",
                 pins: &[SignalPin {
                     pin: "P2_13",
                     alt: 0u8,
@@ -3342,7 +3342,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a6",
+                name: "A6",
                 pins: &[SignalPin {
                     pin: "P2_17",
                     alt: 0u8,
@@ -3351,7 +3351,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a2",
+                name: "A2",
                 pins: &[SignalPin {
                     pin: "P2_19",
                     alt: 0u8,
@@ -3360,7 +3360,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a20",
+                name: "A20",
                 pins: &[SignalPin {
                     pin: "P3_31",
                     alt: 0u8,
@@ -3369,7 +3369,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a21",
+                name: "A21",
                 pins: &[SignalPin {
                     pin: "P3_30",
                     alt: 0u8,
@@ -3378,7 +3378,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "a22",
+                name: "A22",
                 pins: &[SignalPin {
                     pin: "P3_29",
                     alt: 0u8,
@@ -3400,7 +3400,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/CMP",
         signals: &[
             Signal {
-                name: "in0",
+                name: "IN0",
                 pins: &[SignalPin {
                     pin: "P2_2",
                     alt: 0u8,
@@ -3409,7 +3409,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out",
+                name: "OUT",
                 pins: &[
                     SignalPin {
                         pin: "P0_3",
@@ -3425,7 +3425,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in3",
+                name: "IN3",
                 pins: &[SignalPin {
                     pin: "P1_0",
                     alt: 0u8,
@@ -3434,7 +3434,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in1",
+                name: "IN1",
                 pins: &[SignalPin {
                     pin: "P1_3",
                     alt: 0u8,
@@ -3443,7 +3443,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in2",
+                name: "IN2",
                 pins: &[SignalPin {
                     pin: "P1_4",
                     alt: 0u8,
@@ -3465,7 +3465,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/CMP",
         signals: &[
             Signal {
-                name: "in0",
+                name: "IN0",
                 pins: &[SignalPin {
                     pin: "P2_3",
                     alt: 0u8,
@@ -3474,7 +3474,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in1",
+                name: "IN1",
                 pins: &[SignalPin {
                     pin: "P0_3",
                     alt: 0u8,
@@ -3483,7 +3483,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out",
+                name: "OUT",
                 pins: &[
                     SignalPin {
                         pin: "P0_6",
@@ -3499,7 +3499,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in3",
+                name: "IN3",
                 pins: &[SignalPin {
                     pin: "P1_1",
                     alt: 0u8,
@@ -3508,7 +3508,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "in2",
+                name: "IN2",
                 pins: &[SignalPin {
                     pin: "P1_5",
                     alt: 0u8,
@@ -3529,7 +3529,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         address: 0x400B4000,
         driver_name: "mcxa/DAC",
         signals: &[Signal {
-            name: "out",
+            name: "OUT",
             pins: &[SignalPin {
                 pin: "P2_2",
                 alt: 0u8,
@@ -3550,7 +3550,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/OPAMP",
         signals: &[
             Signal {
-                name: "inp0",
+                name: "INP0",
                 pins: &[SignalPin {
                     pin: "P2_12",
                     alt: 0u8,
@@ -3559,7 +3559,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "inn",
+                name: "INN",
                 pins: &[SignalPin {
                     pin: "P2_13",
                     alt: 0u8,
@@ -3568,7 +3568,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "out",
+                name: "OUT",
                 pins: &[SignalPin {
                     pin: "P2_15",
                     alt: 0u8,
@@ -3626,7 +3626,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         driver_name: "mcxa/CAN",
         signals: &[
             Signal {
-                name: "txd",
+                name: "TXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_10",
@@ -3657,7 +3657,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 iomuxc_daisy: None,
             },
             Signal {
-                name: "rxd",
+                name: "RXD",
                 pins: &[
                     SignalPin {
                         pin: "P1_11",
