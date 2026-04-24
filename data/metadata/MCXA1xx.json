@@ -971,12 +971,14 @@
       "name": "MRCC0",
       "address": "0x40091000",
       "block": "mcxa/MRCC1xx::MRCC",
+      "module": "MRCC",
       "signals": []
     },
     {
       "name": "SYSCON",
       "address": "0x40091000",
       "block": "mcxa/SYSCON1xx::SYSCON",
+      "module": "SYSCON",
       "signals": []
     },
     {
