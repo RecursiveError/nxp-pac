@@ -49,17 +49,17 @@ pub const PINS: &[Pin] = &[
     Pin {
         name: "P1_29",
         iomuxc: None,
-        feature: None,
+        feature: Some("dangerous-reset-as-gpio"),
     },
     Pin {
         name: "P1_30",
         iomuxc: None,
-        feature: None,
+        feature: Some("sosc-as-gpio"),
     },
     Pin {
         name: "P1_31",
         iomuxc: None,
-        feature: None,
+        feature: Some("sosc-as-gpio"),
     },
     Pin {
         name: "P4_2",
@@ -314,27 +314,27 @@ pub const PINS: &[Pin] = &[
     Pin {
         name: "P0_0",
         iomuxc: None,
-        feature: None,
+        feature: Some("swd-as-gpio"),
     },
     Pin {
         name: "P0_1",
         iomuxc: None,
-        feature: None,
+        feature: Some("swd-as-gpio"),
     },
     Pin {
         name: "P0_2",
         iomuxc: None,
-        feature: None,
+        feature: Some("swd-swo-as-gpio"),
     },
     Pin {
         name: "P0_3",
         iomuxc: None,
-        feature: None,
+        feature: Some("jtag-extras-as-gpio"),
     },
     Pin {
         name: "P0_6",
         iomuxc: None,
-        feature: None,
+        feature: Some("jtag-extras-as-gpio"),
     },
     Pin {
         name: "P0_16",
