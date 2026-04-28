@@ -63,6 +63,7 @@ pub struct Peripheral {
     #[serde(default)]
     pub dma_muxing: Vec<DmaMux>,
     pub only_in: Option<String>,
+    pub gate: Option<Gate>,
 }
 
 impl Peripheral {
@@ -128,6 +129,13 @@ pub struct DmaMux {
     pub signal: String,
     pub mux: String,
     pub request: u8,
+}
+
+#[derive(Debug, Clone, Deserialize)]
+pub struct Gate {
+    pub enable: String,
+    pub reset: String,
+    pub bit: String,
 }
 
 fn generate_metadata(name: &str, metadata: &Metadata) -> TokenStream {
@@ -247,6 +255,19 @@ fn generate_metadata(name: &str, metadata: &Metadata) -> TokenStream {
 
         let driver_name = peripheral.peripheral_block.as_deref().unwrap_or_default();
 
+        let gate = match peripheral.gate.as_ref() {
+            Some(Gate { enable, reset, bit }) => {
+                quote! {
+                    Some(Gate {
+                        enable: #enable,
+                        reset: #reset,
+                        bit: #bit,
+                    })
+                }
+            }
+            None => quote! { None },
+        };
+
         quote! {
             Peripheral {
                 name: #name,
@@ -255,6 +276,7 @@ fn generate_metadata(name: &str, metadata: &Metadata) -> TokenStream {
                 signals: &[#(#signals),*],
                 flexcomm: #flexcomm,
                 dma_muxing: &[#(#dma_muxing),*],
+                gate: #gate,
             }
         }
     });
