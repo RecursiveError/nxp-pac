@@ -164,7 +164,6 @@ fieldset/Gcr:
     description: Buffer Enable.
     bit_offset: 17
     bit_size: 1
-    enum: BufEn
   - name: iref_ptat_ext_sel
     description: External On-Chip PTAT Current Reference Select.
     bit_offset: 20
@@ -270,15 +269,6 @@ fieldset/Verid:
     description: Major Version Number.
     bit_offset: 24
     bit_size: 8
-enum/BufEn:
-  bit_size: 1
-  variants:
-  - name: UseBuf
-    description: Not used.
-    value: 0
-  - name: NoUseBuf
-    description: Used.
-    value: 1
 enum/BufSpdCtrl:
   bit_size: 1
   variants:

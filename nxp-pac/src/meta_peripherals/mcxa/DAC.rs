@@ -481,14 +481,14 @@ impl Gcr {
     #[doc = "Buffer Enable."]
     #[must_use]
     #[inline(always)]
-    pub const fn buf_en(&self) -> BufEn {
+    pub const fn buf_en(&self) -> bool {
         let val = (self.0 >> 17usize) & 0x01;
-        BufEn::from_bits(val as u8)
+        val != 0
     }
     #[doc = "Buffer Enable."]
     #[inline(always)]
-    pub const fn set_buf_en(&mut self, val: BufEn) {
-        self.0 = (self.0 & !(0x01 << 17usize)) | (((val.to_bits() as u32) & 0x01) << 17usize);
+    pub const fn set_buf_en(&mut self, val: bool) {
+        self.0 = (self.0 & !(0x01 << 17usize)) | (((val as u32) & 0x01) << 17usize);
     }
     #[doc = "External On-Chip PTAT Current Reference Select."]
     #[must_use]
@@ -555,7 +555,7 @@ impl defmt::Format for Gcr {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Gcr {{ dacen: {=bool:?}, dacrfs: {:?}, fifoen: {:?}, swmd: {=bool:?}, trgsel: {:?}, ptgen: {=bool:?}, latch_cyc: {=u8:?}, buf_en: {:?}, iref_ptat_ext_sel: {=bool:?}, iref_ztc_ext_sel: {=bool:?}, buf_spd_ctrl: {:?} }}",
+            "Gcr {{ dacen: {=bool:?}, dacrfs: {:?}, fifoen: {:?}, swmd: {=bool:?}, trgsel: {:?}, ptgen: {=bool:?}, latch_cyc: {=u8:?}, buf_en: {=bool:?}, iref_ptat_ext_sel: {=bool:?}, iref_ztc_ext_sel: {=bool:?}, buf_spd_ctrl: {:?} }}",
             self.dacen(),
             self.dacrfs(),
             self.fifoen(),
@@ -981,37 +981,6 @@ impl defmt::Format for Verid {
             self.minor(),
             self.major()
         )
-    }
-}
-#[repr(u8)]
-#[derive(Copy, Clone, Debug, Eq, PartialEq, Ord, PartialOrd)]
-#[cfg_attr(feature = "defmt", derive(defmt::Format))]
-pub enum BufEn {
-    #[doc = "Not used."]
-    UseBuf = 0x0,
-    #[doc = "Used."]
-    NoUseBuf = 0x01,
-}
-impl BufEn {
-    #[inline(always)]
-    pub const fn from_bits(val: u8) -> BufEn {
-        unsafe { core::mem::transmute(val & 0x01) }
-    }
-    #[inline(always)]
-    pub const fn to_bits(self) -> u8 {
-        unsafe { core::mem::transmute(self) }
-    }
-}
-impl From<u8> for BufEn {
-    #[inline(always)]
-    fn from(val: u8) -> BufEn {
-        BufEn::from_bits(val)
-    }
-}
-impl From<BufEn> for u8 {
-    #[inline(always)]
-    fn from(val: BufEn) -> u8 {
-        BufEn::to_bits(val)
     }
 }
 #[repr(u8)]
