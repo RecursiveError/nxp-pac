@@ -50,6 +50,7 @@ pub struct Peripheral {
     pub signals: &'static [Signal],
     pub flexcomm: Option<&'static str>,
     pub dma_muxing: &'static [DmaMux],
+    pub gate: Option<Gate>,
 }
 
 #[derive(Debug)]
@@ -71,6 +72,13 @@ pub struct DmaMux {
     pub signal: &'static str,
     pub mux: &'static str,
     pub request: u8,
+}
+
+#[derive(Debug)]
+pub struct Gate {
+    pub enable: &'static str,
+    pub reset: Option<&'static str>,
+    pub config: Option<&'static str>,
 }
 
 pub use _generated::*;
