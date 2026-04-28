@@ -806,7 +806,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 51,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("AdcConfig"),
+        }),
     },
     Peripheral {
         name: "ADC1",
@@ -1009,7 +1013,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 52,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("AdcConfig"),
+        }),
     },
     Peripheral {
         name: "ADC2",
@@ -1449,7 +1457,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "CTIMER0",
@@ -2012,7 +2024,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 32,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("CTimerConfig"),
+        }),
     },
     Peripheral {
         name: "CTIMER1",
@@ -2500,7 +2516,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 34,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("CTimerConfig"),
+        }),
     },
     Peripheral {
         name: "CTIMER2",
@@ -3008,7 +3028,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 36,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("CTimerConfig"),
+        }),
     },
     Peripheral {
         name: "CTIMER3",
@@ -3511,7 +3535,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 38,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("CTimerConfig"),
+        }),
     },
     Peripheral {
         name: "CTIMER4",
@@ -4009,7 +4037,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 40,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("CTimerConfig"),
+        }),
     },
     Peripheral {
         name: "DAC0",
@@ -4085,7 +4117,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "EIM0",
@@ -6049,7 +6085,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 60,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "GPIO1",
@@ -6270,7 +6310,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 61,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "GPIO2",
@@ -6527,7 +6571,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 62,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "GPIO3",
@@ -6829,7 +6877,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 63,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "GPIO4",
@@ -6915,7 +6967,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 64,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "I3C0",
@@ -6994,7 +7050,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 8,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("I3cConfig"),
+        }),
     },
     Peripheral {
         name: "INPUTMUX0",
@@ -7003,7 +7063,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "ISPMODE",
@@ -7107,7 +7171,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 12,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("Lpi2cConfig"),
+        }),
     },
     Peripheral {
         name: "LPI2C1",
@@ -7192,7 +7260,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 14,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("Lpi2cConfig"),
+        }),
     },
     Peripheral {
         name: "LPI2C2",
@@ -7286,7 +7358,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 4,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("Lpi2cConfig"),
+        }),
     },
     Peripheral {
         name: "LPI2C3",
@@ -7366,7 +7442,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 6,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("Lpi2cConfig"),
+        }),
     },
     Peripheral {
         name: "LPSPI0",
@@ -7499,7 +7579,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 16,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpspiConfig"),
+        }),
     },
     Peripheral {
         name: "LPSPI1",
@@ -7637,7 +7721,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 18,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpspiConfig"),
+        }),
     },
     Peripheral {
         name: "LPTMR0",
@@ -7774,7 +7862,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 22,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "LPUART1",
@@ -7904,7 +7996,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 24,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "LPUART2",
@@ -8039,7 +8135,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 26,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "LPUART3",
@@ -8144,7 +8244,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 28,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "LPUART4",
@@ -8259,7 +8363,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 30,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: Some("mrcc_glb_rst0"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "LPUART5",
@@ -8384,7 +8492,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 103,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("LpuartConfig"),
+        }),
     },
     Peripheral {
         name: "MAU0",
@@ -8470,7 +8582,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("OsTimerConfig"),
+        }),
     },
     Peripheral {
         name: "PKC0",
@@ -8488,7 +8604,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "PORT1",
@@ -8497,7 +8617,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "PORT2",
@@ -8506,7 +8630,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "PORT3",
@@ -8515,7 +8643,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "PORT4",
@@ -8524,7 +8656,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "EQDC0",
@@ -10196,7 +10332,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: None,
+        }),
     },
     Peripheral {
         name: "UDF0",
@@ -10615,7 +10755,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_acc0",
+            reset: None,
+            config: Some("Clk1MConfig"),
+        }),
     },
     Peripheral {
         name: "XTAL48M",

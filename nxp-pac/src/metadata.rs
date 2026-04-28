@@ -74,10 +74,11 @@ pub struct DmaMux {
     pub request: u8,
 }
 
+#[derive(Debug)]
 pub struct Gate {
     pub enable: &'static str,
-    pub reset: &'static str,
-    pub bit: &'static str,
+    pub reset: Option<&'static str>,
+    pub config: Option<&'static str>,
 }
 
 pub use _generated::*;

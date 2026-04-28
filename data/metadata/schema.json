@@ -145,15 +145,13 @@
               "description": "The name of the register that resets the peripheral",
               "type": "string"
             },
-            "bit": {
-              "description": "The name of the bit that's relevant for this peripheral in the specified registers",
+            "config": {
+              "description": "The name of the config type used for setting up the clocks",
               "type": "string"
             }
           },
           "required": [
-            "enable",
-            "reset",
-            "bit"
+            "enable"
           ]
         }
       },

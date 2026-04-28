@@ -134,8 +134,8 @@ pub struct DmaMux {
 #[derive(Debug, Clone, Deserialize)]
 pub struct Gate {
     pub enable: String,
-    pub reset: String,
-    pub bit: String,
+    pub reset: Option<String>,
+    pub config: Option<String>,
 }
 
 fn generate_metadata(name: &str, metadata: &Metadata) -> TokenStream {
@@ -256,12 +256,25 @@ fn generate_metadata(name: &str, metadata: &Metadata) -> TokenStream {
         let driver_name = peripheral.peripheral_block.as_deref().unwrap_or_default();
 
         let gate = match peripheral.gate.as_ref() {
-            Some(Gate { enable, reset, bit }) => {
+            Some(Gate {
+                enable,
+                reset,
+                config,
+            }) => {
+                let reset = match reset {
+                    Some(reset) => quote! { Some(#reset) },
+                    None => quote! { None },
+                };
+                let config = match config {
+                    Some(config) => quote! { Some(#config) },
+                    None => quote! { None },
+                };
+
                 quote! {
                     Some(Gate {
                         enable: #enable,
                         reset: #reset,
-                        bit: #bit,
+                        config: #config,
                     })
                 }
             }
