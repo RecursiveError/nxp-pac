@@ -12,6 +12,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806396u32),
             pad: 1075806892u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_01",
@@ -19,6 +20,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806400u32),
             pad: 1075806896u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_02",
@@ -26,6 +28,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806404u32),
             pad: 1075806900u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_03",
@@ -33,6 +36,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806408u32),
             pad: 1075806904u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_04",
@@ -40,6 +44,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806412u32),
             pad: 1075806908u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_05",
@@ -47,6 +52,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806416u32),
             pad: 1075806912u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_06",
@@ -54,6 +60,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806420u32),
             pad: 1075806916u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_07",
@@ -61,6 +68,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806424u32),
             pad: 1075806920u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_08",
@@ -68,6 +76,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806428u32),
             pad: 1075806924u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_09",
@@ -75,6 +84,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806432u32),
             pad: 1075806928u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_10",
@@ -82,6 +92,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806436u32),
             pad: 1075806932u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_11",
@@ -89,6 +100,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806440u32),
             pad: 1075806936u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_12",
@@ -96,6 +108,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806444u32),
             pad: 1075806940u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_13",
@@ -103,6 +116,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806448u32),
             pad: 1075806944u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_14",
@@ -110,6 +124,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806452u32),
             pad: 1075806948u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B0_15",
@@ -117,6 +132,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806456u32),
             pad: 1075806952u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_00",
@@ -124,6 +140,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806460u32),
             pad: 1075806956u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_01",
@@ -131,6 +148,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806464u32),
             pad: 1075806960u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_02",
@@ -138,6 +156,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806468u32),
             pad: 1075806964u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_03",
@@ -145,6 +164,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806472u32),
             pad: 1075806968u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_04",
@@ -152,6 +172,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806476u32),
             pad: 1075806972u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_05",
@@ -159,6 +180,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806480u32),
             pad: 1075806976u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_06",
@@ -166,6 +188,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806484u32),
             pad: 1075806980u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_07",
@@ -173,6 +196,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806488u32),
             pad: 1075806984u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_08",
@@ -180,6 +204,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806492u32),
             pad: 1075806988u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_09",
@@ -187,6 +212,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806496u32),
             pad: 1075806992u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_10",
@@ -194,6 +220,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806500u32),
             pad: 1075806996u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_11",
@@ -201,6 +228,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806504u32),
             pad: 1075807000u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_12",
@@ -208,6 +236,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806508u32),
             pad: 1075807004u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_13",
@@ -215,6 +244,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806512u32),
             pad: 1075807008u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_14",
@@ -222,6 +252,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806516u32),
             pad: 1075807012u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_AD_B1_15",
@@ -229,6 +260,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806520u32),
             pad: 1075807016u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_00",
@@ -236,6 +268,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806524u32),
             pad: 1075806524u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_01",
@@ -243,6 +276,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806528u32),
             pad: 1075806528u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_02",
@@ -250,6 +284,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806532u32),
             pad: 1075806532u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_03",
@@ -257,6 +292,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806536u32),
             pad: 1075806536u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_04",
@@ -264,6 +300,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806540u32),
             pad: 1075806540u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_05",
@@ -271,6 +308,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806544u32),
             pad: 1075806544u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_06",
@@ -278,6 +316,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806548u32),
             pad: 1075806548u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_07",
@@ -285,6 +324,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806552u32),
             pad: 1075806552u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_08",
@@ -292,6 +332,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806556u32),
             pad: 1075806556u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_09",
@@ -299,6 +340,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806560u32),
             pad: 1075806560u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_10",
@@ -306,6 +348,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806564u32),
             pad: 1075806564u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_11",
@@ -313,6 +356,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806568u32),
             pad: 1075806568u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_12",
@@ -320,6 +364,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806572u32),
             pad: 1075806572u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_13",
@@ -327,6 +372,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806576u32),
             pad: 1075806576u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_14",
@@ -334,6 +380,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806580u32),
             pad: 1075806580u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B0_15",
@@ -341,6 +388,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806584u32),
             pad: 1075806584u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_00",
@@ -348,6 +396,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806588u32),
             pad: 1075806588u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_01",
@@ -355,6 +404,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806592u32),
             pad: 1075806592u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_02",
@@ -362,6 +412,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806596u32),
             pad: 1075806596u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_03",
@@ -369,6 +420,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806600u32),
             pad: 1075806600u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_04",
@@ -376,6 +428,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806604u32),
             pad: 1075806604u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_05",
@@ -383,6 +436,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806608u32),
             pad: 1075806608u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_06",
@@ -390,6 +444,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806612u32),
             pad: 1075806612u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_07",
@@ -397,6 +452,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806616u32),
             pad: 1075806616u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_08",
@@ -404,6 +460,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806620u32),
             pad: 1075806620u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_09",
@@ -411,6 +468,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806624u32),
             pad: 1075806624u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_10",
@@ -418,6 +476,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806628u32),
             pad: 1075806628u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_11",
@@ -425,6 +484,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806632u32),
             pad: 1075806632u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_12",
@@ -432,6 +492,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806636u32),
             pad: 1075806636u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_13",
@@ -439,6 +500,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806640u32),
             pad: 1075806640u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_14",
@@ -446,6 +508,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806644u32),
             pad: 1075806644u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_B1_15",
@@ -453,6 +516,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806648u32),
             pad: 1075806648u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_00",
@@ -460,6 +524,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806228u32),
             pad: 1075806724u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_01",
@@ -467,6 +532,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806232u32),
             pad: 1075806728u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_02",
@@ -474,6 +540,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806236u32),
             pad: 1075806732u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_03",
@@ -481,6 +548,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806240u32),
             pad: 1075806736u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_04",
@@ -488,6 +556,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806244u32),
             pad: 1075806740u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_05",
@@ -495,6 +564,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806248u32),
             pad: 1075806744u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_06",
@@ -502,6 +572,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806252u32),
             pad: 1075806748u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_07",
@@ -509,6 +580,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806256u32),
             pad: 1075806752u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_08",
@@ -516,6 +588,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806260u32),
             pad: 1075806756u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_09",
@@ -523,6 +596,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806264u32),
             pad: 1075806760u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_10",
@@ -530,6 +604,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806268u32),
             pad: 1075806764u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_11",
@@ -537,6 +612,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806272u32),
             pad: 1075806768u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_12",
@@ -544,6 +620,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806276u32),
             pad: 1075806772u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_13",
@@ -551,6 +628,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806280u32),
             pad: 1075806776u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_14",
@@ -558,6 +636,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806284u32),
             pad: 1075806780u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_15",
@@ -565,6 +644,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806288u32),
             pad: 1075806784u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_16",
@@ -572,6 +652,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806292u32),
             pad: 1075806788u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_17",
@@ -579,6 +660,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806296u32),
             pad: 1075806792u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_18",
@@ -586,6 +668,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806300u32),
             pad: 1075806796u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_19",
@@ -593,6 +676,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806304u32),
             pad: 1075806800u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_20",
@@ -600,6 +684,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806308u32),
             pad: 1075806804u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_21",
@@ -607,6 +692,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806312u32),
             pad: 1075806808u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_22",
@@ -614,6 +700,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806316u32),
             pad: 1075806812u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_23",
@@ -621,6 +708,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806320u32),
             pad: 1075806816u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_24",
@@ -628,6 +716,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806324u32),
             pad: 1075806820u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_25",
@@ -635,6 +724,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806328u32),
             pad: 1075806824u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_26",
@@ -642,6 +732,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806332u32),
             pad: 1075806828u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_27",
@@ -649,6 +740,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806336u32),
             pad: 1075806832u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_28",
@@ -656,6 +748,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806340u32),
             pad: 1075806836u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_29",
@@ -663,6 +756,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806344u32),
             pad: 1075806840u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_30",
@@ -670,6 +764,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806348u32),
             pad: 1075806844u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_31",
@@ -677,6 +772,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806352u32),
             pad: 1075806848u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_32",
@@ -684,6 +780,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806356u32),
             pad: 1075806852u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_33",
@@ -691,6 +788,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806360u32),
             pad: 1075806856u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_34",
@@ -698,6 +796,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806364u32),
             pad: 1075806860u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_35",
@@ -705,6 +804,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806368u32),
             pad: 1075806864u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_36",
@@ -712,6 +812,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806372u32),
             pad: 1075806868u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_37",
@@ -719,6 +820,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806376u32),
             pad: 1075806872u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_38",
@@ -726,6 +828,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806380u32),
             pad: 1075806876u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_39",
@@ -733,6 +836,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806384u32),
             pad: 1075806880u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_40",
@@ -740,6 +844,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806388u32),
             pad: 1075806884u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_EMC_41",
@@ -747,6 +852,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806392u32),
             pad: 1075806888u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_00",
@@ -754,6 +860,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806652u32),
             pad: 1075807148u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_01",
@@ -761,6 +868,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806656u32),
             pad: 1075807152u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_02",
@@ -768,6 +876,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806660u32),
             pad: 1075807156u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_03",
@@ -775,6 +884,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806664u32),
             pad: 1075807160u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_04",
@@ -782,6 +892,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806668u32),
             pad: 1075807164u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B0_05",
@@ -789,6 +900,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806672u32),
             pad: 1075807168u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_00",
@@ -796,6 +908,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806676u32),
             pad: 1075807172u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_01",
@@ -803,6 +916,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806680u32),
             pad: 1075807176u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_02",
@@ -810,6 +924,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806684u32),
             pad: 1075807180u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_03",
@@ -817,6 +932,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806688u32),
             pad: 1075807184u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_04",
@@ -824,6 +940,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806692u32),
             pad: 1075807188u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_05",
@@ -831,6 +948,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806696u32),
             pad: 1075807192u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_06",
@@ -838,6 +956,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806700u32),
             pad: 1075807196u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_07",
@@ -845,6 +964,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806704u32),
             pad: 1075807200u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_08",
@@ -852,6 +972,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806708u32),
             pad: 1075807204u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_09",
@@ -859,6 +980,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806712u32),
             pad: 1075807208u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_10",
@@ -866,6 +988,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806716u32),
             pad: 1075807212u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SD_B1_11",
@@ -873,6 +996,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075806720u32),
             pad: 1075807216u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_00",
@@ -880,6 +1004,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807836u32),
             pad: 1075807924u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_01",
@@ -887,6 +1012,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807840u32),
             pad: 1075807928u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_02",
@@ -894,6 +1020,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807844u32),
             pad: 1075807932u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_03",
@@ -901,6 +1028,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807848u32),
             pad: 1075807936u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_04",
@@ -908,6 +1036,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807852u32),
             pad: 1075807940u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_05",
@@ -915,6 +1044,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807856u32),
             pad: 1075807944u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_06",
@@ -922,6 +1052,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807860u32),
             pad: 1075807948u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_07",
@@ -929,6 +1060,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807864u32),
             pad: 1075807952u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_08",
@@ -936,6 +1068,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807868u32),
             pad: 1075807956u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_09",
@@ -943,6 +1076,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807872u32),
             pad: 1075807960u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_10",
@@ -950,6 +1084,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807876u32),
             pad: 1075807964u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_11",
@@ -957,6 +1092,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807880u32),
             pad: 1075807968u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_12",
@@ -964,6 +1100,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807884u32),
             pad: 1075807972u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B0_13",
@@ -971,6 +1108,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807888u32),
             pad: 1075807976u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_00",
@@ -978,6 +1116,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807892u32),
             pad: 1075807980u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_01",
@@ -985,6 +1124,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807896u32),
             pad: 1075807984u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_02",
@@ -992,6 +1132,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807900u32),
             pad: 1075807988u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_03",
@@ -999,6 +1140,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807904u32),
             pad: 1075807992u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_04",
@@ -1006,6 +1148,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807908u32),
             pad: 1075807996u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_05",
@@ -1013,6 +1156,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807912u32),
             pad: 1075808000u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_06",
@@ -1020,6 +1164,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807916u32),
             pad: 1075808004u32,
         }),
+        feature: None,
     },
     Pin {
         name: "GPIO_SPI_B1_07",
@@ -1027,6 +1172,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1075807920u32),
             pad: 1075808008u32,
         }),
+        feature: None,
     },
     Pin {
         name: "WAKEUP",
@@ -1034,6 +1180,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1074429952u32),
             pad: 1074429976u32,
         }),
+        feature: None,
     },
     Pin {
         name: "PMIC_ON_REQ",
@@ -1041,6 +1188,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1074429956u32),
             pad: 1074429980u32,
         }),
+        feature: None,
     },
     Pin {
         name: "PMIC_STBY_REQ",
@@ -1048,6 +1196,7 @@ pub const PINS: &[Pin] = &[
             mux: Some(1074429960u32),
             pad: 1074429984u32,
         }),
+        feature: None,
     },
     Pin {
         name: "ONOFF",
@@ -1055,6 +1204,7 @@ pub const PINS: &[Pin] = &[
             mux: None,
             pad: 1074429972u32,
         }),
+        feature: None,
     },
     Pin {
         name: "POR_B",
@@ -1062,6 +1212,7 @@ pub const PINS: &[Pin] = &[
             mux: None,
             pad: 1074429968u32,
         }),
+        feature: None,
     },
     Pin {
         name: "TEST_MODE",
@@ -1069,6 +1220,7 @@ pub const PINS: &[Pin] = &[
             mux: None,
             pad: 1074429964u32,
         }),
+        feature: None,
     },
 ];
 pub const PERIPHERALS: &[Peripheral] = &[
@@ -1320,6 +1472,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXSPI2",
@@ -1592,6 +1745,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO1",
@@ -1889,6 +2043,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO2",
@@ -2186,6 +2341,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO3",
@@ -2447,6 +2603,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO4",
@@ -2744,6 +2901,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO5",
@@ -2780,6 +2938,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO10",
@@ -2987,6 +3146,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART1",
@@ -3032,6 +3192,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART2",
@@ -3091,6 +3252,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART3",
@@ -3174,6 +3336,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART4",
@@ -3243,6 +3406,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART5",
@@ -3302,6 +3466,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART6",
@@ -3361,6 +3526,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART7",
@@ -3420,6 +3586,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "LPUART8",
@@ -3489,6 +3656,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
 ];
 pub const INTERRUPTS: &[(&str, u32)] = &[
