@@ -1422,13 +1422,13 @@ impl Firccfg {
     #[must_use]
     #[inline(always)]
     pub const fn freq_sel(&self) -> FreqSel {
-        let val = (self.0 >> 0usize) & 0x0f;
+        let val = (self.0 >> 1usize) & 0x07;
         FreqSel::from_bits(val as u8)
     }
     #[doc = "Frequency Range."]
     #[inline(always)]
     pub const fn set_freq_sel(&mut self, val: FreqSel) {
-        self.0 = (self.0 & !(0x0f << 0usize)) | (((val.to_bits() as u32) & 0x0f) << 0usize);
+        self.0 = (self.0 & !(0x07 << 1usize)) | (((val.to_bits() as u32) & 0x07) << 1usize);
     }
 }
 impl Default for Firccfg {
@@ -5147,19 +5147,11 @@ pub enum FreqSel {
     Firc90_96mhz = 0x05,
     _RESERVED_6 = 0x06,
     Firc180_192mhz = 0x07,
-    _RESERVED_8 = 0x08,
-    _RESERVED_9 = 0x09,
-    _RESERVED_a = 0x0a,
-    _RESERVED_b = 0x0b,
-    _RESERVED_c = 0x0c,
-    _RESERVED_d = 0x0d,
-    _RESERVED_e = 0x0e,
-    _RESERVED_f = 0x0f,
 }
 impl FreqSel {
     #[inline(always)]
     pub const fn from_bits(val: u8) -> FreqSel {
-        unsafe { core::mem::transmute(val & 0x0f) }
+        unsafe { core::mem::transmute(val & 0x07) }
     }
     #[inline(always)]
     pub const fn to_bits(self) -> u8 {
