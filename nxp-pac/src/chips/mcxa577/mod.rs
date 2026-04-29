@@ -233,6 +233,8 @@ pub const CTIMER1: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40005000
 pub const CTIMER2: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40006000 as _) };
 pub const CTIMER3: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40007000 as _) };
 pub const CTIMER4: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40008000 as _) };
+pub const DAC0: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B4000 as _) };
+pub const DAC1: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B5000 as _) };
 pub const DMA0: dma::Dma12 = unsafe { dma::Dma12::from_ptr(0x40080000 as _) };
 pub const DMA1: dma::Dma4 = unsafe { dma::Dma4::from_ptr(0x40013000 as _) };
 pub const FMU0: fmu::Fmu = unsafe { fmu::Fmu::from_ptr(0x40095000 as _) };
@@ -296,6 +298,8 @@ pub mod common;
 pub mod crc;
 #[path = "../../meta_peripherals/mcxa/CTIMER.rs"]
 pub mod ctimer;
+#[path = "../../meta_peripherals/mcxa/DAC.rs"]
+pub mod dac;
 #[path = "../../meta_peripherals/mcxa/DMA.rs"]
 pub mod dma;
 #[path = "../../meta_peripherals/mcxa/EDMA_TCD.rs"]

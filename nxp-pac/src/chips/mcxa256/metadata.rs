@@ -4046,7 +4046,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "DAC0",
         address: 0x400B4000,
-        driver_name: "mcxa/DAC0",
+        driver_name: "mcxa/DAC",
         signals: &[Signal {
             name: "OUT",
             pins: &[SignalPin {
@@ -4062,7 +4062,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
             mux: "DMA3",
             request: 56,
         }],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: Some("mrcc_glb_rst1"),
+            config: Some("DacConfig"),
+        }),
     },
     Peripheral {
         name: "DBGMAILBOX",

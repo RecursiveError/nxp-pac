@@ -17,6 +17,7 @@ includes:
   - mcxa/cmc.yaml
   - mcxa/crc.yaml
   - mcxa/ctimer.yaml
+  - mcxa/dac.yaml
   - mcxa/dma.yaml
   - mcxa/flexpwm.yaml
   - mcxa/gpio.yaml

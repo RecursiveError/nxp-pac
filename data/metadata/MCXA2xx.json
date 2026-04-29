@@ -3527,7 +3527,7 @@
     {
       "name": "DAC0",
       "address": "0x400B4000",
-      "block": "mcxa/DAC0",
+      "block": "mcxa/DAC",
       "signals": [
         {
           "name": "OUT",
@@ -3539,6 +3539,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "DacConfig"
+      },
       "dma_muxing": [
         {
           "signal": "DAC0FifoRequest",
