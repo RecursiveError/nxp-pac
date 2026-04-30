@@ -1,0 +1,3075 @@
+block/Flexspi:
+  description: Flexible Serial Peripheral Interface.
+  items:
+  - name: mcr0
+    description: Module Control 0.
+    byte_offset: 0
+    fieldset: Mcr0
+  - name: mcr1
+    description: Module Control 1.
+    byte_offset: 4
+    fieldset: Mcr1
+  - name: mcr2
+    description: Module Control 2.
+    byte_offset: 8
+    fieldset: Mcr2
+  - name: ahbcr
+    description: AHB Bus Control.
+    byte_offset: 12
+    fieldset: Ahbcr
+  - name: inten
+    description: Interrupt Enable.
+    byte_offset: 16
+    fieldset: Inten
+  - name: intr
+    description: Interrupt.
+    byte_offset: 20
+    fieldset: Intr
+  - name: lutkey
+    description: LUT Key.
+    byte_offset: 24
+    fieldset: Lutkey
+  - name: lutcr
+    description: LUT Control.
+    byte_offset: 28
+    fieldset: Lutcr
+  - name: ahbrxbuf0cr0
+    description: AHB Receive Buffer 0 Control 0.
+    byte_offset: 32
+    fieldset: Ahbrxbuf0cr0
+  - name: ahbrxbuf1cr0
+    description: AHB Receive Buffer 1 Control 0.
+    byte_offset: 36
+    fieldset: Ahbrxbuf1cr0
+  - name: ahbrxbuf2cr0
+    description: AHB Receive Buffer 2 Control 0.
+    byte_offset: 40
+    fieldset: Ahbrxbuf2cr0
+  - name: ahbrxbuf3cr0
+    description: AHB Receive Buffer 3 Control 0.
+    byte_offset: 44
+    fieldset: Ahbrxbuf3cr0
+  - name: ahbrxbuf4cr0
+    description: AHB Receive Buffer 4 Control 0.
+    byte_offset: 48
+    fieldset: Ahbrxbuf4cr0
+  - name: ahbrxbuf5cr0
+    description: AHB Receive Buffer 5 Control 0.
+    byte_offset: 52
+    fieldset: Ahbrxbuf5cr0
+  - name: ahbrxbuf6cr0
+    description: AHB Receive Buffer 6 Control 0.
+    byte_offset: 56
+    fieldset: Ahbrxbuf6cr0
+  - name: ahbrxbuf7cr0
+    description: AHB Receive Buffer 7 Control 0.
+    byte_offset: 60
+    fieldset: Ahbrxbuf7cr0
+  - name: ahbrxbufcr1
+    description: AHB Receive Buffer n Control 1.
+    array:
+      len: 8
+      stride: 4
+    byte_offset: 64
+    access: Read
+  - name: flsha1cr0
+    description: Flash Control 0.
+    byte_offset: 96
+    fieldset: Flsha1cr0
+  - name: flsha2cr0
+    description: Flash Control 0.
+    byte_offset: 100
+    fieldset: Flsha2cr0
+  - name: flshb1cr0
+    description: Flash Control 0.
+    byte_offset: 104
+    fieldset: Flshb1cr0
+  - name: flshb2cr0
+    description: Flash Control 0.
+    byte_offset: 108
+    fieldset: Flshb2cr0
+  - name: flshcr1
+    description: Flash Control 1.
+    array:
+      len: 4
+      stride: 4
+    byte_offset: 112
+    fieldset: Flshcr1
+  - name: flshcr2
+    description: Flash Control 2.
+    array:
+      len: 4
+      stride: 4
+    byte_offset: 128
+    fieldset: Flshcr2
+  - name: flshcr3
+    description: Flash Control 3.
+    byte_offset: 144
+    fieldset: Flshcr3
+  - name: flshcr4
+    description: Flash Control 4.
+    byte_offset: 148
+    fieldset: Flshcr4
+  - name: flshcr5
+    description: Flash Control 5.
+    byte_offset: 152
+    access: Read
+  - name: flshcr6
+    description: Flash Control 6.
+    byte_offset: 156
+    access: Read
+  - name: ipcr0
+    description: IP Control 0.
+    byte_offset: 160
+    fieldset: Ipcr0
+  - name: ipcr1
+    description: IP Control 1.
+    byte_offset: 164
+    fieldset: Ipcr1
+  - name: ipcr2
+    description: IP Control 2.
+    byte_offset: 168
+    fieldset: Ipcr2
+  - name: ipcr3
+    description: IP Control 3.
+    byte_offset: 172
+    access: Read
+  - name: ipcmd
+    description: IP Command.
+    byte_offset: 176
+    fieldset: Ipcmd
+  - name: dlpr
+    description: Data Learning Pattern.
+    byte_offset: 180
+    fieldset: Dlpr
+  - name: iprxfcr
+    description: IP Receive FIFO Control.
+    byte_offset: 184
+    fieldset: Iprxfcr
+  - name: iptxfcr
+    description: IP Transmit FIFO Control.
+    byte_offset: 188
+    fieldset: Iptxfcr
+  - name: dllcr
+    description: DLL Control 0.
+    array:
+      len: 2
+      stride: 4
+    byte_offset: 192
+    fieldset: Dllcr
+  - name: misccr2
+    description: Misc Control 2.
+    byte_offset: 200
+    fieldset: Misccr2
+  - name: misccr3
+    description: Misc Control 3.
+    byte_offset: 204
+    fieldset: Misccr3
+  - name: sts0
+    description: Status 0.
+    byte_offset: 224
+    access: Read
+    fieldset: Sts0
+  - name: sts1
+    description: Status 1.
+    byte_offset: 228
+    access: Read
+    fieldset: Sts1
+  - name: sts2
+    description: Status 2.
+    byte_offset: 232
+    access: Read
+    fieldset: Sts2
+  - name: ahbspndsts
+    description: AHB Suspend Status.
+    byte_offset: 236
+    access: Read
+    fieldset: Ahbspndsts
+  - name: iprxfsts
+    description: IP Receive FIFO Status.
+    byte_offset: 240
+    access: Read
+    fieldset: Iprxfsts
+  - name: iptxfsts
+    description: IP Transmit FIFO Status.
+    byte_offset: 244
+    access: Read
+    fieldset: Iptxfsts
+  - name: rfdr
+    description: IP Receive FIFO Data x.
+    array:
+      len: 32
+      stride: 4
+    byte_offset: 256
+    access: Read
+    fieldset: Rfdr
+  - name: tfdr
+    description: IP TX FIFO Data x.
+    array:
+      len: 32
+      stride: 4
+    byte_offset: 384
+    access: Write
+    fieldset: Tfdr
+  - name: lut
+    description: Lookup Table x.
+    array:
+      len: 64
+      stride: 4
+    byte_offset: 512
+    fieldset: Lut
+  - name: haddrstart
+    description: HADDR REMAP Start Address.
+    byte_offset: 1056
+    fieldset: Haddrstart
+  - name: haddrend
+    description: HADDR REMAP END ADDR.
+    byte_offset: 1060
+    fieldset: Haddrend
+  - name: haddroffset
+    description: HADDR Remap Offset.
+    byte_offset: 1064
+    fieldset: Haddroffset
+  - name: ipedctrl
+    description: IPED Function Control.
+    byte_offset: 1068
+    fieldset: Ipedctrl
+  - name: ipsnszstart0
+    description: IPS Nonsecure Region 0 Start Address.
+    byte_offset: 1072
+    fieldset: Ipsnszstart0
+  - name: ipsnszend0
+    description: IPS Nonsecure Region 0 End Address.
+    byte_offset: 1076
+    fieldset: Ipsnszend0
+  - name: ipsnszstart1
+    description: IPS Nonsecure Region 1 Start Address.
+    byte_offset: 1080
+    fieldset: Ipsnszstart1
+  - name: ipsnszend1
+    description: IPS Nonsecure Region 1 End Address.
+    byte_offset: 1084
+    fieldset: Ipsnszend1
+  - name: ahbbufregionstart0
+    description: Receive Buffer Start Address of Region 0.
+    byte_offset: 1088
+    fieldset: Ahbbufregionstart0
+  - name: ahbbufregionend0
+    description: Receive Buffer Region 0 End Address.
+    byte_offset: 1092
+    fieldset: Ahbbufregionend0
+  - name: ahbbufregionstart1
+    description: Receive Buffer Start Address of Region 1.
+    byte_offset: 1096
+    fieldset: Ahbbufregionstart1
+  - name: ahbbufregionend1
+    description: Receive Buffer Region 1 End Address.
+    byte_offset: 1100
+    fieldset: Ahbbufregionend1
+  - name: ahbbufregionstart2
+    description: Receive Buffer Start Address of Region 2.
+    byte_offset: 1104
+    fieldset: Ahbbufregionstart2
+  - name: ahbbufregionend2
+    description: Receive Buffer Region 2 End Address.
+    byte_offset: 1108
+    fieldset: Ahbbufregionend2
+  - name: ahbbufregionstart3
+    description: Receive Buffer Start Address of Region 3.
+    byte_offset: 1112
+    fieldset: Ahbbufregionstart3
+  - name: ahbbufregionend3
+    description: Receive Buffer Region 3 End Address.
+    byte_offset: 1116
+    fieldset: Ahbbufregionend3
+  - name: ipedctxctrl0
+    description: IPED context control 0.
+    byte_offset: 1280
+    fieldset: Ipedctxctrl0
+  - name: ipedctxctrl1
+    description: IPED context control 1.
+    byte_offset: 1284
+    fieldset: Ipedctxctrl1
+  - name: ipedctx0iv0
+    description: IPED Context0 IV0.
+    byte_offset: 1312
+    fieldset: Ipedctx0iv0
+  - name: ipedctx0iv1
+    description: IPED Context0 IV1.
+    byte_offset: 1316
+    fieldset: Ipedctx0iv1
+  - name: ipedctx0start
+    description: Start Address of Region.
+    byte_offset: 1320
+    fieldset: Ipedctx0start
+  - name: ipedctx0end
+    description: End Address of Region.
+    byte_offset: 1324
+    fieldset: Ipedctx0end
+  - name: ipedctx1iv0
+    description: IPED Context1 IV0.
+    byte_offset: 1344
+    fieldset: Ipedctx1iv0
+  - name: ipedctx1iv1
+    description: IPED Context1 IV1.
+    byte_offset: 1348
+    fieldset: Ipedctx1iv1
+  - name: ipedctx1start
+    description: Start Address of Region.
+    byte_offset: 1352
+    fieldset: Ipedctx1start
+  - name: ipedctx1end
+    description: End Address of Region.
+    byte_offset: 1356
+    fieldset: Ipedctx1end
+  - name: ipedctx2iv0
+    description: IPED Context2 IV0.
+    byte_offset: 1376
+    fieldset: Ipedctx2iv0
+  - name: ipedctx2iv1
+    description: IPED Context2 IV1.
+    byte_offset: 1380
+    fieldset: Ipedctx2iv1
+  - name: ipedctx2start
+    description: Start Address of Region.
+    byte_offset: 1384
+    fieldset: Ipedctx2start
+  - name: ipedctx2end
+    description: End Address of Region.
+    byte_offset: 1388
+    fieldset: Ipedctx2end
+  - name: ipedctx3iv0
+    description: IPED Context3 IV0.
+    byte_offset: 1408
+    fieldset: Ipedctx3iv0
+  - name: ipedctx3iv1
+    description: IPED Context3 IV1.
+    byte_offset: 1412
+    fieldset: Ipedctx3iv1
+  - name: ipedctx3start
+    description: Start Address of Region.
+    byte_offset: 1416
+    fieldset: Ipedctx3start
+  - name: ipedctx3end
+    description: End Address of Region.
+    byte_offset: 1420
+    fieldset: Ipedctx3end
+  - name: ipedctx4iv0
+    description: IPED Context4 IV0.
+    byte_offset: 1440
+    fieldset: Ipedctx4iv0
+  - name: ipedctx4iv1
+    description: IPED Context4 IV1.
+    byte_offset: 1444
+    fieldset: Ipedctx4iv1
+  - name: ipedctx4start
+    description: Start Address of Region.
+    byte_offset: 1448
+    fieldset: Ipedctx4start
+  - name: ipedctx4end
+    description: End Address of Region.
+    byte_offset: 1452
+    fieldset: Ipedctx4end
+  - name: ipedctx5iv0
+    description: IPED Context5 IV0.
+    byte_offset: 1472
+    fieldset: Ipedctx5iv0
+  - name: ipedctx5iv1
+    description: IPED Context5 IV1.
+    byte_offset: 1476
+    fieldset: Ipedctx5iv1
+  - name: ipedctx5start
+    description: Start Address of Region.
+    byte_offset: 1480
+    fieldset: Ipedctx5start
+  - name: ipedctx5end
+    description: End Address of Region.
+    byte_offset: 1484
+    fieldset: Ipedctx5end
+  - name: ipedctx6iv0
+    description: IPED Context6 IV0.
+    byte_offset: 1504
+    fieldset: Ipedctx6iv0
+  - name: ipedctx6iv1
+    description: IPED Context6 IV1.
+    byte_offset: 1508
+    fieldset: Ipedctx6iv1
+  - name: ipedctx6start
+    description: Start Address of Region.
+    byte_offset: 1512
+    fieldset: Ipedctx6start
+  - name: ipedctx6end
+    description: End Address of Region.
+    byte_offset: 1516
+    fieldset: Ipedctx6end
+fieldset/Ahbbufregionend0:
+  description: Receive Buffer Region 0 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionend1:
+  description: Receive Buffer Region 1 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionend2:
+  description: Receive Buffer Region 2 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionend3:
+  description: Receive Buffer Region 3 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionstart0:
+  description: Receive Buffer Start Address of Region 0.
+  fields:
+  - name: start_address
+    description: Start Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionstart1:
+  description: Receive Buffer Start Address of Region 1.
+  fields:
+  - name: start_address
+    description: Start Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionstart2:
+  description: Receive Buffer Start Address of Region 2.
+  fields:
+  - name: start_address
+    description: Start Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbbufregionstart3:
+  description: Receive Buffer Start Address of Region 3.
+  fields:
+  - name: start_address
+    description: Start Address of Prefetch Sub-Buffer Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ahbcr:
+  description: AHB Bus Control.
+  fields:
+  - name: aparen
+    description: AHB Parallel Mode Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Aparen
+  - name: clrahbrxbuf
+    description: Clear AHB Receive Buffer.
+    bit_offset: 1
+    bit_size: 1
+    enum: Clrahbrxbuf
+  - name: clrahbtxbuf
+    description: Clear AHB Transmit Buffer.
+    bit_offset: 2
+    bit_size: 1
+    enum: Clrahbtxbuf
+  - name: cachableen
+    description: Cacheable Read Access Enable.
+    bit_offset: 3
+    bit_size: 1
+    enum: Cachableen
+  - name: bufferableen
+    description: Bufferable Write Access Enable.
+    bit_offset: 4
+    bit_size: 1
+    enum: Bufferableen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 5
+    bit_size: 1
+    enum: AhbcrPrefetchen
+  - name: readaddropt
+    description: AHB Read Address Option.
+    bit_offset: 6
+    bit_size: 1
+    enum: Readaddropt
+  - name: resumedisable
+    description: AHB Read Resume Disable.
+    bit_offset: 7
+    bit_size: 1
+    enum: Resumedisable
+  - name: readszalign
+    description: AHB Read Size Alignment.
+    bit_offset: 10
+    bit_size: 1
+    enum: Readszalign
+  - name: alignment
+    description: AHB Boundary Alignment.
+    bit_offset: 20
+    bit_size: 2
+    enum: Alignment
+  - name: aflashbase
+    description: AHB Memory-Mapped Flash Base Address.
+    bit_offset: 28
+    bit_size: 4
+fieldset/Ahbrxbuf0cr0:
+  description: AHB Receive Buffer 0 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf0cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf0cr0Prefetchen
+fieldset/Ahbrxbuf1cr0:
+  description: AHB Receive Buffer 1 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf1cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf1cr0Prefetchen
+fieldset/Ahbrxbuf2cr0:
+  description: AHB Receive Buffer 2 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf2cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf2cr0Prefetchen
+fieldset/Ahbrxbuf3cr0:
+  description: AHB Receive Buffer 3 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf3cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf3cr0Prefetchen
+fieldset/Ahbrxbuf4cr0:
+  description: AHB Receive Buffer 4 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf4cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf4cr0Prefetchen
+fieldset/Ahbrxbuf5cr0:
+  description: AHB Receive Buffer 5 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf5cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf5cr0Prefetchen
+fieldset/Ahbrxbuf6cr0:
+  description: AHB Receive Buffer 6 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf6cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf6cr0Prefetchen
+fieldset/Ahbrxbuf7cr0:
+  description: AHB Receive Buffer 7 Control 0.
+  fields:
+  - name: bufsz
+    description: AHB Receive Buffer Size.
+    bit_offset: 0
+    bit_size: 8
+  - name: mstrid
+    description: AHB Controller ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: priority
+    description: AHB Controller Read Priority.
+    bit_offset: 24
+    bit_size: 3
+  - name: regionen
+    description: AHB Receive Buffer Address Region Enable.
+    bit_offset: 30
+    bit_size: 1
+    enum: Ahbrxbuf7cr0Regionen
+  - name: prefetchen
+    description: AHB Read Prefetch Enable.
+    bit_offset: 31
+    bit_size: 1
+    enum: Ahbrxbuf7cr0Prefetchen
+fieldset/Ahbspndsts:
+  description: AHB Suspend Status.
+  fields:
+  - name: active
+    description: Active AHB Read Prefetch Suspended.
+    bit_offset: 0
+    bit_size: 1
+    enum: Active
+  - name: bufid
+    description: AHB Receive Buffer ID for Suspended Command Sequence.
+    bit_offset: 1
+    bit_size: 3
+  - name: datlft
+    description: Data Left.
+    bit_offset: 16
+    bit_size: 16
+fieldset/Dllcr:
+  description: DLL Control 0.
+  fields:
+  - name: dllen
+    description: DLL Calibration Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Dllen
+  - name: dllreset
+    description: DLL reset.
+    bit_offset: 1
+    bit_size: 1
+    enum: Dllreset
+  - name: forceupdate
+    description: Force update.
+    bit_offset: 2
+    bit_size: 1
+  - name: slvdlytarget
+    description: Target Delay Line.
+    bit_offset: 3
+    bit_size: 4
+  - name: gateupdate
+    description: Gate DLL Update.
+    bit_offset: 7
+    bit_size: 1
+  - name: ovrden
+    description: Target Clock Delay Line Override Value Enable.
+    bit_offset: 8
+    bit_size: 1
+    enum: Ovrden
+  - name: ovrdval
+    description: Target Clock Delay Line Override Value.
+    bit_offset: 9
+    bit_size: 6
+  - name: refphasegap
+    description: Reference Clock Delay Line Phase Adjust Gap. REFPHASEGAP setting of 2h is recommended if DLLEN is set.
+    bit_offset: 15
+    bit_size: 2
+  - name: refphasestart
+    description: Reference Clock Delay Line Start Phase.
+    bit_offset: 17
+    bit_size: 3
+  - name: slvupdateint
+    description: Target Delay Line Update Interval.
+    bit_offset: 20
+    bit_size: 8
+  - name: refupdateint
+    description: DLL Control Loop Update Interval.
+    bit_offset: 28
+    bit_size: 4
+fieldset/Dlpr:
+  description: Data Learning Pattern.
+  fields:
+  - name: dlp
+    description: Data Learning Pattern.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Flsha1cr0:
+  description: Flash Control 0.
+  fields:
+  - name: flshsz
+    description: Flash Size in KB.
+    bit_offset: 0
+    bit_size: 23
+  - name: addrshift
+    description: AHB Address Shift Function control.
+    bit_offset: 29
+    bit_size: 1
+fieldset/Flsha2cr0:
+  description: Flash Control 0.
+  fields:
+  - name: flshsz
+    description: Flash Size in KB.
+    bit_offset: 0
+    bit_size: 23
+  - name: addrshift
+    description: AHB Address Shift Function control.
+    bit_offset: 29
+    bit_size: 1
+fieldset/Flshb1cr0:
+  description: Flash Control 0.
+  fields:
+  - name: flshsz
+    description: Flash Size in KB.
+    bit_offset: 0
+    bit_size: 23
+  - name: addrshift
+    description: AHB Address Shift Function control.
+    bit_offset: 29
+    bit_size: 1
+fieldset/Flshb2cr0:
+  description: Flash Control 0.
+  fields:
+  - name: flshsz
+    description: Flash Size in KB.
+    bit_offset: 0
+    bit_size: 23
+  - name: addrshift
+    description: AHB Address Shift Function control.
+    bit_offset: 29
+    bit_size: 1
+fieldset/Flshcr1:
+  description: Flash Control 1.
+  fields:
+  - name: tcss
+    description: Serial Flash CS Setup Time.
+    bit_offset: 0
+    bit_size: 5
+  - name: tcsh
+    description: Serial Flash CS Hold Time.
+    bit_offset: 5
+    bit_size: 5
+  - name: wa
+    description: Word-Addressable.
+    bit_offset: 10
+    bit_size: 1
+    enum: Wa
+  - name: cas
+    description: Column Address Size.
+    bit_offset: 11
+    bit_size: 4
+  - name: csintervalunit
+    description: Chip Select Interval Unit.
+    bit_offset: 15
+    bit_size: 1
+    enum: Csintervalunit
+  - name: csinterval
+    description: Chip Select Interval.
+    bit_offset: 16
+    bit_size: 16
+fieldset/Flshcr2:
+  description: Flash Control 2.
+  fields:
+  - name: ardseqid
+    description: Sequence Index for AHB Read-Triggered Command in LUT.
+    bit_offset: 0
+    bit_size: 4
+  - name: ardseqnum
+    description: Sequence Number for AHB Read-Triggered Command.
+    bit_offset: 5
+    bit_size: 3
+  - name: awrseqid
+    description: Sequence Index for AHB Write-Triggered Command.
+    bit_offset: 8
+    bit_size: 4
+  - name: awrseqnum
+    description: Sequence Number for AHB Write-Triggered Command.
+    bit_offset: 13
+    bit_size: 3
+  - name: awrwait
+    description: AHB Write Wait.
+    bit_offset: 16
+    bit_size: 12
+  - name: awrwaitunit
+    description: AWRWAIT Unit.
+    bit_offset: 28
+    bit_size: 3
+    enum: Awrwaitunit
+  - name: clrinstrptr
+    description: Clear Instruction Pointer.
+    bit_offset: 31
+    bit_size: 1
+fieldset/Flshcr3:
+  description: Flash Control 3.
+  fields:
+  - name: siodoidle
+    description: Data pins (SIO) default output level in IDLE state.
+    bit_offset: 0
+    bit_size: 8
+  - name: siodononidle
+    description: Data pins (SIO) default output level in NON-IDLE state (chip Select is asserted).
+    bit_offset: 8
+    bit_size: 8
+  - name: siooeidle
+    description: Data pins (SIO) default output enabled in IDLE state.
+    bit_offset: 16
+    bit_size: 8
+  - name: siooenonidle
+    description: Data pins (SIO) default output enabled in NON-IDLE state (chip Select is asserted).
+    bit_offset: 24
+    bit_size: 8
+fieldset/Flshcr4:
+  description: Flash Control 4.
+  fields:
+  - name: wmopt1
+    description: Write Mask Option 1.
+    bit_offset: 0
+    bit_size: 1
+  - name: wmena
+    description: Write Mask Enable for Port A.
+    bit_offset: 2
+    bit_size: 1
+    enum: Wmena
+  - name: wmenb
+    description: Write Mask Enable for Port B.
+    bit_offset: 3
+    bit_size: 1
+    enum: Wmenb
+  - name: sckrstdisabled
+    description: SCLK Reset Disable.
+    bit_offset: 4
+    bit_size: 1
+    enum: Sckrstdisabled
+  - name: dqsposcap
+    description: DQS POS Capture.
+    bit_offset: 5
+    bit_size: 1
+    enum: Dqsposcap
+  - name: wmopt1b
+    description: Write Mask Option 1B.
+    bit_offset: 6
+    bit_size: 1
+    enum: Wmopt1b
+  - name: wmopt2b
+    description: Write Mask Option 2B.
+    bit_offset: 7
+    bit_size: 1
+    enum: Wmopt2b
+  - name: wmoptdiff
+    description: Write Mask Option Differential.
+    bit_offset: 8
+    bit_size: 1
+    enum: Wmoptdiff
+fieldset/Haddrend:
+  description: HADDR REMAP END ADDR.
+  fields:
+  - name: endstart
+    description: End Address of HADDR Remap Range.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Haddroffset:
+  description: HADDR Remap Offset.
+  fields:
+  - name: addroffset
+    description: HADDR Offset.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Haddrstart:
+  description: HADDR REMAP Start Address.
+  fields:
+  - name: remapen
+    description: AHB Bus Address Remap Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Remapen
+  - name: swapen
+    description: AHB or IP Bus Address Swap Enable.
+    bit_offset: 2
+    bit_size: 1
+  - name: addrstart
+    description: HADDR Start Address.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Inten:
+  description: Interrupt Enable.
+  fields:
+  - name: ipcmddoneen
+    description: IP-Triggered Command Sequences Execution Finished Interrupt Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Ipcmddoneen
+  - name: ipcmdgeen
+    description: IP-Triggered Command Sequences Grant Timeout Interrupt Enable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipcmdgeen
+  - name: ahbcmdgeen
+    description: AHB-Triggered Command Sequences Grant Timeout Interrupt Enable.
+    bit_offset: 2
+    bit_size: 1
+    enum: Ahbcmdgeen
+  - name: ipcmderren
+    description: IP-Triggered Command Sequences Error Detected Interrupt Enable.
+    bit_offset: 3
+    bit_size: 1
+    enum: Ipcmderren
+  - name: ahbcmderren
+    description: AHB-Triggered Command Sequences Error Detected Interrupt Enable.
+    bit_offset: 4
+    bit_size: 1
+    enum: Ahbcmderren
+  - name: iprxwaen
+    description: IP Receive FIFO Watermark Available Interrupt Enable.
+    bit_offset: 5
+    bit_size: 1
+    enum: Iprxwaen
+  - name: iptxween
+    description: IP Transmit FIFO Watermark Empty Interrupt Enable.
+    bit_offset: 6
+    bit_size: 1
+    enum: Iptxween
+  - name: datalearnfailen
+    description: Data Learning Failed Interrupt Enable.
+    bit_offset: 7
+    bit_size: 1
+    enum: Datalearnfailen
+  - name: sckstopbyrden
+    description: SCLK Stopped By Read Interrupt Enable.
+    bit_offset: 8
+    bit_size: 1
+    enum: Sckstopbyrden
+  - name: sckstopbywren
+    description: SCLK Stopped By Write Interrupt Enable.
+    bit_offset: 9
+    bit_size: 1
+    enum: Sckstopbywren
+  - name: ahbbustimeouten
+    description: AHB Bus Timeout Interrupt Enable.
+    bit_offset: 10
+    bit_size: 1
+    enum: Ahbbustimeouten
+  - name: seqtimeouten
+    description: Sequence execution Timeout Interrupt Enable.
+    bit_offset: 11
+    bit_size: 1
+    enum: Seqtimeouten
+  - name: ipcmdsecurevioen
+    description: IP Command Security Violation Interrupt Enable.
+    bit_offset: 16
+    bit_size: 1
+    enum: Ipcmdsecurevioen
+fieldset/Intr:
+  description: Interrupt.
+  fields:
+  - name: ipcmddone
+    description: IP-Triggered Command Sequences Execution Finished.
+    bit_offset: 0
+    bit_size: 1
+  - name: ipcmdge
+    description: IP-Triggered Command Sequences Grant Timeout.
+    bit_offset: 1
+    bit_size: 1
+  - name: ahbcmdge
+    description: AHB-Triggered Command Sequences Grant Timeout.
+    bit_offset: 2
+    bit_size: 1
+  - name: ipcmderr
+    description: IP-Triggered Command Sequences Error.
+    bit_offset: 3
+    bit_size: 1
+  - name: ahbcmderr
+    description: AHB-Triggered Command Sequences Error.
+    bit_offset: 4
+    bit_size: 1
+  - name: iprxwa
+    description: IP Receive FIFO Watermark Available.
+    bit_offset: 5
+    bit_size: 1
+  - name: iptxwe
+    description: IP Transmit FIFO Watermark Empty.
+    bit_offset: 6
+    bit_size: 1
+  - name: datalearnfail
+    description: Data Learning Failed.
+    bit_offset: 7
+    bit_size: 1
+  - name: sckstopbyrd
+    description: SCLK Stopped Due To Full Receive FIFO.
+    bit_offset: 8
+    bit_size: 1
+  - name: sckstopbywr
+    description: SCLK Stopped Due To Empty Transmit FIFO.
+    bit_offset: 9
+    bit_size: 1
+  - name: ahbbustimeout
+    description: AHB Bus Timeout.
+    bit_offset: 10
+    bit_size: 1
+  - name: seqtimeout
+    description: Sequence Execution Timeout.
+    bit_offset: 11
+    bit_size: 1
+  - name: ipcmdsecurevio
+    description: IP Command Security Violation.
+    bit_offset: 16
+    bit_size: 1
+fieldset/Ipcmd:
+  description: IP Command.
+  fields:
+  - name: trg
+    description: Command Trigger.
+    bit_offset: 0
+    bit_size: 1
+    enum: Trg
+fieldset/Ipcr0:
+  description: IP Control 0.
+  fields:
+  - name: sfar
+    description: Serial Flash Address.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipcr1:
+  description: IP Control 1.
+  fields:
+  - name: idatsz
+    description: Flash Read/Program Data Size (in bytes) for IP command.
+    bit_offset: 0
+    bit_size: 16
+  - name: iseqid
+    description: Sequence Index in LUT for IP command.
+    bit_offset: 16
+    bit_size: 4
+  - name: iseqnum
+    description: 'Sequence Number for IP command: ISEQNUM+1.'
+    bit_offset: 24
+    bit_size: 3
+  - name: iparen
+    description: Parallel Mode Enable for IP Commands.
+    bit_offset: 31
+    bit_size: 1
+fieldset/Ipcr2:
+  description: IP Control 2.
+  fields:
+  - name: ipblkahbreq
+    description: IP Command Blocking AHB Command Request Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Ipblkahbreq
+  - name: ipblkahback
+    description: IP Command Blocking AHB Command Acknowledgment Enable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipblkahback
+  - name: ipblkallahb
+    description: IP Command Blocking All AHB Command Enable.
+    bit_offset: 2
+    bit_size: 1
+    enum: Ipblkallahb
+fieldset/Ipedctrl:
+  description: IPED Function Control.
+  fields:
+  - name: config
+    description: IPED Mode Select.
+    bit_offset: 0
+    bit_size: 1
+    enum: Config
+  - name: iped_en
+    description: IPED Encryption and Decryption Enable.
+    bit_offset: 1
+    bit_size: 1
+    enum: IpedEn
+  - name: ipwr_en
+    description: IP Write IPED CTR Mode Encryption Enable.
+    bit_offset: 2
+    bit_size: 1
+    enum: IpwrEn
+  - name: ahbwr_en
+    description: AHB Write IPED CTR Mode Encryption Enable.
+    bit_offset: 3
+    bit_size: 1
+    enum: AhbwrEn
+  - name: ahbrd_en
+    description: AHB Read IPED CTR Mode Decryption Enable.
+    bit_offset: 4
+    bit_size: 1
+    enum: AhbrdEn
+  - name: iped_protect
+    description: IPED Protection.
+    bit_offset: 9
+    bit_size: 1
+    enum: IpedProtect
+  - name: iped_swreset
+    description: Abort Current Decryption or Encryption.
+    bit_offset: 10
+    bit_size: 1
+    enum: IpedSwreset
+fieldset/Ipedctx0end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx0iv0:
+  description: IPED Context0 IV0.
+  fields:
+  - name: ctx0_iv0
+    description: Lowest 32 bits of IV for region 0.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx0iv1:
+  description: IPED Context0 IV1.
+  fields:
+  - name: ctx0_iv1
+    description: Highest 32 bits of IV for region 0.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx0start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx0startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx1end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx1iv0:
+  description: IPED Context1 IV0.
+  fields:
+  - name: ctx1_iv0
+    description: Lowest 32 bits of IV for region 1.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx1iv1:
+  description: IPED Context1 IV1.
+  fields:
+  - name: ctx1_iv1
+    description: Highest 32 bits of IV for region 1.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx1start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx1startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx2end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx2iv0:
+  description: IPED Context2 IV0.
+  fields:
+  - name: ctx2_iv0
+    description: Lowest 32 bits of IV for region 2.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx2iv1:
+  description: IPED Context2 IV1.
+  fields:
+  - name: ctx2_iv1
+    description: Highest 32 bits of IV for region 2.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx2start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx2startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx3end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx3iv0:
+  description: IPED Context3 IV0.
+  fields:
+  - name: ctx3_iv0
+    description: Lowest 32 bits of IV for region 3.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx3iv1:
+  description: IPED Context3 IV1.
+  fields:
+  - name: ctx3_iv1
+    description: Highest 32 bits of IV for region 3.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx3start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx3startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx4end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx4iv0:
+  description: IPED Context4 IV0.
+  fields:
+  - name: ctx4_iv0
+    description: Lowest 32 bits of IV for region 4.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx4iv1:
+  description: IPED Context4 IV1.
+  fields:
+  - name: ctx4_iv1
+    description: Highest 32 bits of IV for region 4.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx4start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx4startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx5end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx5iv0:
+  description: IPED Context5 IV0.
+  fields:
+  - name: ctx5_iv0
+    description: Lowest 32 bits of IV for region 5.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx5iv1:
+  description: IPED Context5 IV1.
+  fields:
+  - name: ctx5_iv1
+    description: Highest 32 bits of IV for region 5.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx5start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx5startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx6end:
+  description: End Address of Region.
+  fields:
+  - name: end_address
+    description: End Address of IPED Region.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctx6iv0:
+  description: IPED Context6 IV0.
+  fields:
+  - name: ctx6_iv0
+    description: Lowest 32 bits of IV for region 6.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx6iv1:
+  description: IPED Context6 IV1.
+  fields:
+  - name: ctx6_iv1
+    description: Highest 32 bits of IV for region 6.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Ipedctx6start:
+  description: Start Address of Region.
+  fields:
+  - name: ahbbuserror_dis
+    description: AHB Bus Error Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Ipedctx6startAhbbuserrorDis
+  - name: start_address
+    description: Start Address.
+    bit_offset: 8
+    bit_size: 24
+fieldset/Ipedctxctrl0:
+  description: IPED context control 0.
+  fields:
+  - name: ctx0_freeze0
+    description: Context Register Freeze for Region 0.
+    bit_offset: 0
+    bit_size: 2
+  - name: ctx1_freeze0
+    description: Context Register Freeze for Region 1.
+    bit_offset: 2
+    bit_size: 2
+  - name: ctx2_freeze0
+    description: Context Register Freeze for Region 2.
+    bit_offset: 4
+    bit_size: 2
+  - name: ctx3_freeze0
+    description: Context Register Freeze for Region 3.
+    bit_offset: 6
+    bit_size: 2
+  - name: ctx4_freeze0
+    description: Context Register Freeze for Region 4.
+    bit_offset: 8
+    bit_size: 2
+  - name: ctx5_freeze0
+    description: Context Register Freeze for Region 5.
+    bit_offset: 10
+    bit_size: 2
+  - name: ctx6_freeze0
+    description: Context Register Freeze for Region 6.
+    bit_offset: 12
+    bit_size: 2
+fieldset/Ipedctxctrl1:
+  description: IPED context control 1.
+  fields:
+  - name: ctx0_freeze1
+    description: Context Register Freeze for Region 0.
+    bit_offset: 0
+    bit_size: 2
+  - name: ctx1_freeze1
+    description: Context Register Freeze for Region 1.
+    bit_offset: 2
+    bit_size: 2
+  - name: ctx2_freeze1
+    description: Context Register Freeze for Region 2.
+    bit_offset: 4
+    bit_size: 2
+  - name: ctx3_freeze1
+    description: Context Register Freeze for Region 3.
+    bit_offset: 6
+    bit_size: 2
+  - name: ctx4_freeze1
+    description: Context Register Freeze for Region 4.
+    bit_offset: 8
+    bit_size: 2
+  - name: ctx5_freeze1
+    description: Context Register Freeze for Region 5.
+    bit_offset: 10
+    bit_size: 2
+  - name: ctx6_freeze1
+    description: Context Register Freeze for Region 6.
+    bit_offset: 12
+    bit_size: 2
+fieldset/Iprxfcr:
+  description: IP Receive FIFO Control.
+  fields:
+  - name: clriprxf
+    description: Clear IP Receive FIFO.
+    bit_offset: 0
+    bit_size: 1
+    enum: Clriprxf
+  - name: rxdmaen
+    description: IP Receive FIFO Reading by DMA Enable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Rxdmaen
+  - name: rxwmrk
+    description: IP Receive FIFO Watermark Level.
+    bit_offset: 2
+    bit_size: 7
+fieldset/Iprxfsts:
+  description: IP Receive FIFO Status.
+  fields:
+  - name: fill
+    description: Fill Level of IP Receive FIFO.
+    bit_offset: 0
+    bit_size: 8
+  - name: rdcntr
+    description: Read Data Counter.
+    bit_offset: 16
+    bit_size: 16
+fieldset/Ipsnszend0:
+  description: IPS Nonsecure Region 0 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Nonsecure Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ipsnszend1:
+  description: IPS Nonsecure Region 1 End Address.
+  fields:
+  - name: end_address
+    description: End Address of Nonsecure Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ipsnszstart0:
+  description: IPS Nonsecure Region 0 Start Address.
+  fields:
+  - name: start_address
+    description: Start Address of Nonsecure Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Ipsnszstart1:
+  description: IPS Nonsecure Region 1 Start Address.
+  fields:
+  - name: start_address
+    description: Start Address of Nonsecure Region.
+    bit_offset: 12
+    bit_size: 20
+fieldset/Iptxfcr:
+  description: IP Transmit FIFO Control.
+  fields:
+  - name: clriptxf
+    description: Clear IP Transmit FIFO.
+    bit_offset: 0
+    bit_size: 1
+    enum: Clriptxf
+  - name: txdmaen
+    description: Transmit FIFO DMA Enable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Txdmaen
+  - name: txwmrk
+    description: Transmit Watermark Level.
+    bit_offset: 2
+    bit_size: 7
+fieldset/Iptxfsts:
+  description: IP Transmit FIFO Status.
+  fields:
+  - name: fill
+    description: Fill Level of IP Transmit FIFO.
+    bit_offset: 0
+    bit_size: 8
+  - name: wrcntr
+    description: Write Data Counter.
+    bit_offset: 16
+    bit_size: 16
+fieldset/Lut:
+  description: Lookup Table x.
+  fields:
+  - name: operand0
+    description: OPERAND0.
+    bit_offset: 0
+    bit_size: 8
+  - name: num_pads0
+    description: NUM_PADS0.
+    bit_offset: 8
+    bit_size: 2
+  - name: opcode0
+    description: OPCODE.
+    bit_offset: 10
+    bit_size: 6
+  - name: operand1
+    description: OPERAND1.
+    bit_offset: 16
+    bit_size: 8
+  - name: num_pads1
+    description: NUM_PADS1.
+    bit_offset: 24
+    bit_size: 2
+  - name: opcode1
+    description: OPCODE1.
+    bit_offset: 26
+    bit_size: 6
+fieldset/Lutcr:
+  description: LUT Control.
+  fields:
+  - name: lock
+    description: Lock LUT.
+    bit_offset: 0
+    bit_size: 1
+    enum: Lock
+  - name: unlock
+    description: Unlock LUT.
+    bit_offset: 1
+    bit_size: 1
+    enum: Unlock
+  - name: protect
+    description: LUT Protection.
+    bit_offset: 2
+    bit_size: 1
+    enum: Protect
+fieldset/Lutkey:
+  description: LUT Key.
+  fields:
+  - name: key
+    description: LUT Key.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Mcr0:
+  description: Module Control 0.
+  fields:
+  - name: swreset
+    description: Software Reset.
+    bit_offset: 0
+    bit_size: 1
+    enum: Swreset
+  - name: mdis
+    description: Module Disable.
+    bit_offset: 1
+    bit_size: 1
+    enum: Mdis
+  - name: endcfg
+    description: AHB and IPS Bus Endian Configuration.
+    bit_offset: 2
+    bit_size: 2
+    enum: Endcfg
+  - name: rxclksrc
+    description: Sample Clock Source for Flash Reading.
+    bit_offset: 4
+    bit_size: 2
+    enum: Rxclksrc
+  - name: ardfen
+    description: AHB Read Access to IP Receive FIFO Enable.
+    bit_offset: 6
+    bit_size: 1
+    enum: Ardfen
+  - name: atdfen
+    description: AHB Write Access to IP Transmit FIFO Enable.
+    bit_offset: 7
+    bit_size: 1
+    enum: Atdfen
+  - name: serclkdiv
+    description: Serial Root Clock Divider.
+    bit_offset: 8
+    bit_size: 3
+    enum: Serclkdiv
+  - name: hsen
+    description: Half Speed Serial Flash Memory Access Enable.
+    bit_offset: 11
+    bit_size: 1
+    enum: Hsen
+  - name: dozeen
+    description: Doze Mode Enable.
+    bit_offset: 12
+    bit_size: 1
+    enum: Dozeen
+  - name: combinationen
+    description: Combination Mode Enable.
+    bit_offset: 13
+    bit_size: 1
+  - name: sckfreerunen
+    description: SCLK Free-running Enable.
+    bit_offset: 14
+    bit_size: 1
+  - name: learnen
+    description: Data Learning Enable.
+    bit_offset: 15
+    bit_size: 1
+  - name: ipgrantwait
+    description: Timeout Wait Cycle for IP Command Grant.
+    bit_offset: 16
+    bit_size: 8
+  - name: ahbgrantwait
+    description: Timeouts Wait Cycle for AHB command Grant.
+    bit_offset: 24
+    bit_size: 8
+fieldset/Mcr1:
+  description: Module Control 1.
+  fields:
+  - name: ahbbuswait
+    description: AHB Bus Wait.
+    bit_offset: 0
+    bit_size: 16
+  - name: seqwait
+    description: Command Sequence Wait.
+    bit_offset: 16
+    bit_size: 16
+fieldset/Mcr2:
+  description: Module Control 2.
+  fields:
+  - name: abortoncmden
+    description: Abort on Command Enable.
+    bit_offset: 0
+    bit_size: 1
+    enum: Abortoncmden
+  - name: abortonraddren
+    description: Allow Command Sequence Abort during RADDR.
+    bit_offset: 1
+    bit_size: 1
+  - name: abortoncaddren
+    description: Allow Command Sequence Abort during CADDR.
+    bit_offset: 2
+    bit_size: 1
+  - name: abortonmodeen
+    description: Allow Command Sequence Abort during MODE.
+    bit_offset: 3
+    bit_size: 1
+  - name: abortondummyen
+    description: Allow Command Sequence Abort during DUMMY.
+    bit_offset: 4
+    bit_size: 1
+  - name: abortonwriteen
+    description: Allow Command Sequence Abort during WRITE.
+    bit_offset: 5
+    bit_size: 1
+  - name: abortonreaden
+    description: Allow Command Sequence Abort during READ.
+    bit_offset: 6
+    bit_size: 1
+  - name: abortonlearnen
+    description: Allow Command Sequence Abort during LEARN.
+    bit_offset: 7
+    bit_size: 1
+  - name: abortondatszen
+    description: Allow Command Sequence Abort during DATSZ.
+    bit_offset: 8
+    bit_size: 1
+  - name: clrahbbufopt
+    description: Clear AHB Buffer.
+    bit_offset: 11
+    bit_size: 1
+    enum: Clrahbbufopt
+  - name: sck2opt
+    description: SCLK2 Toggle Output.
+    bit_offset: 12
+    bit_size: 1
+    enum: Sck2opt
+  - name: tstmd
+    description: Test Mode Enable.
+    bit_offset: 13
+    bit_size: 1
+    enum: Tstmd
+  - name: clrlearnphase
+    description: Clear Learn Phase Selection.
+    bit_offset: 14
+    bit_size: 1
+    enum: Clrlearnphase
+  - name: samedeviceen
+    description: Same Device Enable.
+    bit_offset: 15
+    bit_size: 1
+    enum: Samedeviceen
+  - name: flashdqsopt
+    description: Flash DQS Option.
+    bit_offset: 16
+    bit_size: 1
+    enum: Flashdqsopt
+  - name: rxdelayopt
+    description: Option bit for RX data sampling (when MCR0[RXCLKSRC] is not set to 0x3), for internal use only.
+    bit_offset: 17
+    bit_size: 2
+    enum: Rxdelayopt
+  - name: sckbdiffopt
+    description: SCLK Port B Differential Output.
+    bit_offset: 19
+    bit_size: 1
+    enum: Sckbdiffopt
+  - name: clkphaserst
+    description: Clock Phase Reset.
+    bit_offset: 20
+    bit_size: 1
+  - name: rxclksrc_b
+    description: Port B Receiver Clock Source.
+    bit_offset: 21
+    bit_size: 2
+    enum: RxclksrcB
+  - name: rx_clk_src_diff
+    description: Sample Clock Source Different.
+    bit_offset: 23
+    bit_size: 1
+    enum: RxClkSrcDiff
+  - name: resumewait
+    description: Resume Wait Duration.
+    bit_offset: 24
+    bit_size: 8
+fieldset/Misccr2:
+  description: Misc Control 2.
+  fields:
+  - name: learnphasegap
+    description: Data Learning Clock Phase Gap.
+    bit_offset: 0
+    bit_size: 2
+    enum: Learnphasegap
+  - name: phaserstopt
+    description: Clock Phase Reset Output.
+    bit_offset: 2
+    bit_size: 2
+    enum: Phaserstopt
+  - name: doeopt
+    description: Data Line Output Delay Enable.
+    bit_offset: 4
+    bit_size: 1
+    enum: Doeopt
+  - name: rwdsoeopt
+    description: RWDS Output Enable De-assertion Delay.
+    bit_offset: 5
+    bit_size: 1
+    enum: Rwdsoeopt
+  - name: otfad_swreset
+    description: OTFAD Software Reset.
+    bit_offset: 6
+    bit_size: 1
+  - name: timerextend
+    description: Timer Extend.
+    bit_offset: 7
+    bit_size: 1
+  - name: ipedmux_swreset
+    description: Software Reset for IPED MUX.
+    bit_offset: 8
+    bit_size: 1
+fieldset/Misccr3:
+  description: Misc Control 3.
+  fields:
+  - name: tx_fifo_wr_delay
+    description: Number of AHB clk delays between internal async TX FIFO push.
+    bit_offset: 16
+    bit_size: 4
+fieldset/Rfdr:
+  description: IP Receive FIFO Data x.
+  fields:
+  - name: rxdata
+    description: Receive Data.
+    bit_offset: 0
+    bit_size: 32
+fieldset/Sts0:
+  description: Status 0.
+  fields:
+  - name: seqidle
+    description: SEQ_CTL State Machine Idle.
+    bit_offset: 0
+    bit_size: 1
+    enum: Seqidle
+  - name: arbidle
+    description: ARB_CTL State Machine Idle.
+    bit_offset: 1
+    bit_size: 1
+    enum: Arbidle
+  - name: arbcmdsrc
+    description: ARB Command Source.
+    bit_offset: 2
+    bit_size: 2
+    enum: Arbcmdsrc
+  - name: datalearnphasea
+    description: Data Learning Phase Selection on Port A.
+    bit_offset: 4
+    bit_size: 4
+  - name: datalearnphaseb
+    description: Data Learning Phase Selection on Port B.
+    bit_offset: 8
+    bit_size: 4
+fieldset/Sts1:
+  description: Status 1.
+  fields:
+  - name: ahbcmderrid
+    description: AHB Command Error ID.
+    bit_offset: 0
+    bit_size: 4
+  - name: ahbcmderrcode
+    description: AHB Command Error Code.
+    bit_offset: 8
+    bit_size: 4
+    enum: Ahbcmderrcode
+  - name: ipcmderrid
+    description: IP Command Error ID.
+    bit_offset: 16
+    bit_size: 4
+  - name: ipcmderrcode
+    description: IP Command Error Code.
+    bit_offset: 24
+    bit_size: 4
+    enum: Ipcmderrcode
+fieldset/Sts2:
+  description: Status 2.
+  fields:
+  - name: aslvlock
+    description: Flash A Sample Target Delay Line Locked.
+    bit_offset: 0
+    bit_size: 1
+    enum: Aslvlock
+  - name: areflock
+    description: Flash A Sample Clock Reference Delay Line Locked.
+    bit_offset: 1
+    bit_size: 1
+    enum: Areflock
+  - name: aslvsel
+    description: Flash A Sample Clock Target Delay Line Delay Cell Number.
+    bit_offset: 2
+    bit_size: 6
+  - name: arefsel
+    description: Flash A Sample Clock Reference Delay Line Delay Cell Number.
+    bit_offset: 8
+    bit_size: 6
+  - name: bslvlock
+    description: Flash B Sample Target Reference Delay Line Locked.
+    bit_offset: 16
+    bit_size: 1
+    enum: Bslvlock
+  - name: breflock
+    description: Flash B Sample Clock Reference Delay Line Locked.
+    bit_offset: 17
+    bit_size: 1
+    enum: Breflock
+  - name: bslvsel
+    description: Flash B Sample Clock Target Delay Line Delay Cell Number.
+    bit_offset: 18
+    bit_size: 6
+  - name: brefsel
+    description: Flash B Sample Clock Reference Delay Line Delay Cell Number.
+    bit_offset: 24
+    bit_size: 6
+fieldset/Tfdr:
+  description: IP TX FIFO Data x.
+  fields:
+  - name: txdata
+    description: Transmit Data.
+    bit_offset: 0
+    bit_size: 32
+enum/Abortoncmden:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: When command abort request is received during CMD instruction, command sequence waits for the CMD instruction to complete instead of aborting immediately.
+    value: 0
+  - name: Val1
+    description: When command abort request is received during CMD instruction, command sequence is aborted immediately.
+    value: 1
+enum/Active:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No suspended AHB read prefetch command.
+    value: 0
+  - name: Val1
+    description: An AHB read prefetch command sequence has been suspended.
+    value: 1
+enum/Ahbbustimeouten:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Ahbcmderrcode:
+  bit_size: 4
+  variants:
+  - name: Val0
+    description: No error.
+    value: 0
+  - name: Val1
+    description: Write or read data size is not a multiple of two bytes while parallel mode is enabled (AHBCR[APAREN] = 1). This error only occurs when FLSHCR4[WMOPT] = 1.
+    value: 1
+  - name: Val2
+    description: AHB Write command with JMP_ON_CS instruction used in the sequence.
+    value: 2
+  - name: Val3
+    description: Unknown instruction opcode in the sequence.
+    value: 3
+  - name: Val4
+    description: DUMMY_SDR or DUMMY_RWDS_SDR instruction used in DDR sequence.
+    value: 4
+  - name: Val5
+    description: DUMMY_DDR or DUMMY_RWDS_DDR instruction used in SDR sequence.
+    value: 5
+  - name: Val6
+    description: Sequence execution timeout.
+    value: 14
+enum/Ahbcmderren:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Ahbcmdgeen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/AhbcrPrefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable.
+    value: 0
+  - name: Value1
+    description: Enable.
+    value: 1
+enum/AhbrdEn:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/Ahbrxbuf0cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf0cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf1cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf1cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf2cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf2cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf3cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf3cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf4cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf4cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf5cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf5cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf6cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf6cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/Ahbrxbuf7cr0Prefetchen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled.
+    value: 0
+  - name: Value1
+    description: Enabled when is enabled.
+    value: 1
+enum/Ahbrxbuf7cr0Regionen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disabled. The buffer hit is based on the value of MSTRID only.
+    value: 0
+  - name: Value1
+    description: Enabled. The buffer hit is based on the value of MSTRID and the address within AHBBUFREGIONSTARTn and AHBREGIONENDn.
+    value: 1
+enum/AhbwrEn:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/Alignment:
+  bit_size: 2
+  variants:
+  - name: Bit0
+    description: No limit.
+    value: 0
+  - name: Bit1
+    description: 1 KB.
+    value: 1
+  - name: Bit2
+    description: 512 bytes.
+    value: 2
+  - name: Bit3
+    description: 256 bytes.
+    value: 3
+enum/Aparen:
+  bit_size: 1
+  variants:
+  - name: Individual
+    description: Flash is accessed in Individual mode.
+    value: 0
+  - name: Enable
+    description: Flash is accessed in Parallel mode.
+    value: 1
+enum/Arbcmdsrc:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: Trigger source is AHB read command.
+    value: 0
+  - name: Val1
+    description: Trigger source is AHB write command.
+    value: 1
+  - name: Val2
+    description: Trigger source is IP command (by writing 1 to IPCMD[TRG]).
+    value: 2
+  - name: Val3
+    description: Trigger source is a suspended command that has resumed.
+    value: 3
+enum/Arbidle:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Not idle.
+    value: 0
+  - name: Value1
+    description: Idle.
+    value: 1
+enum/Ardfen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: AHB read access disabled. IP bus reads IP receive FIFO. AHB Bus read access to IP receive FIFO memory space produces bus error.
+    value: 0
+  - name: Val1
+    description: AHB read access enabled. AHB bus reads IP receive FIFO. IP Bus read access to IP receive FIFO memory space returns data zero and causes no bus error.
+    value: 1
+enum/Areflock:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Not locked.
+    value: 0
+  - name: Val1
+    description: Locked.
+    value: 1
+enum/Aslvlock:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Not locked.
+    value: 0
+  - name: Val1
+    description: Locked.
+    value: 1
+enum/Atdfen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: AHB write access disabled. IP bus writes to IP transmit FIFO. AHB bus write access to IP transmit FIFO memory space produces bus error.
+    value: 0
+  - name: Val1
+    description: AHB write access enabled. AHB bus writes to IP transmit FIFO. IP Bus write access to IP transmit FIFO memory space is ignored and causes no bus error.
+    value: 1
+enum/Awrwaitunit:
+  bit_size: 3
+  variants:
+  - name: Val0
+    description: '2.'
+    value: 0
+  - name: Val1
+    description: '8.'
+    value: 1
+  - name: Val2
+    description: '32.'
+    value: 2
+  - name: Val3
+    description: '128.'
+    value: 3
+  - name: Val4
+    description: '512.'
+    value: 4
+  - name: Val5
+    description: '2048.'
+    value: 5
+  - name: Val6
+    description: '8192.'
+    value: 6
+  - name: Val7
+    description: '32768.'
+    value: 7
+enum/Breflock:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Not locked.
+    value: 0
+  - name: Val1
+    description: Locked.
+    value: 1
+enum/Bslvlock:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Not locked.
+    value: 0
+  - name: Val1
+    description: Locked.
+    value: 1
+enum/Bufferableen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disabled. For all AHB write accesses (bufferable or nonbufferable hprot[2]=0x1 or 0x0), FlexSPI returns AHB Bus Ready after transmitting all data and finishing command.
+    value: 0
+  - name: Val1
+    description: Enabled. For AHB bufferable write access, FlexSPI returns AHB Bus Ready when the arbitrator grants the AHB command. FlexSPI does not wait for the AHB command to finish.
+    value: 1
+enum/Cachableen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disabled. When an AHB bus cacheable read access occurs, FlexSPI does not check whether it hit the AHB transmit buffer.
+    value: 0
+  - name: Val1
+    description: Enabled. When an AHB bus cacheable read access occurs, FlexSPI first checks whether the access hit the AHB transmit buffer.
+    value: 1
+enum/Clrahbbufopt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Not cleared automatically.
+    value: 0
+  - name: Val1
+    description: Cleared automatically.
+    value: 1
+enum/Clrahbrxbuf:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No impact.
+    value: 0
+  - name: Val1
+    description: Enable clear operation.
+    value: 1
+enum/Clrahbtxbuf:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No impact.
+    value: 0
+  - name: Val1
+    description: Enable clear operation.
+    value: 1
+enum/Clriprxf:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: No function.
+    value: 0
+  - name: Value1
+    description: A clock cycle pulse clears all valid data entries in IP receive FIFO.
+    value: 1
+enum/Clriptxf:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: No function.
+    value: 0
+  - name: Value1
+    description: A clock cycle pulse clears all valid data entries in the IP transmit FIFO.
+    value: 1
+enum/Clrlearnphase:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No impact.
+    value: 0
+  - name: Val1
+    description: Reset sample clock phase selection to 0.
+    value: 1
+enum/Config:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Fully pipelined.
+    value: 0
+  - name: Val1
+    description: Not fully pipelined.
+    value: 1
+enum/Csintervalunit:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: 1 serial clock cycle.
+    value: 0
+  - name: Val1
+    description: 256 serial clock cycles.
+    value: 1
+enum/Datalearnfailen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Dllen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable.
+    value: 0
+  - name: Value1
+    description: Enable.
+    value: 1
+enum/Dllreset:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: No function.
+    value: 0
+  - name: Value1
+    description: Force DLL reset.
+    value: 1
+enum/Doeopt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Data line output enable de-assertion is delayed for one cycle.
+    value: 0
+  - name: Val1
+    description: Data line output enable de-assertion is not delayed for one cycle.
+    value: 1
+enum/Dozeen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/Dqsposcap:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: DQS falling edge is used to capture the RX data.
+    value: 0
+  - name: Val1
+    description: DQS rising edge is used to capture the RX data.
+    value: 1
+enum/Endcfg:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: 64-bit Little Endian.
+    value: 0
+  - name: Val1
+    description: 64-bit Big Endian.
+    value: 1
+  - name: Val2
+    description: 32-bit Little Endian.
+    value: 2
+  - name: Val3
+    description: 32-bit Big Endian.
+    value: 3
+enum/Flashdqsopt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: FlexSPI drives toggling SCLK output until it receives all flash read data bits. There will be an extra SCLK cycle after all read data bits are returned on SPI bus.
+    value: 0
+  - name: Val1
+    description: FlexSPI drives SCLK output according to read data size and pad number (no extra SCLK toggling). If there is DQS latency, FlexSPI receives less data than required. Never set this bit if there is DQS latency.
+    value: 1
+enum/Hsen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/Ipblkahback:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: IP commands do not block AHB command acknowledgment.
+    value: 0
+  - name: Value1
+    description: IP commands block AHB command acknowledgment.
+    value: 1
+enum/Ipblkahbreq:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: IP commands do not block AHB command requests.
+    value: 0
+  - name: Value1
+    description: IP commands block AHB command requests.
+    value: 1
+enum/Ipblkallahb:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: IP commands only block AHB commands that affect the IPED region.
+    value: 0
+  - name: Value1
+    description: IP commands block all AHB commands.
+    value: 1
+enum/Ipcmddoneen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Ipcmderrcode:
+  bit_size: 4
+  variants:
+  - name: Val0
+    description: No error.
+    value: 0
+  - name: Val1
+    description: Write or read data size is not a multiple of two bytes while parallel mode is enabled (IPCR0[IPAREN] = 1). This error only occurs when FLSHCR4[WMOPT] = 1.
+    value: 1
+  - name: Val2
+    description: IP command with JMP_ON_CS instruction used in the sequence.
+    value: 2
+  - name: Val3
+    description: Unknown instruction opcode in the sequence.
+    value: 3
+  - name: Val4
+    description: DUMMY_SDR or DUMMY_RWDS_SDR instruction used in DDR sequence.
+    value: 4
+  - name: Val5
+    description: DUMMY_DDR or DUMMY_RWDS_DDR instruction used in SDR sequence.
+    value: 5
+  - name: Val6
+    description: Flash memory access start address exceeds entire flash address range (A1, A2, B1, and B2).
+    value: 6
+  - name: Val7
+    description: Sequence execution timeout.
+    value: 14
+  - name: Val8
+    description: Flash boundary crossed.
+    value: 15
+enum/Ipcmderren:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Ipcmdgeen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Ipcmdsecurevioen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/IpedEn:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/IpedProtect:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No restrictions.
+    value: 0
+  - name: Val1
+    description: Only privileged controllers can write IPED registers.
+    value: 1
+enum/IpedSwreset:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No function.
+    value: 0
+  - name: Val1
+    description: Aborts current decryption or encryption and waits for the next start operation.
+    value: 1
+enum/Ipedctx0startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx1startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx2startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx3startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx4startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx5startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Ipedctx6startAhbbuserrorDis:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: AHB bus errors enabled.
+    value: 0
+  - name: Value1
+    description: AHB bus errors disabled.
+    value: 1
+enum/Iprxwaen:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Iptxween:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/IpwrEn:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable.
+    value: 0
+  - name: Val1
+    description: Enable.
+    value: 1
+enum/Learnphasegap:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: N = 2.
+    value: 0
+  - name: Val1
+    description: N = 3.
+    value: 1
+  - name: Val2
+    description: N = 4.
+    value: 2
+  - name: Val3
+    description: N = 5.
+    value: 3
+enum/Lock:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: LUT is unlocked (LUTCR[UNLOCK] must be 1).
+    value: 0
+  - name: Value1
+    description: LUT is locked and cannot be written.
+    value: 1
+enum/Mdis:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No impact.
+    value: 0
+  - name: Val1
+    description: Module disable.
+    value: 1
+enum/Ovrden:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable.
+    value: 0
+  - name: Value1
+    description: Enable.
+    value: 1
+enum/Phaserstopt:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: 0.5 cycles.
+    value: 0
+  - name: Val1
+    description: 1.5 cycles.
+    value: 1
+  - name: Val2
+    description: 2.5 cycles.
+    value: 2
+  - name: Val3
+    description: 3.5 cycles.
+    value: 3
+enum/Protect:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Not protected. All IPS controllers can access LUTCR and LUT memory.
+    value: 0
+  - name: Value1
+    description: Protected. Only secure IPS controller can change the value of LUTCR and write to LUT memory.
+    value: 1
+enum/Readaddropt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: AHB read burst start address alignment is limited when flash memory is accessed in parallel mode or flash is word-addressable.
+    value: 0
+  - name: Val1
+    description: AHB read burst start address alignment is not limited. FlexSPI fetches more data than the AHB burst requires for address alignment.
+    value: 1
+enum/Readszalign:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Register settings such as PREFETCH_EN determine AHB read size.
+    value: 0
+  - name: Val1
+    description: AHB read size to up size to 8 bytes aligned, no prefetching.
+    value: 1
+enum/Remapen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: HADDR REMAP Disabled.
+    value: 0
+  - name: Val1
+    description: HADDR REMAP Enabled.
+    value: 1
+enum/Resumedisable:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Suspended AHB read prefetch resumes when AHB is IDLE.
+    value: 0
+  - name: Val1
+    description: Suspended AHB read prefetch does not resume once aborted.
+    value: 1
+enum/Rwdsoeopt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: RWDS output enable de-assertion is delayed for one cycle.
+    value: 0
+  - name: Val1
+    description: RWDS output enable de-assertion is not delayed for one cycle.
+    value: 1
+enum/RxClkSrcDiff:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Use MCR0[RXCLKSRC] for Port A and Port B. MCR2[RXCLKSRC_B] is ignored and MCR0[RXCLKSRC] selects the Sample Clock source for Flash Reading of both ports A and B.
+    value: 0
+  - name: Value1
+    description: Use MCR0[RXCLKSRC] for Port A, and MCR2[RXCLKSRC_B] for Port B. MCR0[RXCLKSRC] selects the Sample Clock source for Flash Reading of port A (A_SCLK) and MCR2[RXCLKSRC_B] selects the Sample Clock source for Flash Reading of port B (B_SCLK).
+    value: 1
+enum/Rxclksrc:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: Dummy Read strobe that FlexSPI generates, looped back internally.
+    value: 0
+  - name: Val1
+    description: Dummy Read strobe that FlexSPI generates, looped back from DQS pad.
+    value: 1
+  - name: Val2
+    description: SCLK output clock and looped back from SCLK pad.
+    value: 2
+  - name: Val3
+    description: Flash-memory-provided read strobe and input from DQS pad.
+    value: 3
+enum/RxclksrcB:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: Dummy read strobe that FlexSPI generates, looped back internally.
+    value: 0
+  - name: Val1
+    description: Dummy read strobe that FlexSPI generates, looped back from DQS pad.
+    value: 1
+  - name: Val2
+    description: SCLK output clock and looped back from SCLK pad.
+    value: 2
+  - name: Val3
+    description: Flash-memory-provided read strobe and input from DQS pad.
+    value: 3
+enum/Rxdelayopt:
+  bit_size: 2
+  variants:
+  - name: Val0
+    description: FlexSPI will sample RX data lines 4 cycles after SCLK edge.
+    value: 0
+  - name: Val1
+    description: FlexSPI will sample RX data lines 5 cycles after SCLK edge.
+    value: 1
+  - name: Val2
+    description: FlexSPI will sample RX data lines 6 cycles after SCLK edge.
+    value: 2
+  - name: Val3
+    description: FlexSPI will sample RX data lines 7 cycles after SCLK edge.
+    value: 3
+enum/Rxdmaen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disabled. The processor reads the FIFO.
+    value: 0
+  - name: Val1
+    description: Enabled. DMA reads the FIFO.
+    value: 1
+enum/Samedeviceen:
+  bit_size: 1
+  variants:
+  - name: IndividualParallel
+    description: In Individual mode, FLSHA1CRx and FLSHA2CRx, FLSHB1CRx and FLSHB2CRx settings are applied to Flash A1, A2, B1, B2 separately. In Parallel mode, FLSHA1CRx register setting is applied to Flash A1 and B1, FLSHA2CRx register setting is applied to Flash A2 and B2. FLSHB1CRx and FLSHB2CRx register settings are ignored.
+    value: 0
+  - name: Enable
+    description: FLSHA1CR0, FLSHA1CR1, and FLSHA1CR2 register settings are applied to Flash A1, A2, B1, B2. FLSHA2CRx, FLSHB1CRx, and FLSHB2CRx settings are ignored.
+    value: 1
+enum/Sck2opt:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: SCLK2 output clock toggles for READ and LEARN instructions only.
+    value: 0
+  - name: Val1
+    description: SCLK2 output clock toggles for entire sequence.
+    value: 1
+enum/Sckbdiffopt:
+  bit_size: 1
+  variants:
+  - name: Val1
+    description: Use B_SCLK pad as port B SCLK clock output. Port B flash memory access is available.
+    value: 0
+  - name: Val0
+    description: Use B_SCLK pad as port A SCLK inverted clock output (Differential clock to A_SCLK). Port B flash memory access is not available.
+    value: 1
+enum/Sckrstdisabled:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: SCLK is reset to default level before PCS signal is deasserted.
+    value: 0
+  - name: Val1
+    description: SCLK is reset to default level after PCS signal is deasserted.
+    value: 1
+enum/Sckstopbyrden:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Sckstopbywren:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Seqidle:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Not idle.
+    value: 0
+  - name: Value1
+    description: Idle.
+    value: 1
+enum/Seqtimeouten:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Disable interrupt or no impact.
+    value: 0
+  - name: Value1
+    description: Enable interrupt.
+    value: 1
+enum/Serclkdiv:
+  bit_size: 3
+  variants:
+  - name: Val0
+    description: Divided by 1.
+    value: 0
+  - name: Val1
+    description: Divided by 2.
+    value: 1
+  - name: Val2
+    description: Divided by 3.
+    value: 2
+  - name: Val3
+    description: Divided by 4.
+    value: 3
+  - name: Val4
+    description: Divided by 5.
+    value: 4
+  - name: Val5
+    description: Divided by 6.
+    value: 5
+  - name: Val6
+    description: Divided by 7.
+    value: 6
+  - name: Val7
+    description: Divided by 8.
+    value: 7
+enum/Swreset:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: No impact.
+    value: 0
+  - name: Val1
+    description: Software reset.
+    value: 1
+enum/Trg:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: No action.
+    value: 0
+  - name: Value1
+    description: Start the IP command that the IPCR0 and IPCR1 registers define.
+    value: 1
+enum/Tstmd:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disable. Sequence execution is started when IP or AHB command triggers it as normal.
+    value: 0
+  - name: Val1
+    description: Enable. Sequence execution is not started after IP or AHB command triggers it. It remains blocked until ipt_tester_trigger input (another pin for test) is high. A high pulse of serial clock domain is required.
+    value: 1
+enum/Txdmaen:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Processor.
+    value: 0
+  - name: Val1
+    description: DMA.
+    value: 1
+enum/Unlock:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: LUT is locked (LUTCR[LOCK] must be 1).
+    value: 0
+  - name: Value1
+    description: LUT is unlocked and can be written.
+    value: 1
+enum/Wa:
+  bit_size: 1
+  variants:
+  - name: Value0
+    description: Byte-addressable.
+    value: 0
+  - name: Value1
+    description: Word-addressable.
+    value: 1
+enum/Wmena:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disabled. When writing to external device, DQS(RWDS) pin is not driven.
+    value: 0
+  - name: Val1
+    description: Enabled. When writing to external device, FlexSPI drives DQS(RWDS) pin as write mask output.
+    value: 1
+enum/Wmenb:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Disabled. When writing to external device, DQS(RWDS) pin is not driven.
+    value: 0
+  - name: Val1
+    description: Enabled. When writing to external device, FlexSPI drives DQS(RWDS) pin as write mask output.
+    value: 1
+enum/Wmopt1b:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: DQSB used as Write Mask when writing to external device.
+    value: 0
+  - name: Val1
+    description: DQSB not used as Write Mask when writing to external device.
+    value: 1
+enum/Wmopt2b:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: DQSB is used as Write Mask when writing to external device.
+    value: 0
+  - name: Val1
+    description: DQSB is not used as Write Mask when writing to external device.
+    value: 1
+enum/Wmoptdiff:
+  bit_size: 1
+  variants:
+  - name: Val0
+    description: Write Mask behaves same on PORTA and PORTB, controlled by WMOPT1 and WMOPT2.
+    value: 0
+  - name: Val1
+    description: Write Mask behaves differently. WMOPT1 and WMOPT2 control PORTA. WMOPT1B and WMOPT2B control PORTB.
+    value: 1

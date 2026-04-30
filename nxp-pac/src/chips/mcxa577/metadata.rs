@@ -5434,7 +5434,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "FLEXSPI0",
         address: 0x40020000,
-        driver_name: "",
+        driver_name: "mcxa/FLEXSPI",
         signals: &[
             Signal {
                 name: "A_DATA0",
@@ -5594,7 +5594,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 111,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc2",
+            reset: Some("mrcc_glb_rst2"),
+            config: Some("FlexspiConfig"),
+        }),
     },
     Peripheral {
         name: "FMC0",

@@ -237,6 +237,7 @@ pub const DAC0: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B4000 as _) };
 pub const DAC1: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B5000 as _) };
 pub const DMA0: dma::Dma12 = unsafe { dma::Dma12::from_ptr(0x40080000 as _) };
 pub const DMA1: dma::Dma4 = unsafe { dma::Dma4::from_ptr(0x40013000 as _) };
+pub const FLEXSPI0: flexspi::Flexspi = unsafe { flexspi::Flexspi::from_ptr(0x40020000 as _) };
 pub const FMU0: fmu::Fmu = unsafe { fmu::Fmu::from_ptr(0x40095000 as _) };
 pub const GPIO0: gpio::Gpio = unsafe { gpio::Gpio::from_ptr(0x40048000 as _) };
 pub const GPIO1: gpio::Gpio = unsafe { gpio::Gpio::from_ptr(0x4004A000 as _) };
@@ -304,6 +305,8 @@ pub mod dac;
 pub mod dma;
 #[path = "../../meta_peripherals/mcxa/EDMA_TCD.rs"]
 pub mod edma_tcd;
+#[path = "../../meta_peripherals/mcxa/FLEXSPI.rs"]
+pub mod flexspi;
 #[path = "../../meta_peripherals/mcxa/FMU.rs"]
 pub mod fmu;
 #[path = "../../meta_peripherals/mcxa/GPIO.rs"]

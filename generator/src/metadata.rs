@@ -406,7 +406,7 @@ pub fn extract_peripherals(
     })
     .with_context(|| format!("Error generating peripheral yamls for {core}"))?;
 
-    let path_regex = regex::Regex::new("^(.+)::.+$")?;
+    let path_regex = regex::Regex::new("^(.+)__.+$")?;
     for entry in fs::read_dir(original_dir).context("reading original subdir")? {
         let entry = entry?;
 
