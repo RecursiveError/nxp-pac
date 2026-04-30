@@ -4677,6 +4677,7 @@
     {
       "name": "FLEXSPI0",
       "address": "0x40020000",
+      "block": "mcxa/FLEXSPI",
       "signals": [
         {
           "name": "A_DATA0",
@@ -4834,7 +4835,12 @@
           "mux": "DMA3",
           "request": 111
         }
-      ]
+      ],
+      "gate": {
+        "enable": "mrcc_glb_cc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "FlexspiConfig"
+      }
     },
     {
       "name": "FMC0",
