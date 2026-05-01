@@ -1,7 +1,7 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
-#![doc = "Peripheral access API (generated using chiptool v0.1.0 (859f02b 2026-04-15))"]
+#![doc = "Peripheral access API (generated using chiptool v0.1.0 (e5ab29f 2026-04-30))"]
 #[doc = "MRCC."]
 #[derive(Copy, Clone, Eq, PartialEq)]
 pub struct Mrcc {
@@ -1095,13 +1095,13 @@ impl GlbAcc0 {
     #[doc = "DMA."]
     #[must_use]
     #[inline(always)]
-    pub const fn dma(&self) -> bool {
+    pub const fn dma0(&self) -> bool {
         let val = (self.0 >> 10usize) & 0x01;
         val != 0
     }
     #[doc = "DMA."]
     #[inline(always)]
-    pub const fn set_dma(&mut self, val: bool) {
+    pub const fn set_dma0(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val as u32) & 0x01) << 10usize);
     }
     #[doc = "AOI0."]
@@ -1376,7 +1376,7 @@ impl core::fmt::Debug for GlbAcc0 {
             .field("freqme", &self.freqme())
             .field("utick0", &self.utick0())
             .field("wwdt0", &self.wwdt0())
-            .field("dma", &self.dma())
+            .field("dma0", &self.dma0())
             .field("aoi0", &self.aoi0())
             .field("crc0", &self.crc0())
             .field("eim0", &self.eim0())
@@ -1406,7 +1406,7 @@ impl defmt::Format for GlbAcc0 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "GlbAcc0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, wwdt0: {=bool:?}, dma: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, fmc: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
+            "GlbAcc0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, wwdt0: {=bool:?}, dma0: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, fmc: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
             self.inputmux0(),
             self.i3c0(),
             self.ctimer0(),
@@ -1417,7 +1417,7 @@ impl defmt::Format for GlbAcc0 {
             self.freqme(),
             self.utick0(),
             self.wwdt0(),
-            self.dma(),
+            self.dma0(),
             self.aoi0(),
             self.crc0(),
             self.eim0(),
@@ -1919,13 +1919,13 @@ impl GlbCc0 {
     #[doc = "DMA."]
     #[must_use]
     #[inline(always)]
-    pub const fn dma(&self) -> bool {
+    pub const fn dma0(&self) -> bool {
         let val = (self.0 >> 10usize) & 0x01;
         val != 0
     }
     #[doc = "DMA."]
     #[inline(always)]
-    pub const fn set_dma(&mut self, val: bool) {
+    pub const fn set_dma0(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val as u32) & 0x01) << 10usize);
     }
     #[doc = "AOI0."]
@@ -2200,7 +2200,7 @@ impl core::fmt::Debug for GlbCc0 {
             .field("freqme", &self.freqme())
             .field("utick0", &self.utick0())
             .field("wwdt0", &self.wwdt0())
-            .field("dma", &self.dma())
+            .field("dma0", &self.dma0())
             .field("aoi0", &self.aoi0())
             .field("crc0", &self.crc0())
             .field("eim0", &self.eim0())
@@ -2230,7 +2230,7 @@ impl defmt::Format for GlbCc0 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "GlbCc0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, wwdt0: {=bool:?}, dma: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, fmc: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
+            "GlbCc0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, wwdt0: {=bool:?}, dma0: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, fmc: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
             self.inputmux0(),
             self.i3c0(),
             self.ctimer0(),
@@ -2241,7 +2241,7 @@ impl defmt::Format for GlbCc0 {
             self.freqme(),
             self.utick0(),
             self.wwdt0(),
-            self.dma(),
+            self.dma0(),
             self.aoi0(),
             self.crc0(),
             self.eim0(),
@@ -2805,13 +2805,13 @@ impl GlbRst0 {
     #[doc = "DMA."]
     #[must_use]
     #[inline(always)]
-    pub const fn dma(&self) -> bool {
+    pub const fn dma0(&self) -> bool {
         let val = (self.0 >> 10usize) & 0x01;
         val != 0
     }
     #[doc = "DMA."]
     #[inline(always)]
-    pub const fn set_dma(&mut self, val: bool) {
+    pub const fn set_dma0(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 10usize)) | (((val as u32) & 0x01) << 10usize);
     }
     #[doc = "AOI0."]
@@ -3073,7 +3073,7 @@ impl core::fmt::Debug for GlbRst0 {
             .field("ctimer4", &self.ctimer4())
             .field("freqme", &self.freqme())
             .field("utick0", &self.utick0())
-            .field("dma", &self.dma())
+            .field("dma0", &self.dma0())
             .field("aoi0", &self.aoi0())
             .field("crc0", &self.crc0())
             .field("eim0", &self.eim0())
@@ -3102,7 +3102,7 @@ impl defmt::Format for GlbRst0 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "GlbRst0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, dma: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
+            "GlbRst0 {{ inputmux0: {=bool:?}, i3c0: {=bool:?}, ctimer0: {=bool:?}, ctimer1: {=bool:?}, ctimer2: {=bool:?}, ctimer3: {=bool:?}, ctimer4: {=bool:?}, freqme: {=bool:?}, utick0: {=bool:?}, dma0: {=bool:?}, aoi0: {=bool:?}, crc0: {=bool:?}, eim0: {=bool:?}, erm0: {=bool:?}, aoi1: {=bool:?}, flexio0: {=bool:?}, lpi2c0: {=bool:?}, lpi2c1: {=bool:?}, lpspi0: {=bool:?}, lpspi1: {=bool:?}, lpuart0: {=bool:?}, lpuart1: {=bool:?}, lpuart2: {=bool:?}, lpuart3: {=bool:?}, lpuart4: {=bool:?}, usb0: {=bool:?}, qdc0: {=bool:?}, qdc1: {=bool:?}, flexpwm0: {=bool:?}, flexpwm1: {=bool:?} }}",
             self.inputmux0(),
             self.i3c0(),
             self.ctimer0(),
@@ -3112,7 +3112,7 @@ impl defmt::Format for GlbRst0 {
             self.ctimer4(),
             self.freqme(),
             self.utick0(),
-            self.dma(),
+            self.dma0(),
             self.aoi0(),
             self.crc0(),
             self.eim0(),

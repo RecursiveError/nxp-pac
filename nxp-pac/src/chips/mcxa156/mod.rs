@@ -230,6 +230,7 @@ pub const FLEXPWM1: flexpwm::Flexpwm = unsafe { flexpwm::Flexpwm::from_ptr(0x400
 pub const OSTIMER0: ostimer::Ostimer = unsafe { ostimer::Ostimer::from_ptr(0x400AD000 as _) };
 pub const ADC0: adc::Adc = unsafe { adc::Adc::from_ptr(0x400AF000 as _) };
 pub const ADC1: adc::Adc = unsafe { adc::Adc::from_ptr(0x400B0000 as _) };
+pub const DAC0: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B4000 as _) };
 pub const PORT0: port::Port = unsafe { port::Port::from_ptr(0x400BC000 as _) };
 pub const PORT1: port::Port = unsafe { port::Port::from_ptr(0x400BD000 as _) };
 pub const PORT2: port::Port = unsafe { port::Port::from_ptr(0x400BE000 as _) };
@@ -252,6 +253,8 @@ pub mod common;
 pub mod crc;
 #[path = "../../meta_peripherals/mcxa/CTIMER.rs"]
 pub mod ctimer;
+#[path = "../../meta_peripherals/mcxa/DAC.rs"]
+pub mod dac;
 #[path = "../../meta_peripherals/mcxa/DMA.rs"]
 pub mod dma;
 #[path = "../../meta_peripherals/mcxa/EDMA_TCD.rs"]
