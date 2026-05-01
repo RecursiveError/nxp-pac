@@ -1,3 +1,5 @@
+# This transform is not being used at this moment because of the bad quality of the peripheral definition in the SVD.
+
 transforms:
   - !Rename
     from: secure_ahb_ctrl::(.+)

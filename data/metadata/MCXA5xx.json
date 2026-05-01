@@ -951,6 +951,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "AdcConfig"
+      },
       "dma_muxing": [
         {
           "signal": "ADC0FifoRequest",
@@ -1145,6 +1150,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "AdcConfig"
+      },
       "dma_muxing": [
         {
           "signal": "ADC1FifoRequest",
@@ -1419,7 +1429,11 @@
       "name": "CRC0",
       "address": "0x400C5000",
       "block": "mcxa/CRC",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc0",
+        "reset": "mrcc_glb_rst0"
+      }
     },
     {
       "name": "CTIMER0",
@@ -1891,6 +1905,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "CTimerConfig"
+      },
       "dma_muxing": [
         {
           "signal": "CTIMER0M0",
@@ -2314,6 +2333,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "CTimerConfig"
+      },
       "dma_muxing": [
         {
           "signal": "CTIMER1M0",
@@ -2753,6 +2777,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "CTimerConfig"
+      },
       "dma_muxing": [
         {
           "signal": "CTIMER2M0",
@@ -3196,6 +3225,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "CTimerConfig"
+      },
       "dma_muxing": [
         {
           "signal": "CTIMER3M0",
@@ -3627,6 +3661,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "CTimerConfig"
+      },
       "dma_muxing": [
         {
           "signal": "CTIMER4M0",
@@ -3643,6 +3682,7 @@
     {
       "name": "DAC0",
       "address": "0x400B4000",
+      "block": "mcxa/DAC",
       "signals": [
         {
           "name": "OUT",
@@ -3654,6 +3694,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "DacConfig"
+      },
       "dma_muxing": [
         {
           "signal": "DAC0FifoRequest",
@@ -3665,6 +3710,7 @@
     {
       "name": "DAC1",
       "address": "0x400B5000",
+      "block": "mcxa/DAC",
       "signals": [
         {
           "name": "OUT",
@@ -3676,6 +3722,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "DacConfig"
+      },
       "dma_muxing": [
         {
           "signal": "DAC1FifoRequest",
@@ -3734,13 +3785,21 @@
       "name": "DMA0",
       "address": "0x40080000",
       "block": "mcxa/DMA::DMA12",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0"
+      }
     },
     {
       "name": "DMA1",
       "address": "0x40013000",
       "block": "mcxa/DMA::DMA4",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0"
+      }
     },
     {
       "name": "EIM0",
@@ -4618,6 +4677,7 @@
     {
       "name": "FLEXSPI0",
       "address": "0x40020000",
+      "block": "mcxa/FLEXSPI",
       "signals": [
         {
           "name": "A_DATA0",
@@ -4775,7 +4835,12 @@
           "mux": "DMA3",
           "request": 111
         }
-      ]
+      ],
+      "gate": {
+        "enable": "mrcc_glb_cc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "FlexspiConfig"
+      }
     },
     {
       "name": "FMC0",
@@ -5091,6 +5156,10 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc3",
+        "reset": "mrcc_glb_rst3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO0PinEvent0",
@@ -5312,6 +5381,10 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc3",
+        "reset": "mrcc_glb_rst3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO1PinEvent0",
@@ -5605,6 +5678,10 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc3",
+        "reset": "mrcc_glb_rst3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO2PinEvent0",
@@ -5871,6 +5948,10 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc3",
+        "reset": "mrcc_glb_rst3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO3PinEvent0",
@@ -6011,6 +6092,10 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc3",
+        "reset": "mrcc_glb_rst3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO4PinEvent0",
@@ -6115,6 +6200,9 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_cc3"
+      },
       "dma_muxing": [
         {
           "signal": "GPIO5PinEvent0",
@@ -6168,6 +6256,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "I3cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "I3C0Rx",
@@ -6261,6 +6354,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "I3cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "I3C1Rx",
@@ -6319,6 +6417,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "I3cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "I3C2Rx",
@@ -6377,6 +6480,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc2",
+        "reset": "mrcc_glb_rst2",
+        "config": "I3cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "I3C3Rx",
@@ -6394,7 +6502,11 @@
       "name": "INPUTMUX0",
       "address": "0x40001000",
       "block": "mcxa/INPUTMUX",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc0",
+        "reset": "mrcc_glb_rst0"
+      }
     },
     {
       "name": "ISPMODE",
@@ -6490,6 +6602,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "Lpi2cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPI2C0Rx",
@@ -6561,6 +6678,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "Lpi2cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPI2C1Rx",
@@ -6641,6 +6763,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "Lpi2cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPI2C2Rx",
@@ -6749,6 +6876,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "Lpi2cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPI2C3Rx",
@@ -6865,6 +6997,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "Lpi2cConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPI2C4Rx",
@@ -6975,6 +7112,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI0Rx",
@@ -7089,6 +7231,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI1Rx",
@@ -7199,6 +7346,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI2Rx",
@@ -7337,6 +7489,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI3Rx",
@@ -7447,6 +7604,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI4Rx",
@@ -7557,6 +7719,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc1",
+        "reset": "mrcc_glb_rst1",
+        "config": "LpspiConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPSPI5Rx",
@@ -7695,6 +7862,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART0Rx",
@@ -7802,6 +7974,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART1Rx",
@@ -7913,6 +8090,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART2Rx",
@@ -8000,6 +8182,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART3Rx",
@@ -8083,6 +8270,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART4Rx",
@@ -8186,6 +8378,11 @@
           ]
         }
       ],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "LpuartConfig"
+      },
       "dma_muxing": [
         {
           "signal": "LPUART5Rx",
@@ -8208,7 +8405,12 @@
       "name": "OSTIMER0",
       "address": "0x400AD000",
       "block": "mcxa/OSTIMER",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc0",
+        "reset": "mrcc_glb_rst0",
+        "config": "OsTimerConfig"
+      }
     },
     {
       "name": "PF",
@@ -8341,37 +8543,60 @@
       "name": "PORT0",
       "address": "0x400BC000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1"
+      }
     },
     {
       "name": "PORT1",
       "address": "0x400BD000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1"
+      }
     },
     {
       "name": "PORT2",
       "address": "0x400BE000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1"
+      }
     },
     {
       "name": "PORT3",
       "address": "0x400BF000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1"
+      }
     },
     {
       "name": "PORT4",
       "address": "0x400C0000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1",
+        "reset": "mrcc_glb_rst1"
+      }
     },
     {
       "name": "PORT5",
       "address": "0x400E3000",
       "block": "mcxa/PORT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc1"
+      }
     },
     {
       "name": "RESET",
@@ -9392,7 +9617,11 @@
       "name": "TRNG0",
       "address": "0x400EC000",
       "block": "mcxa/TRNG",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_acc4",
+        "reset": "mrcc_glb_rst4"
+      }
     },
     {
       "name": "TSI0",
@@ -10708,13 +10937,21 @@
       "name": "WWDT0",
       "address": "0x4000C000",
       "block": "mcxa/WWDT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "config": "Clk1MConfig"
+      }
     },
     {
       "name": "WWDT1",
       "address": "0x4000D000",
       "block": "mcxa/WWDT",
-      "signals": []
+      "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_acc0",
+        "config": "Clk1MConfig"
+      }
     },
     {
       "name": "XTAL32K",

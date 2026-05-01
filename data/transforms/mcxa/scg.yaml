@@ -11,9 +11,22 @@ transforms:
     enum: scg0::FreqSel
     from: .*
 
+  - !DeleteFields
+    fieldset: scg0::Firccfg
+    from: freq_sel
+
+  - !AddFields
+    fieldset: scg0::Firccfg
+    fields:
+      - name: freq_sel
+        description: Frequency Range.
+        bit_offset: 1
+        bit_size: 3
+        enum: scg0::FreqSel
+
   - !ResizeEnums
     enum: scg0::FreqSel
-    bit_size: 4
+    bit_size: 3
 
   - !AddEnumVariants
     enum: scg0::FreqSel

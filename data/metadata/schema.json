@@ -132,6 +132,27 @@
         "only_in": {
           "description": "A regular expression to specify which chips this peripheral is available for. This can be used to define a superset chip and share most mappings with subset chips",
           "type": "string"
+        },
+        "gate": {
+          "description": "Clock & reset control for the peripheral",
+          "type": "object",
+          "properties": {
+            "enable": {
+              "description": "The name of the register that gates/enables the clock to the peripheral",
+              "type": "string"
+            },
+            "reset": {
+              "description": "The name of the register that resets the peripheral",
+              "type": "string"
+            },
+            "config": {
+              "description": "The name of the config type used for setting up the clocks",
+              "type": "string"
+            }
+          },
+          "required": [
+            "enable"
+          ]
         }
       },
       "required": [

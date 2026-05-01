@@ -9,266 +9,332 @@ pub const PINS: &[Pin] = &[
     Pin {
         name: "PIO0_0",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_1",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_2",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_3",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_4",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_5",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_6",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_7",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_8",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_9",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_10",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_11",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_12",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_13",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_14",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_15",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_16",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_17",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_18",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_19",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_20",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_21",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_22",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_23",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_24",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_25",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_26",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_27",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_28",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_29",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_30",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO0_31",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_0",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_1",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_2",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_3",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_4",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_5",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_6",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_7",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_8",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_9",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_10",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_11",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_12",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_13",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_14",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_15",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_16",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_17",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_18",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_19",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_20",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_21",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_22",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_23",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_24",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_25",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_26",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_27",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_28",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_29",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_30",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "PIO1_31",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "VREFP",
         iomuxc: None,
+        feature: None,
     },
     Pin {
         name: "VREFN",
         iomuxc: None,
+        feature: None,
     },
 ];
 pub const PERIPHERALS: &[Peripheral] = &[
@@ -395,6 +461,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO0",
@@ -692,6 +759,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "GPIO1",
@@ -989,6 +1057,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM0",
@@ -997,6 +1066,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM1",
@@ -1005,6 +1075,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM2",
@@ -1013,6 +1084,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM3",
@@ -1021,6 +1093,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM4",
@@ -1029,6 +1102,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM5",
@@ -1037,6 +1111,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM6",
@@ -1045,6 +1120,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "FLEXCOMM7",
@@ -1053,6 +1129,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         signals: &[],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
     Peripheral {
         name: "USART0",
@@ -1168,6 +1245,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 5,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART1",
@@ -1206,6 +1284,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 7,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART2",
@@ -1244,6 +1323,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 11,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART3",
@@ -1282,6 +1362,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 9,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART4",
@@ -1320,6 +1401,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 13,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART5",
@@ -1358,6 +1440,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 15,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART6",
@@ -1396,6 +1479,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 17,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "USART7",
@@ -1434,6 +1518,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 19,
             },
         ],
+        gate: None,
     },
     Peripheral {
         name: "SCT0",
@@ -1639,6 +1724,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
         ],
         flexcomm: None,
         dma_muxing: &[],
+        gate: None,
     },
 ];
 pub const INTERRUPTS: &[(&str, u32)] = &[
