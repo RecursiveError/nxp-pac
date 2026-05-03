@@ -2,7 +2,7 @@
 # These are described in UM11126 Table 817
 transforms:
   - !AddFields
-    fieldset: USBHSD::DEVCMDSTAT
+    fieldset: USBHSD::regs::DEVCMDSTAT
     fields:
       - name: force_vbus
         description: When set, VBUS voltage indicators from the PHY are overruled for connect detection (FORCE_VBUS).
