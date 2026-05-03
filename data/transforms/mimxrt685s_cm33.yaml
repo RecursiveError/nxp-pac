@@ -9,5 +9,6 @@ includes:
 - imxrt685s/crc.yaml
 - imxrt685s/dma.yaml
 - imxrt685s/iopctl.yaml
+- imxrt685s/usbhsd.yaml
 transforms:
   - !Sort
