@@ -836,7 +836,442 @@ pub const PERIPHERALS: &[Peripheral] = &[
         name: "CTIMER0",
         address: 0x40004000,
         driver_name: "mcxa/CTIMER",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "INP8",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP9",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP10",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP11",
+                pins: &[SignalPin {
+                    pin: "P1_15",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP16",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP17",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP6",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP7",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP12",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP13",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP14",
+                pins: &[SignalPin {
+                    pin: "P2_4",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP15",
+                pins: &[SignalPin {
+                    pin: "P2_5",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP18",
+                pins: &[SignalPin {
+                    pin: "P2_6",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP19",
+                pins: &[SignalPin {
+                    pin: "P2_7",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP3",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP5",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP4",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP0",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP1",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP2",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT2",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_15",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_16",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_18",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT3",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_17",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_19",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT0",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_12",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT1",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_13",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -860,7 +1295,407 @@ pub const PERIPHERALS: &[Peripheral] = &[
         name: "CTIMER1",
         address: 0x40005000,
         driver_name: "mcxa/CTIMER",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "INP8",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP9",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP10",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP11",
+                pins: &[SignalPin {
+                    pin: "P1_15",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP16",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP17",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP6",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP7",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP12",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP13",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP14",
+                pins: &[SignalPin {
+                    pin: "P2_4",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP15",
+                pins: &[SignalPin {
+                    pin: "P2_5",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP18",
+                pins: &[SignalPin {
+                    pin: "P2_6",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP19",
+                pins: &[SignalPin {
+                    pin: "P2_7",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP3",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP5",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP4",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP0",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP1",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP2",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT0",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_4",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_10",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT1",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_5",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_11",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT2",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_6",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_12",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_4",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT3",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_7",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_13",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_5",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -884,7 +1719,422 @@ pub const PERIPHERALS: &[Peripheral] = &[
         name: "CTIMER2",
         address: 0x40006000,
         driver_name: "mcxa/CTIMER",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "INP8",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP9",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP10",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP11",
+                pins: &[SignalPin {
+                    pin: "P1_15",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP16",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP17",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP6",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP7",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP12",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP13",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP14",
+                pins: &[SignalPin {
+                    pin: "P2_4",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP15",
+                pins: &[SignalPin {
+                    pin: "P2_5",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP18",
+                pins: &[SignalPin {
+                    pin: "P2_6",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP19",
+                pins: &[SignalPin {
+                    pin: "P2_7",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP3",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP5",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP4",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP0",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP1",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP2",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT0",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_10",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_18",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT1",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_11",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_19",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT2",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_12",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT3",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_13",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -908,7 +2158,397 @@ pub const PERIPHERALS: &[Peripheral] = &[
         name: "CTIMER3",
         address: 0x40007000,
         driver_name: "mcxa/CTIMER",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "INP8",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP9",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP10",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP11",
+                pins: &[SignalPin {
+                    pin: "P1_15",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP16",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP17",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP6",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP7",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP12",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP13",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP14",
+                pins: &[SignalPin {
+                    pin: "P2_4",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP15",
+                pins: &[SignalPin {
+                    pin: "P2_5",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP18",
+                pins: &[SignalPin {
+                    pin: "P2_6",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP19",
+                pins: &[SignalPin {
+                    pin: "P2_7",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP3",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP5",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP4",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP0",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP1",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP2",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT0",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT1",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_15",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT2",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_10",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT3",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_11",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_19",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -932,7 +2572,407 @@ pub const PERIPHERALS: &[Peripheral] = &[
         name: "CTIMER4",
         address: 0x40008000,
         driver_name: "mcxa/CTIMER",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "INP8",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP9",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP10",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP11",
+                pins: &[SignalPin {
+                    pin: "P1_15",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP16",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_30",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP17",
+                pins: &[
+                    SignalPin {
+                        pin: "P1_31",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP6",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP7",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP12",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_28",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP13",
+                pins: &[
+                    SignalPin {
+                        pin: "P2_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_27",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP14",
+                pins: &[SignalPin {
+                    pin: "P2_4",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP15",
+                pins: &[SignalPin {
+                    pin: "P2_5",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP18",
+                pins: &[SignalPin {
+                    pin: "P2_6",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP19",
+                pins: &[SignalPin {
+                    pin: "P2_7",
+                    alt: 4u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP3",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_29",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_23",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP5",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP4",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP0",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_0",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_20",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP1",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_1",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_21",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "INP2",
+                pins: &[
+                    SignalPin {
+                        pin: "P0_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P0_22",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT0",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_12",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_2",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_6",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT1",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_3",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_13",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P1_7",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT2",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_4",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_6",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "MAT3",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_5",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P2_15",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_7",
+                        alt: 4u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -3060,10 +5100,165 @@ pub const PERIPHERALS: &[Peripheral] = &[
         gate: None,
     },
     Peripheral {
-        name: "FLEXPWM0",
+        name: "FLEX_PWM0",
         address: 0x400A9000,
         driver_name: "mcxa/FLEXPWM",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "A2",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_2",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_10",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B2",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_3",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_11",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "A1",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_4",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_8",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B1",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_5",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_9",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "A0",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_6",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_6",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B0",
+                pins: &[
+                    SignalPin {
+                        pin: "P4_7",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_7",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "X2",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_20",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_14",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "X1",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_19",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_13",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "X0",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_18",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_12",
+                        alt: 5u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
@@ -3100,10 +5295,127 @@ pub const PERIPHERALS: &[Peripheral] = &[
         gate: None,
     },
     Peripheral {
-        name: "FLEXPWM1",
+        name: "FLEX_PWM1",
         address: 0x400AA000,
         driver_name: "mcxa/FLEXPWM",
-        signals: &[],
+        signals: &[
+            Signal {
+                name: "X2",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_22",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_2",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "X1",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_19",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_1",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "X0",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_18",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_0",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B0",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_17",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_7",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "A0",
+                pins: &[
+                    SignalPin {
+                        pin: "P3_16",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                    SignalPin {
+                        pin: "P3_6",
+                        alt: 7u8,
+                        iomuxc_daisy: None,
+                    },
+                ],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B1",
+                pins: &[SignalPin {
+                    pin: "P3_15",
+                    alt: 7u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "A1",
+                pins: &[SignalPin {
+                    pin: "P3_14",
+                    alt: 7u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "B2",
+                pins: &[SignalPin {
+                    pin: "P3_13",
+                    alt: 7u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+            Signal {
+                name: "A2",
+                pins: &[SignalPin {
+                    pin: "P3_12",
+                    alt: 7u8,
+                    iomuxc_daisy: None,
+                }],
+                iomuxc_daisy: None,
+            },
+        ],
         flexcomm: None,
         dma_muxing: &[
             DmaMux {
