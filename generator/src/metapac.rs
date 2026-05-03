@@ -115,9 +115,10 @@ fn generate_meta_peripherals_mod(current: &Path, mut drivers: Vec<String>) -> an
 /// Generates all core-specific code for a metapac PAC, including any peripherals that have been mapped.
 pub fn generate_core(current: &Path, core: &str, mut metadata: Metadata) -> anyhow::Result<()> {
     let core_dir = current.join("nxp-pac/src/chips").join(core.to_lowercase());
-    if !core_dir.exists() {
-        fs::create_dir_all(&core_dir).context("creating chip dir")?;
+    if core_dir.exists() {
+        fs::remove_dir_all(&core_dir).context("removing old chip dir")?;
     }
+    fs::create_dir_all(&core_dir).context("creating chip dir")?;
 
     // Remove all peripherals that are defined, but don't have a metaperipheral mapped.
     let yaml_peri_dir = current.join("data/metadata/peripherals");
