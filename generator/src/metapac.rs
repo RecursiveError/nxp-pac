@@ -158,9 +158,10 @@ pub fn generate_core(current: &Path, core: &str, mut metadata: Metadata) -> anyh
     });
 
     export_device_x(&core_dir, &metadata).context("exporting device.x")?;
-    export_mod_rs(&core_dir, &metadata).context("exporting mod.rs")?;
     export_vectors_rs(&core_dir, &metadata).context("exporting _vectors.rs")?;
     export_common_rs(&core_dir).context("exporting common.rs")?;
+    // mod.rs contains vectors.rs and common.rs, so write it last to avoid issues with rustfmt
+    export_mod_rs(&core_dir, &metadata).context("exporting mod.rs")?;
 
     Ok(())
 }
