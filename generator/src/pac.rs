@@ -58,6 +58,9 @@ pub fn generate_core(
 
     let device_x = temp.path().join("device.x");
     let output_dir = chip_dir.join(core.to_lowercase());
+    if output_dir.exists() {
+        fs::remove_dir_all(&output_dir).context("removing old PAC core dir")?;
+    }
     fs::create_dir_all(&output_dir)?;
     fs::copy(&device_x, output_dir.join("device.x"))?;
 
