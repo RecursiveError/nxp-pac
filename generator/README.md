@@ -41,5 +41,5 @@ For metapac chips the peripheral definitions are manually curated in [`data/meta
 
 For all chips you can (re-)generate the nxp-pac code by running (replace MCXA577 with your chip).
 ```
-cargo run -p generator -- MCXA577
+cargo run -p generator -- generate MCXA577
 ```
