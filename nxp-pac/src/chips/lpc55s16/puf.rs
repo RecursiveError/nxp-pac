@@ -129,3 +129,4 @@ impl Puf {
     }
 }
 pub mod regs;
+pub mod vals;

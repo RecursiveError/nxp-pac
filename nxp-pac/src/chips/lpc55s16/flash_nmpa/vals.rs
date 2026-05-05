@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Smb {
     #[doc = "Low leakage."]
-    LOW = 0x0,
+    Low = 0x0,
     #[doc = "Medium leakage."]
-    MEDIUM = 0x01,
+    Medium = 0x01,
     #[doc = "Highest leakage."]
-    HIGHEST = 0x02,
+    Highest = 0x02,
     #[doc = "Disable."]
-    DISABLE = 0x03,
+    Disable = 0x03,
 }
 impl Smb {
     #[inline(always)]

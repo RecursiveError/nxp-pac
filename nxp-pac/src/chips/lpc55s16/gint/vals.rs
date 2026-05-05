@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Comb {
     #[doc = "Or. OR functionality: A grouped interrupt is generated when any one of the enabled inputs is active (based on its programmed polarity)."]
-    OR = 0x0,
+    Or = 0x0,
     #[doc = "And. AND functionality: An interrupt is generated when all enabled bits are active (based on their programmed polarity)."]
-    AND = 0x01,
+    And = 0x01,
 }
 impl Comb {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<Comb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Int {
     #[doc = "No request. No interrupt request is pending."]
-    NO_REQUEST = 0x0,
+    NoRequest = 0x0,
     #[doc = "Request active. Interrupt request is active."]
-    REQUEST_ACTIVE = 0x01,
+    RequestActive = 0x01,
 }
 impl Int {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Int> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Trig {
     #[doc = "Edge-triggered."]
-    EDGE_TRIGGERED = 0x0,
+    EdgeTriggered = 0x0,
     #[doc = "Level-triggered."]
-    LEVEL_TRIGGERED = 0x01,
+    LevelTriggered = 0x01,
 }
 impl Trig {
     #[inline(always)]

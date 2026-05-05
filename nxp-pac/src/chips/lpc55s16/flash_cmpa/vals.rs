@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BlockEnroll {
     #[doc = "Allow PUF enroll operation."]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Disable PUF enroll operation."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Disable PUF enroll operation."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Disable PUF enroll operation."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl BlockEnroll {
     #[inline(always)]
@@ -38,13 +38,13 @@ impl From<BlockEnroll> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BlockSetKey {
     #[doc = "Allow PUF Key Code generation."]
-    ALLOW = 0x0,
+    Allow = 0x0,
     #[doc = "Disable PUF Key Code generation."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Disable PUF Key Code generation."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Disable PUF Key Code generation."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl BlockSetKey {
     #[inline(always)]
@@ -73,13 +73,13 @@ impl From<BlockSetKey> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BootSeedCustCfg {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    INCLUD = 0x01,
+    Includ = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl BootSeedCustCfg {
     #[inline(always)]
@@ -108,13 +108,13 @@ impl From<BootSeedCustCfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BootSeedIncEpoch {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    INCLUD = 0x01,
+    Includ = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl BootSeedIncEpoch {
     #[inline(always)]
@@ -143,13 +143,13 @@ impl From<BootSeedIncEpoch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BootSeedIncNxpCfg {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    INCLUD = 0x01,
+    Includ = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl BootSeedIncNxpCfg {
     #[inline(always)]
@@ -178,10 +178,10 @@ impl From<BootSeedIncNxpCfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BootSpeed {
     #[doc = "Defined by NMPA.SYSTEM_SPEED_CODE."]
-    VALUE_0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     #[doc = "48MHz FRO."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl BootSpeed {
@@ -211,9 +211,9 @@ impl From<BootSpeed> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinDbgen {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinDbgen {
     #[inline(always)]
@@ -242,9 +242,9 @@ impl From<CcSocuPinDbgen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinFaMeCmdEn {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinFaMeCmdEn {
     #[inline(always)]
@@ -273,9 +273,9 @@ impl From<CcSocuPinFaMeCmdEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinIspCmdEn {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinIspCmdEn {
     #[inline(always)]
@@ -304,9 +304,9 @@ impl From<CcSocuPinIspCmdEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinNiden {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinNiden {
     #[inline(always)]
@@ -335,9 +335,9 @@ impl From<CcSocuPinNiden> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinSpiden {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinSpiden {
     #[inline(always)]
@@ -366,9 +366,9 @@ impl From<CcSocuPinSpiden> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinSpniden {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinSpniden {
     #[inline(always)]
@@ -397,9 +397,9 @@ impl From<CcSocuPinSpniden> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CcSocuPinTapen {
     #[doc = "Use DAP to enable."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Fixed state."]
-    DISABLE = 0x01,
+    Disable = 0x01,
 }
 impl CcSocuPinTapen {
     #[inline(always)]
@@ -428,19 +428,19 @@ impl From<CcSocuPinTapen> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DefaultIspMode {
     #[doc = "Auto ISP."]
-    AUTO_ISP = 0x0,
+    AutoIsp = 0x0,
     #[doc = "USB_HID_ISP."]
-    USB_HID_ISP = 0x01,
+    UsbHidIsp = 0x01,
     #[doc = "UART ISP."]
-    UART_ISP = 0x02,
+    UartIsp = 0x02,
     #[doc = "SPI Slave ISP."]
-    SPI_ISP = 0x03,
+    SpiIsp = 0x03,
     #[doc = "I2C Slave ISP."]
-    I2C_ISP = 0x04,
+    I2cIsp = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Disable ISP fall through."]
-    DISABLE = 0x07,
+    Disable = 0x07,
 }
 impl DefaultIspMode {
     #[inline(always)]
@@ -469,13 +469,13 @@ impl From<DefaultIspMode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DiceCustCfg {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    UNCLUD = 0x01,
+    Unclud = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl DiceCustCfg {
     #[inline(always)]
@@ -504,13 +504,13 @@ impl From<DiceCustCfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DiceIncNxpCfg {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    INCLUD = 0x01,
+    Includ = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl DiceIncNxpCfg {
     #[inline(always)]
@@ -539,13 +539,13 @@ impl From<DiceIncNxpCfg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DiceIncSecEpoch {
     #[doc = "not included."]
-    NOT_INCLUD = 0x0,
+    NotInclud = 0x0,
     #[doc = "included."]
-    INCLUD = 0x01,
+    Includ = 0x01,
     #[doc = "included."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "included."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl DiceIncSecEpoch {
     #[inline(always)]
@@ -574,13 +574,13 @@ impl From<DiceIncSecEpoch> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LockReg0 {
     #[doc = "Region is not locked."]
-    UNLOCK = 0x0,
+    Unlock = 0x0,
     #[doc = "Region is locked."]
-    LOCK = 0x01,
+    Lock = 0x01,
     #[doc = "Region is locked."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Region is locked."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl LockReg0 {
     #[inline(always)]
@@ -609,13 +609,13 @@ impl From<LockReg0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum LockReg1 {
     #[doc = "Region is not locked."]
-    UNLOCK = 0x0,
+    Unlock = 0x0,
     #[doc = "Region is locked."]
-    LOCK = 0x01,
+    Lock = 0x01,
     #[doc = "Region is locked."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Region is locked."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl LockReg1 {
     #[inline(always)]
@@ -644,13 +644,13 @@ impl From<LockReg1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Reg0EraseCheckEn {
     #[doc = "Region is disabled."]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "Region is enabled."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Region is enabled."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Region is enabled."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl Reg0EraseCheckEn {
     #[inline(always)]
@@ -679,13 +679,13 @@ impl From<Reg0EraseCheckEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Reg1EraseCheckEn {
     #[doc = "Region is disabled."]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "Region is enabled."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Region is enabled."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Region is enabled."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl Reg1EraseCheckEn {
     #[inline(always)]
@@ -714,13 +714,13 @@ impl From<Reg1EraseCheckEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Reg2EraseCheckEn {
     #[doc = "Region is disabled."]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "Region is enabled."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Region is enabled."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Region is enabled."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl Reg2EraseCheckEn {
     #[inline(always)]
@@ -749,13 +749,13 @@ impl From<Reg2EraseCheckEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Rsa4k {
     #[doc = "Allow RSA2048 and higher."]
-    VALUE_0 = 0x0,
+    Value0 = 0x0,
     #[doc = "RSA4096 only."]
-    VALUE_1 = 0x01,
+    Value1 = 0x01,
     #[doc = "RSA4096 only."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "RSA4096 only."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl Rsa4k {
     #[inline(always)]
@@ -784,13 +784,13 @@ impl From<Rsa4k> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecBootEn {
     #[doc = "Plain image (internal flash with or without CRC)."]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "Boot signed images. (internal flash, RSA signed)."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Boot signed images. (internal flash, RSA signed)."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Boot signed images. (internal flash, RSA signed)."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl SecBootEn {
     #[inline(always)]
@@ -819,13 +819,13 @@ impl From<SecBootEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SkipBootSeed {
     #[doc = "Enable BOOT_SEED."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable BOOT_SEED."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Disable BOOT_SEED."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Disable BOOT_SEED."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl SkipBootSeed {
     #[inline(always)]
@@ -854,13 +854,13 @@ impl From<SkipBootSeed> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SkipDice {
     #[doc = "Enable DICE."]
-    ENABLE = 0x0,
+    Enable = 0x0,
     #[doc = "Disable DICE."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Disable DICE."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Disable DICE."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl SkipDice {
     #[inline(always)]
@@ -889,13 +889,13 @@ impl From<SkipDice> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TzmImageType {
     #[doc = "TZ-M image mode is taken from application image header."]
-    VALUE_0 = 0x0,
+    Value0 = 0x0,
     #[doc = "TZ-M disabled image, boots to non-secure mode."]
-    VALUE_1 = 0x01,
+    Value1 = 0x01,
     #[doc = "TZ-M enabled image, boots to secure mode."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "TZ-M enabled image with TZ-M preset, boot to secure mode TZ-M pre-configured by data from application image header."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
 }
 impl TzmImageType {
     #[inline(always)]
@@ -924,9 +924,9 @@ impl From<TzmImageType> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xtal16mhzCapabankTrimTrimValid {
     #[doc = "Capa Bank trimmings not valid. Default trimmings value are used."]
-    NOT_TRIM = 0x0,
+    NotTrim = 0x0,
     #[doc = "Capa Bank trimmings valid."]
-    VALID = 0x01,
+    Valid = 0x01,
 }
 impl Xtal16mhzCapabankTrimTrimValid {
     #[inline(always)]
@@ -955,9 +955,9 @@ impl From<Xtal16mhzCapabankTrimTrimValid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xtal32khzCapabankTrimTrimValid {
     #[doc = "Capa Bank trimmings not valid. Default trimmings value are used."]
-    NOT_TRIM = 0x0,
+    NotTrim = 0x0,
     #[doc = "Capa Bank trimmings valid."]
-    VALID = 0x01,
+    Valid = 0x01,
 }
 impl Xtal32khzCapabankTrimTrimValid {
     #[inline(always)]

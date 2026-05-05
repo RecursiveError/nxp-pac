@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum BodvbatHyst {
     #[doc = "25 mV."]
-    HYST_25MV = 0x0,
+    Hyst25mv = 0x0,
     #[doc = "50 mV."]
-    HYST_50MV = 0x01,
+    Hyst50mv = 0x01,
     #[doc = "75 mV."]
-    HYST_75MV = 0x02,
+    Hyst75mv = 0x02,
     #[doc = "100 mV."]
-    HYST_100MV = 0x03,
+    Hyst100mv = 0x03,
 }
 impl BodvbatHyst {
     #[inline(always)]
@@ -38,13 +38,13 @@ impl From<BodvbatHyst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bootmode {
     #[doc = "Latest IC boot was a Full power cycle boot sequence (PoR, Pin Reset, Brown Out Detectors Reset, Software Reset)."]
-    POWERUP = 0x0,
+    Powerup = 0x0,
     #[doc = "Latest IC boot was from DEEP SLEEP low power mode."]
-    DEEPSLEEP = 0x01,
+    Deepsleep = 0x01,
     #[doc = "Latest IC boot was from POWER DOWN low power mode."]
-    POWERDOWN = 0x02,
+    Powerdown = 0x02,
     #[doc = "Latest IC boot was from DEEP POWER DOWN low power mode."]
-    DEEPPOWERDOWN = 0x03,
+    Deeppowerdown = 0x03,
 }
 impl Bootmode {
     #[inline(always)]
@@ -73,9 +73,9 @@ impl From<Bootmode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Captestoscinsel {
     #[doc = "Oscillator output pin (osc_out)."]
-    OSCOUT = 0x0,
+    Oscout = 0x0,
     #[doc = "Oscillator input pin (osc_in)."]
-    OSCIN = 0x01,
+    Oscin = 0x01,
 }
 impl Captestoscinsel {
     #[inline(always)]
@@ -104,9 +104,9 @@ impl From<Captestoscinsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Capteststartsrcsel {
     #[doc = "Sourced from CAPTESTSTART."]
-    CAPSTART = 0x0,
+    Capstart = 0x0,
     #[doc = "Sourced from calibration."]
-    CALIB = 0x01,
+    Calib = 0x01,
 }
 impl Capteststartsrcsel {
     #[inline(always)]
@@ -135,9 +135,9 @@ impl From<Capteststartsrcsel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DisableBleed {
     #[doc = "LDO_MEM bleed current is enabled."]
-    BLEED_ENABLE = 0x0,
+    BleedEnable = 0x0,
     #[doc = "LDO_MEM bleed current is disabled. Should be set before entering in Deep Sleep low power mode and cleared after wake up from Deep SLeep low power mode."]
-    BLEED_DISABLE = 0x01,
+    BleedDisable = 0x01,
 }
 impl DisableBleed {
     #[inline(always)]
@@ -166,21 +166,21 @@ impl From<DisableBleed> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FiltercgfClkdiv {
     #[doc = "Filter clock period duration equals 1 Analog Comparator clock period."]
-    FILTER_1CLK_PERIOD = 0x0,
+    Filter1clkPeriod = 0x0,
     #[doc = "Filter clock period duration equals 2 Analog Comparator clock period."]
-    FILTER_2CLK_PERIOD = 0x01,
+    Filter2clkPeriod = 0x01,
     #[doc = "Filter clock period duration equals 4 Analog Comparator clock period."]
-    FILTER_4CLK_PERIOD = 0x02,
+    Filter4clkPeriod = 0x02,
     #[doc = "Filter clock period duration equals 8 Analog Comparator clock period."]
-    FILTER_8CLK_PERIOD = 0x03,
+    Filter8clkPeriod = 0x03,
     #[doc = "Filter clock period duration equals 16 Analog Comparator clock period."]
-    FILTER_16CLK_PERIOD = 0x04,
+    Filter16clkPeriod = 0x04,
     #[doc = "Filter clock period duration equals 32 Analog Comparator clock period."]
-    FILTER_32CLK_PERIOD = 0x05,
+    Filter32clkPeriod = 0x05,
     #[doc = "Filter clock period duration equals 64 Analog Comparator clock period."]
-    FILTER_64CLK_PERIOD = 0x06,
+    Filter64clkPeriod = 0x06,
     #[doc = "Filter clock period duration equals 128 Analog Comparator clock period."]
-    FILTER_128CLK_PERIOD = 0x07,
+    Filter128clkPeriod = 0x07,
 }
 impl FiltercgfClkdiv {
     #[inline(always)]
@@ -209,13 +209,13 @@ impl From<FiltercgfClkdiv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FiltercgfSamplemode {
     #[doc = "Bypass mode."]
-    BYPASS = 0x0,
+    Bypass = 0x0,
     #[doc = "Filter 1 clock period."]
-    FILTER1CLK = 0x01,
+    Filter1clk = 0x01,
     #[doc = "Filter 2 clock period."]
-    FILTER2CLK = 0x02,
+    Filter2clk = 0x02,
     #[doc = "Filter 3 clock period."]
-    FILTER3CLK = 0x03,
+    Filter3clk = 0x03,
 }
 impl FiltercgfSamplemode {
     #[inline(always)]
@@ -244,9 +244,9 @@ impl From<FiltercgfSamplemode> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ldodeepsleepref {
     #[doc = "LDO DEEP Sleep uses Flash buffer biasing as reference."]
-    FLASHBUFFER = 0x0,
+    Flashbuffer = 0x0,
     #[doc = "LDO DEEP Sleep uses Band Gap 0.8V as reference."]
-    BGP0P8V = 0x01,
+    Bgp0p8v = 0x01,
 }
 impl Ldodeepsleepref {
     #[inline(always)]
@@ -275,9 +275,9 @@ impl From<Ldodeepsleepref> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Lowpower {
     #[doc = "High speed mode."]
-    HIGHSPEED = 0x0,
+    Highspeed = 0x0,
     #[doc = "Low power mode (Low speed)."]
-    LOWSPEED = 0x01,
+    Lowspeed = 0x01,
 }
 impl Lowpower {
     #[inline(always)]
@@ -306,17 +306,17 @@ impl From<Lowpower> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Nmux {
     #[doc = "VREF (See field VREFINPUT)."]
-    VREF = 0x0,
+    Vref = 0x0,
     #[doc = "Pin P0_0."]
-    CMP0_A = 0x01,
+    Cmp0A = 0x01,
     #[doc = "Pin P0_9."]
-    CMP0_B = 0x02,
+    Cmp0B = 0x02,
     #[doc = "Pin P0_18."]
-    CMP0_C = 0x03,
+    Cmp0C = 0x03,
     #[doc = "Pin P1_14."]
-    CMP0_D = 0x04,
+    Cmp0D = 0x04,
     #[doc = "Pin P2_23."]
-    CMP0_E = 0x05,
+    Cmp0E = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
@@ -347,9 +347,9 @@ impl From<Nmux> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenAuxbias {
     #[doc = "auxiliary biasing is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "auxiliary biasing is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenAuxbias {
     #[inline(always)]
@@ -378,9 +378,9 @@ impl From<PdenAuxbias> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenBodvbat {
     #[doc = "BOD VBAT is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "BOD VBAT is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenBodvbat {
     #[inline(always)]
@@ -409,9 +409,9 @@ impl From<PdenBodvbat> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenComp {
     #[doc = "Analog Comparator is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "Analog Comparator is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenComp {
     #[inline(always)]
@@ -440,9 +440,9 @@ impl From<PdenComp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenFro32k {
     #[doc = "FRO32KHz is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "FRO32KHz is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenFro32k {
     #[inline(always)]
@@ -471,9 +471,9 @@ impl From<PdenFro32k> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenLdousbhs {
     #[doc = "USB high speed LDO is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "USB high speed LDO is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenLdousbhs {
     #[inline(always)]
@@ -502,9 +502,9 @@ impl From<PdenLdousbhs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenLdoxo32m {
     #[doc = "High speed crystal LDO is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "High speed crystal LDO is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenLdoxo32m {
     #[inline(always)]
@@ -533,9 +533,9 @@ impl From<PdenLdoxo32m> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenPll0 {
     #[doc = "PLL0 is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "PLL0 is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenPll0 {
     #[inline(always)]
@@ -564,9 +564,9 @@ impl From<PdenPll0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenPll0Sscg {
     #[doc = "PLL0 Sread spectrum module is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "PLL0 Sread spectrum module is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenPll0Sscg {
     #[inline(always)]
@@ -595,9 +595,9 @@ impl From<PdenPll0Sscg> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenPll1 {
     #[doc = "PLL1 is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "PLL1 is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenPll1 {
     #[inline(always)]
@@ -626,9 +626,9 @@ impl From<PdenPll1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenRng {
     #[doc = "TRNG clocks are powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "TRNG clocks are powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenRng {
     #[inline(always)]
@@ -657,9 +657,9 @@ impl From<PdenRng> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenUsbfsphy {
     #[doc = "USB Full Speed phy is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "USB Full Speed phy is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenUsbfsphy {
     #[inline(always)]
@@ -688,9 +688,9 @@ impl From<PdenUsbfsphy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenUsbhsphy {
     #[doc = "USB HS phy is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "USB HS phy is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenUsbhsphy {
     #[inline(always)]
@@ -719,9 +719,9 @@ impl From<PdenUsbhsphy> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenXtal32k {
     #[doc = "Crystal 32KHz is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "Crystal 32KHz is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenXtal32k {
     #[inline(always)]
@@ -750,9 +750,9 @@ impl From<PdenXtal32k> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PdenXtal32m {
     #[doc = "High speed crystal is powered."]
-    POWEREDON = 0x0,
+    Poweredon = 0x0,
     #[doc = "High speed crystal is powered down."]
-    POWEREDOFF = 0x01,
+    Poweredoff = 0x01,
 }
 impl PdenXtal32m {
     #[inline(always)]
@@ -781,17 +781,17 @@ impl From<PdenXtal32m> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pmux {
     #[doc = "VREF (See fiedl VREFINPUT)."]
-    VREF = 0x0,
+    Vref = 0x0,
     #[doc = "Pin P0_0."]
-    CMP0_A = 0x01,
+    Cmp0A = 0x01,
     #[doc = "Pin P0_9."]
-    CMP0_B = 0x02,
+    Cmp0B = 0x02,
     #[doc = "Pin P0_18."]
-    CMP0_C = 0x03,
+    Cmp0C = 0x03,
     #[doc = "Pin P1_14."]
-    CMP0_D = 0x04,
+    Cmp0D = 0x04,
     #[doc = "Pin P2_23."]
-    CMP0_E = 0x05,
+    Cmp0E = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
@@ -822,9 +822,9 @@ impl From<Pmux> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sel {
     #[doc = "FRO 32 KHz."]
-    FRO32K = 0x0,
+    Fro32k = 0x0,
     #[doc = "XTAL 32KHz."]
-    XTAL32K = 0x01,
+    Xtal32k = 0x01,
 }
 impl Sel {
     #[inline(always)]
@@ -853,13 +853,13 @@ impl From<Sel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Smb {
     #[doc = "Low leakage."]
-    LOW = 0x0,
+    Low = 0x0,
     #[doc = "Medium leakage."]
-    MEDIUM = 0x01,
+    Medium = 0x01,
     #[doc = "Highest leakage."]
-    HIGHEST = 0x02,
+    Highest = 0x02,
     #[doc = "Disable."]
-    DISABLE = 0x03,
+    Disable = 0x03,
 }
 impl Smb {
     #[inline(always)]
@@ -888,69 +888,69 @@ impl From<Smb> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Triglvl {
     #[doc = "1.00 V."]
-    V_1P00 = 0x0,
+    V1p00 = 0x0,
     #[doc = "1.10 V."]
-    V_1P10 = 0x01,
+    V1p10 = 0x01,
     #[doc = "1.20 V."]
-    V_1P20 = 0x02,
+    V1p20 = 0x02,
     #[doc = "1.30 V."]
-    V_1P30 = 0x03,
+    V1p30 = 0x03,
     #[doc = "1.40 V."]
-    V_1P40 = 0x04,
+    V1p40 = 0x04,
     #[doc = "1.50 V."]
-    V_1P50 = 0x05,
+    V1p50 = 0x05,
     #[doc = "1.60 V."]
-    V_1P60 = 0x06,
+    V1p60 = 0x06,
     #[doc = "1.65 V."]
-    V_1P65 = 0x07,
+    V1p65 = 0x07,
     #[doc = "1.70 V."]
-    V_1P70 = 0x08,
+    V1p70 = 0x08,
     #[doc = "1.75 V."]
-    V_1P75 = 0x09,
+    V1p75 = 0x09,
     #[doc = "1.80 V."]
-    V_1P80 = 0x0a,
+    V1p80 = 0x0a,
     #[doc = "1.90 V."]
-    V_1P90 = 0x0b,
+    V1p90 = 0x0b,
     #[doc = "2.00 V."]
-    V_2P00 = 0x0c,
+    V2p00 = 0x0c,
     #[doc = "2.10 V."]
-    V_2P10 = 0x0d,
+    V2p10 = 0x0d,
     #[doc = "2.20 V."]
-    V_2P20 = 0x0e,
+    V2p20 = 0x0e,
     #[doc = "2.30 V."]
-    V_2P30 = 0x0f,
+    V2p30 = 0x0f,
     #[doc = "2.40 V."]
-    V_2P40 = 0x10,
+    V2p40 = 0x10,
     #[doc = "2.50 V."]
-    V_2P50 = 0x11,
+    V2p50 = 0x11,
     #[doc = "2.60 V."]
-    V_2P60 = 0x12,
+    V2p60 = 0x12,
     #[doc = "2.70 V."]
-    V_2P70 = 0x13,
+    V2p70 = 0x13,
     #[doc = "2.806 V."]
-    V_2P80 = 0x14,
+    V2p80 = 0x14,
     #[doc = "2.90 V."]
-    V_2P90 = 0x15,
+    V2p90 = 0x15,
     #[doc = "3.00 V."]
-    V_3P00 = 0x16,
+    V3p00 = 0x16,
     #[doc = "3.10 V."]
-    V_3P10 = 0x17,
+    V3p10 = 0x17,
     #[doc = "3.20 V."]
-    V_3P20 = 0x18,
+    V3p20 = 0x18,
     #[doc = "3.30 V."]
-    V_3P30_2 = 0x19,
+    V3p302 = 0x19,
     #[doc = "3.30 V."]
-    V_3P30_3 = 0x1a,
+    V3p303 = 0x1a,
     #[doc = "3.30 V."]
-    V_3P30_4 = 0x1b,
+    V3p304 = 0x1b,
     #[doc = "3.30 V."]
-    V_3P30_5 = 0x1c,
+    V3p305 = 0x1c,
     #[doc = "3.30 V."]
-    V_3P30_6 = 0x1d,
+    V3p306 = 0x1d,
     #[doc = "3.30 V."]
-    V_3P30_7 = 0x1e,
+    V3p307 = 0x1e,
     #[doc = "3.30 V."]
-    V_3P30_8 = 0x1f,
+    V3p308 = 0x1f,
 }
 impl Triglvl {
     #[inline(always)]
@@ -979,69 +979,69 @@ impl From<Triglvl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vadj {
     #[doc = "1.22 V."]
-    V_1P220 = 0x0,
+    V1p220 = 0x0,
     #[doc = "0.7 V."]
-    V_0P700 = 0x01,
+    V0p700 = 0x01,
     #[doc = "0.725 V."]
-    V_0P725 = 0x02,
+    V0p725 = 0x02,
     #[doc = "0.75 V."]
-    V_0P750 = 0x03,
+    V0p750 = 0x03,
     #[doc = "0.775 V."]
-    V_0P775 = 0x04,
+    V0p775 = 0x04,
     #[doc = "0.8 V."]
-    V_0P800 = 0x05,
+    V0p800 = 0x05,
     #[doc = "0.825 V."]
-    V_0P825 = 0x06,
+    V0p825 = 0x06,
     #[doc = "0.85 V."]
-    V_0P850 = 0x07,
+    V0p850 = 0x07,
     #[doc = "0.875 V."]
-    V_0P875 = 0x08,
+    V0p875 = 0x08,
     #[doc = "0.9 V."]
-    V_0P900 = 0x09,
+    V0p900 = 0x09,
     #[doc = "0.96 V."]
-    V_0P960 = 0x0a,
+    V0p960 = 0x0a,
     #[doc = "0.97 V."]
-    V_0P970 = 0x0b,
+    V0p970 = 0x0b,
     #[doc = "0.98 V."]
-    V_0P980 = 0x0c,
+    V0p980 = 0x0c,
     #[doc = "0.99 V."]
-    V_0P990 = 0x0d,
+    V0p990 = 0x0d,
     #[doc = "1 V."]
-    V_1P000 = 0x0e,
+    V1p000 = 0x0e,
     #[doc = "1.01 V."]
-    V_1P010 = 0x0f,
+    V1p010 = 0x0f,
     #[doc = "1.02 V."]
-    V_1P020 = 0x10,
+    V1p020 = 0x10,
     #[doc = "1.03 V."]
-    V_1P030 = 0x11,
+    V1p030 = 0x11,
     #[doc = "1.04 V."]
-    V_1P040 = 0x12,
+    V1p040 = 0x12,
     #[doc = "1.05 V."]
-    V_1P050 = 0x13,
+    V1p050 = 0x13,
     #[doc = "1.06 V."]
-    V_1P060 = 0x14,
+    V1p060 = 0x14,
     #[doc = "1.07 V."]
-    V_1P070 = 0x15,
+    V1p070 = 0x15,
     #[doc = "1.08 V."]
-    V_1P080 = 0x16,
+    V1p080 = 0x16,
     #[doc = "1.09 V."]
-    V_1P090 = 0x17,
+    V1p090 = 0x17,
     #[doc = "1.1 V."]
-    V_1P100 = 0x18,
+    V1p100 = 0x18,
     #[doc = "1.11 V."]
-    V_1P110 = 0x19,
+    V1p110 = 0x19,
     #[doc = "1.12 V."]
-    V_1P120 = 0x1a,
+    V1p120 = 0x1a,
     #[doc = "1.13 V."]
-    V_1P130 = 0x1b,
+    V1p130 = 0x1b,
     #[doc = "1.14 V."]
-    V_1P140 = 0x1c,
+    V1p140 = 0x1c,
     #[doc = "1.15 V."]
-    V_1P150 = 0x1d,
+    V1p150 = 0x1d,
     #[doc = "1.16 V."]
-    V_1P160 = 0x1e,
+    V1p160 = 0x1e,
     #[doc = "1.22 V."]
-    V_1P220_1 = 0x1f,
+    V1p2201 = 0x1f,
 }
 impl Vadj {
     #[inline(always)]
@@ -1070,27 +1070,27 @@ impl From<Vadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vout {
     #[doc = "0.95 V."]
-    V_DCDC_0P950 = 0x0,
+    VDcdc0p950 = 0x0,
     #[doc = "0.975 V."]
-    V_DCDC_0P975 = 0x01,
+    VDcdc0p975 = 0x01,
     #[doc = "1 V."]
-    V_DCDC_1P000 = 0x02,
+    VDcdc1p000 = 0x02,
     #[doc = "1.025 V."]
-    V_DCDC_1P025 = 0x03,
+    VDcdc1p025 = 0x03,
     #[doc = "1.05 V."]
-    V_DCDC_1P050 = 0x04,
+    VDcdc1p050 = 0x04,
     #[doc = "1.075 V."]
-    V_DCDC_1P075 = 0x05,
+    VDcdc1p075 = 0x05,
     #[doc = "1.1 V."]
-    V_DCDC_1P100 = 0x06,
+    VDcdc1p100 = 0x06,
     #[doc = "1.125 V."]
-    V_DCDC_1P125 = 0x07,
+    VDcdc1p125 = 0x07,
     #[doc = "1.15 V."]
-    V_DCDC_1P150 = 0x08,
+    VDcdc1p150 = 0x08,
     #[doc = "1.175 V."]
-    V_DCDC_1P175 = 0x09,
+    VDcdc1p175 = 0x09,
     #[doc = "1.2 V."]
-    V_DCDC_1P200 = 0x0a,
+    VDcdc1p200 = 0x0a,
     _RESERVED_b = 0x0b,
     _RESERVED_c = 0x0c,
     _RESERVED_d = 0x0d,
@@ -1124,9 +1124,9 @@ impl From<Vout> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vrefinput {
     #[doc = "Select internal VREF."]
-    INTERNALREF = 0x0,
+    Internalref = 0x0,
     #[doc = "Select VDDA."]
-    VDDA = 0x01,
+    Vdda = 0x01,
 }
 impl Vrefinput {
     #[inline(always)]
@@ -1155,9 +1155,9 @@ impl From<Vrefinput> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WakupioRst {
     #[doc = "Wakeup IO is not reset."]
-    RELEASED = 0x0,
+    Released = 0x0,
     #[doc = "Wakeup IO is reset."]
-    ASSERTED = 0x01,
+    Asserted = 0x01,
 }
 impl WakupioRst {
     #[inline(always)]
@@ -1186,9 +1186,9 @@ impl From<WakupioRst> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Xtal32koscfailure {
     #[doc = "No oscillation failure has been detetced since the last time this bit has been cleared."]
-    NOFAIL = 0x0,
+    Nofail = 0x0,
     #[doc = "At least one oscillation failure has been detetced since the last time this bit has been cleared."]
-    FAILURE = 0x01,
+    Failure = 0x01,
 }
 impl Xtal32koscfailure {
     #[inline(always)]
