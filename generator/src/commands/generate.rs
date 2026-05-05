@@ -67,7 +67,8 @@ fn generate_chip(current_dir: &Path, feature: &ChipDescription) -> anyhow::Resul
         let chips_dir = pac_dir.join("src").join("chips");
 
         if feature.metapac {
-            let metadata = match feature.metadata {
+            let metadata_file = feature.metadata;
+            let metadata = match metadata_file {
                 Some(metadata_file) => Some(
                     crate::metadata::generate(
                         &chips_dir,
@@ -84,7 +85,16 @@ fn generate_chip(current_dir: &Path, feature: &ChipDescription) -> anyhow::Resul
             };
 
             crate::metapac::generate_core(current_dir, core, metadata)
-                .context(format!("Assembling metapac for {core}"))?
+                .context(format!("Assembling metapac for {core}"))?;
+
+            if let Some(metadata_file) = metadata_file {
+                crate::metadata::generate(
+                    &chips_dir,
+                    &metadata_dir.join(metadata_file).with_extension("json"),
+                    core,
+                )
+                .context("Generating metadata")?;
+            }
         } else {
             let svd = chip_src_dir.join(core).with_extension("xml");
             debug!("svd path: {:?}", svd);
