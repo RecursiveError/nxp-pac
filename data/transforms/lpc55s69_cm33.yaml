@@ -1,26 +1,27 @@
 includes:
   - cm33.yaml
+  - sanitize.yaml
 transforms:
   - !DeleteEnumVariants
-    enum: inputmux::Dma0ItrigInmuxInp
+    enum: inputmux::vals::Dma0ItrigInmuxInp
     from: VAL22(.*)
   - !DeleteEnumVariants
-    enum: inputmux::InpN
+    enum: inputmux::vals::InpN
     from: VAL24(.*)
   - !DeleteEnumVariants
-    enum: inputmux::Timer0captselCaptsel
+    enum: inputmux::vals::Timer0captselCaptsel
     from: VAL25(.*)
   - !DeleteEnumVariants
-    enum: inputmux::Timer1captselCaptsel
+    enum: inputmux::vals::Timer1captselCaptsel
     from: VAL25(.*)
   - !DeleteEnumVariants
-    enum: inputmux::Timer2captselCaptsel
+    enum: inputmux::vals::Timer2captselCaptsel
     from: VAL25(.*)
   - !DeleteEnumVariants
-    enum: inputmux::Timer3captselCaptsel
+    enum: inputmux::vals::Timer3captselCaptsel
     from: VAL25(.*)
   - !DeleteEnumVariants
-    enum: inputmux::Timer4captselCaptsel
+    enum: inputmux::vals::Timer4captselCaptsel
     from: VAL25(.*)
 
   # - !DeleteEnumVariants
@@ -28,11 +29,11 @@ transforms:
   #   from: ENUM_0X[5-7]
 
   - !DeleteEnums
-    from: syscon::AdcclkselSel
+    from: syscon::vals::AdcclkselSel
 
   - !Add
     ir:
-      enum/syscon::AdcclkselSel:
+      enum/syscon::vals::AdcclkselSel:
         description: ADC clock source select
         bit_size: 3
         variants:
@@ -52,7 +53,7 @@ transforms:
   # yuppiii it does what i wanted it to do :D
   - !Add
     ir:
-      enum/puf::Key:
+      enum/puf::vals::Key:
         description: Key destination for PUF key.
         bit_size: 8
         variants:
@@ -88,40 +89,56 @@ transforms:
     from: presetctrlx\d
 
   - !Delete
-    from: syscon::Ahbclkctrlx\d
+    from: syscon::regs::Ahbclkctrlx\d
   - !Delete
-    from: syscon::Presetctrlx\d
+    from: syscon::regs::Presetctrlx\d
 
   - !MergeEnums
-    from: iocon::Pio\d+Asw
-    to: iocon::PioAsw
+    from: iocon::vals::Pio\d+Asw
+    to: iocon::vals::PioAsw
   - !MergeEnums
-    from: iocon::Pio\d+Digimode
-    to: iocon::PioDigimode
+    from: iocon::vals::Pio\d+Digimode
+    to: iocon::vals::PioDigimode
   - !MergeEnums
-    from: iocon::Pio\d+Func
-    to: iocon::PioFunc
+    from: iocon::vals::Pio\d+Func
+    to: iocon::vals::PioFunc
   - !MergeEnums
-    from: iocon::Pio\d+Mode
-    to: iocon::PioMode
+    from: iocon::vals::Pio\d+Mode
+    to: iocon::vals::PioMode
   - !MergeEnums
-    from: iocon::Pio\d+Od
-    to: iocon::PioOd
+    from: iocon::vals::Pio\d+Od
+    to: iocon::vals::PioOd
   - !MergeEnums
-    from: iocon::Pio\d+Slew
-    to: iocon::PioSlew
+    from: iocon::vals::Pio\d+Slew
+    to: iocon::vals::PioSlew
   - !MergeEnums
-    from: iocon::Pio\d+Ssel
-    to: iocon::PioSsel
+    from: iocon::vals::Pio\d+Ssel
+    to: iocon::vals::PioSsel
   - !MergeEnums
-    from: iocon::Pio\d+I2cfilter
-    to: iocon::PioI2cfilter
+    from: iocon::vals::Pio\d+I2cfilter
+    to: iocon::vals::PioI2cfilter
   - !MergeEnums
-    from: iocon::Pio\d+Filteroff
-    to: iocon::PioFilteroff
+    from: iocon::vals::Pio\d+Filteroff
+    to: iocon::vals::PioFilteroff
   - !MergeEnums
-    from: iocon::Pio\d+Egp
-    to: iocon::PioEgp
+    from: iocon::vals::Pio\d+Egp
+    to: iocon::vals::PioEgp
+
+
+  - !MergeFieldsets
+    from: iocon::regs::Pio\d+
+    to: iocon::regs::Pio
+    main: iocon::regs::Pio013
+    check: NoCheck
+
+  - !AddFields
+    fieldset: iocon::regs::Pio
+    fields:
+      - name: asw
+        description: "Analog switch input control."
+        bit_offset: 10
+        bit_size: 1
+        enum: iocon::vals::PioAsw
 
   - !MakeRegisterArray
     blocks: iocon::Iocon
@@ -132,79 +149,85 @@ transforms:
     from: pio1_\d+
     to: pio1
 
+  - !MergeEnums
+    from: syscon::vals::Fc\dRst
+    to: syscon::vals::FcRst
+  - !MergeEnums
+    from: syscon::vals::Fcclksel\dSel
+    to: syscon::vals::FcclkselSel
+
   - !MergeFieldsets
-    from: iocon::Pio\d+
-    to: iocon::Pio
-    main: iocon::Pio013
-    check: NoCheck
-
-  - !AddFields
-    fieldset: iocon::Pio
-    fields:
-      - name: asw
-        description: "Analog switch input control."
-        bit_offset: 10
-        bit_size: 1
-        enum: iocon::PioAsw
-
-  - !MergeEnums
-    from: syscon::Fc\dRst
-    to: syscon::FcRst
-  - !MergeEnums
-    from: syscon::Fcclksel\dSel
-    to: syscon::FcclkselSel
-
+    from: syscon::regs::Fcclksel\d
+    to: syscon::regs::Fcclksel
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: fcclksel\d
     to: fcclksel
-  - !MergeFieldsets
-    from: syscon::Fcclksel\d
-    to: syscon::Fcclksel
 
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrg\dctrl
+    to: syscon::regs::Flexfrgctrl
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrg\dctrl
     to: flexfrgctrl
-  - !MergeFieldsets
-    from: syscon::Flexfrg\dctrl
-    to: syscon::Flexfrgctrl
 
+  - !MergeFieldsets
+    from: syscon::regs::Fcclkselx\d
+    to: syscon::regs::Fcclkselx
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: fcclkselx\d
     to: fcckkselx
-  - !MergeFieldsets
-    from: syscon::Fcclkselx\d
-    to: syscon::Fcclkselx
 
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrgxctrl\d
+    to: syscon::regs::Flexfrgxctrl
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrgxctrl\d
     to: flexfrgxctrl
-  - !MergeFieldsets
-    from: syscon::Flexfrgxctrl\d
-    to: syscon::Flexfrgxctrl
 
   - !MakeFieldArray
-    fieldsets: syscon::Presetctrl1
+    fieldsets: syscon::regs::Presetctrl1
     from: fc\d_rst
     to: fc_rst
   - !MakeFieldArray
-    fieldsets: syscon::Presetctrl1
+    fieldsets: syscon::regs::Presetctrl1
     from: set_fc\d_rst
     to: set_fc_rst
 
   - !MakeFieldArray
-    fieldsets: syscon::Ahbclkctrl1
+    fieldsets: syscon::regs::Ahbclkctrl1
     from: fc\d
     to: fc
   - !MakeFieldArray
-    fieldsets: syscon::Ahbclkctrl1
+    fieldsets: syscon::regs::Ahbclkctrl1
     from: set_fc\d
     to: set_fc
 
   # SCTimer
+  - !MergeEnums
+    from: sct0::vals::O\d+res
+    to: sct0::vals::Ores
+  - !MergeEnums
+    from: sct0::vals::Setclr\d+
+    to: sct0::vals::Setclr
+  - !MergeEnums
+    from: sct0::vals::Bidir[L,H]
+    to: sct0::vals::Bidir
+  - !MergeFieldsets
+    from: sct0::regs::Cap\d+
+    to: sct0::regs::Cap
+  - !MergeFieldsets
+    from: sct0::regs::Capctrl\d+
+    to: sct0::regs::Capctrl
+  - !MergeFieldsets
+    from: sct0::regs::Matchrel\d+
+    to: sct0::regs::Matchrel
+  - !MergeFieldsets
+    from: sct0::regs::Match\d+
+    to: sct0::regs::Match
   - !MakeRegisterArray
     blocks: sct0::Sct0
     from: match\d+
@@ -222,50 +245,29 @@ transforms:
     from: capctrl\d+
     to: capctrl
   - !MakeFieldArray
-    fieldsets: sct0::Res
+    fieldsets: sct0::regs::Res
     from: o\d+res
     to: ores
   - !MakeFieldArray
-    fieldsets: sct0::Outputdirctrl
+    fieldsets: sct0::regs::Outputdirctrl
     from: setclr\d+
     to: setclr
   - !MakeFieldArray
-    fieldsets: sct0::Input
+    fieldsets: sct0::regs::Input
     from: ain\d+
     to: ain
   - !MakeFieldArray
-    fieldsets: sct0::Input
+    fieldsets: sct0::regs::Input
     from: sin\d+
     to: sin
-  - !MergeEnums
-    from: sct0::O\d+res
-    to: sct0::Ores
-  - !MergeEnums
-    from: sct0::Setclr\d+
-    to: sct0::Setclr
-  - !MergeFieldsets
-    from: sct0::Cap\d+
-    to: sct0::Cap
-  - !MergeFieldsets
-    from: sct0::Capctrl\d+
-    to: sct0::Capctrl
-  - !MergeFieldsets
-    from: sct0::Matchrel\d+
-    to: sct0::Matchrel
-  - !MergeFieldsets
-    from: sct0::Match\d+
-    to: sct0::Match
-  - !MergeEnums
-    from: sct0::Bidir[L,H]
-    to: sct0::Bidir
 
   # Turn `clr` and `set` in `` into bit arrays.
   - !DeleteFields
-    fieldset: sct0::Out(Clr|Set)
+    fieldset: sct0::regs::Out(Clr|Set)
     from: .*
 
   - !AddFields
-    fieldset: sct0::OutClr
+    fieldset: sct0::regs::OutClr
     fields:
       - name: clr
         bit_offset: 0
@@ -274,7 +276,7 @@ transforms:
           len: 16
           stride: 1
   - !AddFields
-    fieldset: sct0::OutSet
+    fieldset: sct0::regs::OutSet
     fields:
       - name: set
         bit_offset: 0
