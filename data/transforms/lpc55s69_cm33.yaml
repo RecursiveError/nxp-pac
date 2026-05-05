@@ -1,5 +1,6 @@
 includes:
   - cm33.yaml
+  - sanitize.yaml
 transforms:
   - !DeleteEnumVariants
     enum: inputmux::Dma0ItrigInmuxInp
