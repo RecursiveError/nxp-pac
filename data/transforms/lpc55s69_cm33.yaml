@@ -124,14 +124,6 @@ transforms:
     from: iocon::vals::Pio\d+Egp
     to: iocon::vals::PioEgp
 
-  - !MakeRegisterArray
-    blocks: iocon::Iocon
-    from: pio0_\d+
-    to: pio0
-  - !MakeRegisterArray
-    blocks: iocon::Iocon
-    from: pio1_\d+
-    to: pio1
 
   - !MergeFieldsets
     from: iocon::regs::Pio\d+
@@ -148,6 +140,15 @@ transforms:
         bit_size: 1
         enum: iocon::vals::PioAsw
 
+  - !MakeRegisterArray
+    blocks: iocon::Iocon
+    from: pio0_\d+
+    to: pio0
+  - !MakeRegisterArray
+    blocks: iocon::Iocon
+    from: pio1_\d+
+    to: pio1
+
   - !MergeEnums
     from: syscon::vals::Fc\dRst
     to: syscon::vals::FcRst
@@ -155,37 +156,37 @@ transforms:
     from: syscon::vals::Fcclksel\dSel
     to: syscon::vals::FcclkselSel
 
+  - !MergeFieldsets
+    from: syscon::regs::Fcclksel\d
+    to: syscon::regs::Fcclksel
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: fcclksel\d
     to: fcclksel
-  - !MergeFieldsets
-    from: syscon::regs::Fcclksel\d
-    to: syscon::regs::Fcclksel
 
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrg\dctrl
+    to: syscon::regs::Flexfrgctrl
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrg\dctrl
     to: flexfrgctrl
-  - !MergeFieldsets
-    from: syscon::regs::Flexfrg\dctrl
-    to: syscon::regs::Flexfrgctrl
 
+  - !MergeFieldsets
+    from: syscon::regs::Fcclkselx\d
+    to: syscon::regs::Fcclkselx
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: fcclkselx\d
     to: fcckkselx
-  - !MergeFieldsets
-    from: syscon::regs::Fcclkselx\d
-    to: syscon::regs::Fcclkselx
 
+  - !MergeFieldsets
+    from: syscon::regs::Flexfrgxctrl\d
+    to: syscon::regs::Flexfrgxctrl
   - !MakeRegisterArray
     blocks: syscon::Syscon
     from: flexfrgxctrl\d
     to: flexfrgxctrl
-  - !MergeFieldsets
-    from: syscon::regs::Flexfrgxctrl\d
-    to: syscon::regs::Flexfrgxctrl
 
   - !MakeFieldArray
     fieldsets: syscon::regs::Presetctrl1
@@ -206,6 +207,27 @@ transforms:
     to: set_fc
 
   # SCTimer
+  - !MergeEnums
+    from: sct0::vals::O\d+res
+    to: sct0::vals::Ores
+  - !MergeEnums
+    from: sct0::vals::Setclr\d+
+    to: sct0::vals::Setclr
+  - !MergeEnums
+    from: sct0::vals::Bidir[L,H]
+    to: sct0::vals::Bidir
+  - !MergeFieldsets
+    from: sct0::regs::Cap\d+
+    to: sct0::regs::Cap
+  - !MergeFieldsets
+    from: sct0::regs::Capctrl\d+
+    to: sct0::regs::Capctrl
+  - !MergeFieldsets
+    from: sct0::regs::Matchrel\d+
+    to: sct0::regs::Matchrel
+  - !MergeFieldsets
+    from: sct0::regs::Match\d+
+    to: sct0::regs::Match
   - !MakeRegisterArray
     blocks: sct0::Sct0
     from: match\d+
@@ -238,27 +260,6 @@ transforms:
     fieldsets: sct0::regs::Input
     from: sin\d+
     to: sin
-  - !MergeEnums
-    from: sct0::vals::O\d+res
-    to: sct0::vals::Ores
-  - !MergeEnums
-    from: sct0::vals::Setclr\d+
-    to: sct0::vals::Setclr
-  - !MergeFieldsets
-    from: sct0::regs::Cap\d+
-    to: sct0::regs::Cap
-  - !MergeFieldsets
-    from: sct0::regs::Capctrl\d+
-    to: sct0::regs::Capctrl
-  - !MergeFieldsets
-    from: sct0::regs::Matchrel\d+
-    to: sct0::regs::Matchrel
-  - !MergeFieldsets
-    from: sct0::regs::Match\d+
-    to: sct0::regs::Match
-  - !MergeEnums
-    from: sct0::vals::Bidir[L,H]
-    to: sct0::vals::Bidir
 
   # Turn `clr` and `set` in `` into bit arrays.
   - !DeleteFields
