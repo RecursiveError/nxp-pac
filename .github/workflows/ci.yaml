@@ -76,3 +76,24 @@ jobs:
       - name: Check
         run: |
           cargo check -p nxp-pac --locked --features ${{ matrix.chip }}
+  check-metadata:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        chip:
+          - mimxrt1011
+          - mimxrt1062
+          - mimxrt1064
+          - mcxa256
+          - mcxa577
+          - lpc55s16
+          - lpc55s69_cm33_core0
+          - lpc55s69_cm33_core1
+    steps:
+      - uses: actions/checkout@v6
+      - name: Cache Dependencies
+        uses: Swatinem/rust-cache@v2.9.1
+      - name: Check
+        run: |
+          cargo check -p nxp-pac --locked --features ${{ matrix.chip }},metadata
