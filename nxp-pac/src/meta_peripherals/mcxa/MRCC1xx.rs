@@ -365,14 +365,14 @@ impl Mrcc {
     }
     #[doc = "ADC0 clock selection control."]
     #[inline(always)]
-    pub const fn mrcc_adc_clksel(
+    pub const fn mrcc_adc0_clksel(
         self,
     ) -> crate::pac::common::Reg<AdcClksel, crate::pac::common::RW> {
         unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x0140usize) as _) }
     }
-    #[doc = "ADCx clock divider control."]
+    #[doc = "ADC0 clock divider control."]
     #[inline(always)]
-    pub const fn mrcc_adc_clkdiv(self) -> crate::pac::common::Reg<Clkdiv, crate::pac::common::RW> {
+    pub const fn mrcc_adc0_clkdiv(self) -> crate::pac::common::Reg<Clkdiv, crate::pac::common::RW> {
         unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x0144usize) as _) }
     }
     #[doc = "ADC1 clock selection control."]
