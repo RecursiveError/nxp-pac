@@ -1,0 +1,9 @@
+# SVD omits usbhsd::regs::Devcmdstat bit 21 (FORCE_FS)
+transforms:
+  - !AddFields
+    fieldset: usbhsd::regs::Devcmdstat
+    fields:
+      - name: force_fs
+        description: Force full-speed device operation on a high-speed-capable port (FORCE_FS).
+        bit_offset: 21
+        bit_size: 1

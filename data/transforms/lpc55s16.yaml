@@ -2,6 +2,7 @@ includes:
   - useless.yaml
   - cm33.yaml
   - sanitize.yaml
+  - lpc55/usbhsd.yaml
 transforms:
   - !DeleteEnumVariants
     enum: inputmux::vals::Dma0ItrigInmuxInp
