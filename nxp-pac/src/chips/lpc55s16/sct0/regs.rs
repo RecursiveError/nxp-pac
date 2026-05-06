@@ -6,25 +6,25 @@ impl Cap {
     #[doc = "When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the lower 16 bits of the 32-bit value at which this register was last captured."]
     #[must_use]
     #[inline(always)]
-    pub const fn capn_l(&self) -> u16 {
+    pub const fn ca_pn_l(&self) -> u16 {
         let val = (self.0 >> 0usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the lower 16 bits of the 32-bit value at which this register was last captured."]
     #[inline(always)]
-    pub const fn set_capn_l(&mut self, val: u16) {
+    pub const fn set_ca_pn_l(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 0usize)) | (((val as u32) & 0xffff) << 0usize);
     }
     #[doc = "When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the upper 16 bits of the 32-bit value at which this register was last captured."]
     #[must_use]
     #[inline(always)]
-    pub const fn capn_h(&self) -> u16 {
+    pub const fn ca_pn_h(&self) -> u16 {
         let val = (self.0 >> 16usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, read the 16-bit counter value at which this register was last captured. When UNIFY = 1, read the upper 16 bits of the 32-bit value at which this register was last captured."]
     #[inline(always)]
-    pub const fn set_capn_h(&mut self, val: u16) {
+    pub const fn set_ca_pn_h(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 16usize)) | (((val as u32) & 0xffff) << 16usize);
     }
 }
@@ -37,8 +37,8 @@ impl Default for Cap {
 impl core::fmt::Debug for Cap {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Cap")
-            .field("capn_l", &self.capn_l())
-            .field("capn_h", &self.capn_h())
+            .field("ca_pn_l", &self.ca_pn_l())
+            .field("ca_pn_h", &self.ca_pn_h())
             .finish()
     }
 }
@@ -47,9 +47,9 @@ impl defmt::Format for Cap {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Cap {{ capn_l: {=u16:?}, capn_h: {=u16:?} }}",
-            self.capn_l(),
-            self.capn_h()
+            "Cap {{ ca_pn_l: {=u16:?}, ca_pn_h: {=u16:?} }}",
+            self.ca_pn_l(),
+            self.ca_pn_h()
         )
     }
 }
@@ -61,25 +61,25 @@ impl Capctrl {
     #[doc = "If bit m is one, event m causes the CAPn_L (UNIFY = 0) or the CAPn (UNIFY = 1) register to be loaded (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of match/captures in this SCT."]
     #[must_use]
     #[inline(always)]
-    pub const fn capconn_l(&self) -> u16 {
+    pub const fn capco_nn_l(&self) -> u16 {
         let val = (self.0 >> 0usize) & 0xffff;
         val as u16
     }
     #[doc = "If bit m is one, event m causes the CAPn_L (UNIFY = 0) or the CAPn (UNIFY = 1) register to be loaded (event 0 = bit 0, event 1 = bit 1, etc.). The number of bits = number of match/captures in this SCT."]
     #[inline(always)]
-    pub const fn set_capconn_l(&mut self, val: u16) {
+    pub const fn set_capco_nn_l(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 0usize)) | (((val as u32) & 0xffff) << 0usize);
     }
     #[doc = "If bit m is one, event m causes the CAPn_H (UNIFY = 0) register to be loaded (event 0 = bit 16, event 1 = bit 17, etc.). The number of bits = number of match/captures in this SCT."]
     #[must_use]
     #[inline(always)]
-    pub const fn capconn_h(&self) -> u16 {
+    pub const fn capco_nn_h(&self) -> u16 {
         let val = (self.0 >> 16usize) & 0xffff;
         val as u16
     }
     #[doc = "If bit m is one, event m causes the CAPn_H (UNIFY = 0) register to be loaded (event 0 = bit 16, event 1 = bit 17, etc.). The number of bits = number of match/captures in this SCT."]
     #[inline(always)]
-    pub const fn set_capconn_h(&mut self, val: u16) {
+    pub const fn set_capco_nn_h(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 16usize)) | (((val as u32) & 0xffff) << 16usize);
     }
 }
@@ -92,8 +92,8 @@ impl Default for Capctrl {
 impl core::fmt::Debug for Capctrl {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Capctrl")
-            .field("capconn_l", &self.capconn_l())
-            .field("capconn_h", &self.capconn_h())
+            .field("capco_nn_l", &self.capco_nn_l())
+            .field("capco_nn_h", &self.capco_nn_h())
             .finish()
     }
 }
@@ -102,9 +102,9 @@ impl defmt::Format for Capctrl {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Capctrl {{ capconn_l: {=u16:?}, capconn_h: {=u16:?} }}",
-            self.capconn_l(),
-            self.capconn_h()
+            "Capctrl {{ capco_nn_l: {=u16:?}, capco_nn_h: {=u16:?} }}",
+            self.capco_nn_l(),
+            self.capco_nn_h()
         )
     }
 }
@@ -914,13 +914,13 @@ impl EvState {
     #[doc = "If bit m is one, event n happens in state m of the counter selected by the HEVENT bit (n = event number, m = state number; state 0 = bit 0, state 1= bit 1, etc.). The number of bits = number of states in this SCT."]
     #[must_use]
     #[inline(always)]
-    pub const fn statemskn(&self) -> u16 {
+    pub const fn statems_kn(&self) -> u16 {
         let val = (self.0 >> 0usize) & 0xffff;
         val as u16
     }
     #[doc = "If bit m is one, event n happens in state m of the counter selected by the HEVENT bit (n = event number, m = state number; state 0 = bit 0, state 1= bit 1, etc.). The number of bits = number of states in this SCT."]
     #[inline(always)]
-    pub const fn set_statemskn(&mut self, val: u16) {
+    pub const fn set_statems_kn(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 0usize)) | (((val as u32) & 0xffff) << 0usize);
     }
 }
@@ -933,14 +933,14 @@ impl Default for EvState {
 impl core::fmt::Debug for EvState {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("EvState")
-            .field("statemskn", &self.statemskn())
+            .field("statems_kn", &self.statems_kn())
             .finish()
     }
 }
 #[cfg(feature = "defmt")]
 impl defmt::Format for EvState {
     fn format(&self, f: defmt::Formatter) {
-        defmt::write!(f, "EvState {{ statemskn: {=u16:?} }}", self.statemskn())
+        defmt::write!(f, "EvState {{ statems_kn: {=u16:?} }}", self.statems_kn())
     }
 }
 #[doc = "SCT event interrupt enable register."]
@@ -1256,25 +1256,25 @@ impl Match {
     #[doc = "When UNIFY = 0, read or write the 16-bit value to be compared to the L counter. When UNIFY = 1, read or write the lower 16 bits of the 32-bit value to be compared to the unified counter."]
     #[must_use]
     #[inline(always)]
-    pub const fn matchn_l(&self) -> u16 {
+    pub const fn matc_hn_l(&self) -> u16 {
         let val = (self.0 >> 0usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, read or write the 16-bit value to be compared to the L counter. When UNIFY = 1, read or write the lower 16 bits of the 32-bit value to be compared to the unified counter."]
     #[inline(always)]
-    pub const fn set_matchn_l(&mut self, val: u16) {
+    pub const fn set_matc_hn_l(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 0usize)) | (((val as u32) & 0xffff) << 0usize);
     }
     #[doc = "When UNIFY = 0, read or write the 16-bit value to be compared to the H counter. When UNIFY = 1, read or write the upper 16 bits of the 32-bit value to be compared to the unified counter."]
     #[must_use]
     #[inline(always)]
-    pub const fn matchn_h(&self) -> u16 {
+    pub const fn matc_hn_h(&self) -> u16 {
         let val = (self.0 >> 16usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, read or write the 16-bit value to be compared to the H counter. When UNIFY = 1, read or write the upper 16 bits of the 32-bit value to be compared to the unified counter."]
     #[inline(always)]
-    pub const fn set_matchn_h(&mut self, val: u16) {
+    pub const fn set_matc_hn_h(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 16usize)) | (((val as u32) & 0xffff) << 16usize);
     }
 }
@@ -1287,8 +1287,8 @@ impl Default for Match {
 impl core::fmt::Debug for Match {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Match")
-            .field("matchn_l", &self.matchn_l())
-            .field("matchn_h", &self.matchn_h())
+            .field("matc_hn_l", &self.matc_hn_l())
+            .field("matc_hn_h", &self.matc_hn_h())
             .finish()
     }
 }
@@ -1297,9 +1297,9 @@ impl defmt::Format for Match {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Match {{ matchn_l: {=u16:?}, matchn_h: {=u16:?} }}",
-            self.matchn_l(),
-            self.matchn_h()
+            "Match {{ matc_hn_l: {=u16:?}, matc_hn_h: {=u16:?} }}",
+            self.matc_hn_l(),
+            self.matc_hn_h()
         )
     }
 }
@@ -1311,25 +1311,25 @@ impl Matchrel {
     #[doc = "When UNIFY = 0, specifies the 16-bit value to be loaded into the MATCHn_L register. When UNIFY = 1, specifies the lower 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[must_use]
     #[inline(always)]
-    pub const fn reloadn_l(&self) -> u16 {
+    pub const fn reloa_dn_l(&self) -> u16 {
         let val = (self.0 >> 0usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, specifies the 16-bit value to be loaded into the MATCHn_L register. When UNIFY = 1, specifies the lower 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[inline(always)]
-    pub const fn set_reloadn_l(&mut self, val: u16) {
+    pub const fn set_reloa_dn_l(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 0usize)) | (((val as u32) & 0xffff) << 0usize);
     }
     #[doc = "When UNIFY = 0, specifies the 16-bit to be loaded into the MATCHn_H register. When UNIFY = 1, specifies the upper 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[must_use]
     #[inline(always)]
-    pub const fn reloadn_h(&self) -> u16 {
+    pub const fn reloa_dn_h(&self) -> u16 {
         let val = (self.0 >> 16usize) & 0xffff;
         val as u16
     }
     #[doc = "When UNIFY = 0, specifies the 16-bit to be loaded into the MATCHn_H register. When UNIFY = 1, specifies the upper 16 bits of the 32-bit value to be loaded into the MATCHn register."]
     #[inline(always)]
-    pub const fn set_reloadn_h(&mut self, val: u16) {
+    pub const fn set_reloa_dn_h(&mut self, val: u16) {
         self.0 = (self.0 & !(0xffff << 16usize)) | (((val as u32) & 0xffff) << 16usize);
     }
 }
@@ -1342,8 +1342,8 @@ impl Default for Matchrel {
 impl core::fmt::Debug for Matchrel {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("Matchrel")
-            .field("reloadn_l", &self.reloadn_l())
-            .field("reloadn_h", &self.reloadn_h())
+            .field("reloa_dn_l", &self.reloa_dn_l())
+            .field("reloa_dn_h", &self.reloa_dn_h())
             .finish()
     }
 }
@@ -1352,9 +1352,9 @@ impl defmt::Format for Matchrel {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Matchrel {{ reloadn_l: {=u16:?}, reloadn_h: {=u16:?} }}",
-            self.reloadn_l(),
-            self.reloadn_h()
+            "Matchrel {{ reloa_dn_l: {=u16:?}, reloa_dn_h: {=u16:?} }}",
+            self.reloa_dn_l(),
+            self.reloa_dn_h()
         )
     }
 }

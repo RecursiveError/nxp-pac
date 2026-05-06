@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CardNumber {
     #[doc = "Command will be execute on SDCARD 0."]
-    CARD0 = 0x0,
+    Card0 = 0x0,
     #[doc = "Command will be execute on SDCARD 1."]
-    CARD1 = 0x01,
+    Card1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
     _RESERVED_4 = 0x04,

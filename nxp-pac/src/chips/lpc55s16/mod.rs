@@ -1,6 +1,7 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
-#![doc = "Peripheral access API (generated using chiptool v0.1.0 (6a8c2aa 2026-01-27))"]
+#![allow(non_upper_case_globals)]
+#![doc = "Peripheral access API (generated using chiptool v0.1.0 (e5ab29f 2026-04-30))"]
 #[derive(Copy, Clone, Debug, PartialEq, Eq)]
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Interrupt {
@@ -322,7 +323,15 @@ pub const SECGPIO: secgpio::Secgpio = unsafe { secgpio::Secgpio::from_ptr(0x400a
 pub const AHB_SECURE_CTRL: ahb_secure_ctrl::AhbSecureCtrl =
     unsafe { ahb_secure_ctrl::AhbSecureCtrl::from_ptr(0x400a_c000usize as _) };
 #[doc = "no description available"]
-pub const SCNSCB: scn_scb::ScnScb = unsafe { scn_scb::ScnScb::from_ptr(0xe000_e000usize as _) };
+pub const SCNSCB: s_cn_scb::SCnScb = unsafe { s_cn_scb::SCnScb::from_ptr(0xe000_e000usize as _) };
+#[doc = "no description available"]
+pub const NVIC: nvic::Nvic = unsafe { nvic::Nvic::from_ptr(0xe000_e100usize as _) };
+#[doc = "no description available"]
+pub const SCB: scb::Scb = unsafe { scb::Scb::from_ptr(0xe000_ed00usize as _) };
+#[doc = "Memory Protection Unit"]
+pub const MPU: mpu::Mpu = unsafe { mpu::Mpu::from_ptr(0xe000_ed90usize as _) };
+#[doc = "no description available"]
+pub const SAU: sau::Sau = unsafe { sau::Sau::from_ptr(0xe000_edd0usize as _) };
 #[doc = r" Number available in the NVIC for configuring priority"]
 #[cfg(feature = "rt")]
 pub const NVIC_PRIO_BITS: u8 = 3;
@@ -355,7 +364,9 @@ pub mod i2c;
 pub mod i2s;
 pub mod inputmux;
 pub mod iocon;
+pub mod mpu;
 pub mod mrt0;
+pub mod nvic;
 pub mod ostimer;
 pub mod pint;
 pub mod plu;
@@ -365,7 +376,9 @@ pub mod puf;
 pub mod puf_sram_ctrl;
 pub mod rng;
 pub mod rtc;
-pub mod scn_scb;
+pub mod s_cn_scb;
+pub mod sau;
+pub mod scb;
 pub mod sct0;
 pub mod secgpio;
 pub mod spi;

@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RtcOscBypass {
     #[doc = "The RTC Oscillator operates normally as a crystal oscillator with the crystal connected between the RTC_XTALIN and RTC_XTALOUT pins."]
-    USED = 0x0,
+    Used = 0x0,
     #[doc = "The RTC Oscillator is in bypass mode. In this mode a clock can be directly input into the RTC_XTALIN pin."]
-    BYPASS = 0x01,
+    Bypass = 0x01,
 }
 impl RtcOscBypass {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<RtcOscBypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RtcOscPd {
     #[doc = "See RTC_OSC_BYPASS."]
-    POWER_UP = 0x0,
+    PowerUp = 0x0,
     #[doc = "RTC oscillator is powered-down."]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl RtcOscPd {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<RtcOscPd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RtcSubsecEna {
     #[doc = "The sub-second counter (if implemented) is disabled. This bit is cleared by a system-level POR or BOD reset as well as a by the RTC_ENA bit (bit 7 in this register). On modules not equipped with a sub-second counter, this bit will always read-back as a '0'."]
-    POWER_UP = 0x0,
+    PowerUp = 0x0,
     #[doc = "The 32 KHz sub-second counter is enabled (if implemented). Counting commences on the start of the first one-second interval after this bit is set. Note: This bit can only be set after the RTC_ENA bit (bit 7) is set by a previous write operation. Note: The RTC sub-second counter must be re-enabled whenever the chip exits deep power-down mode."]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl RtcSubsecEna {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<RtcSubsecEna> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Wake1khz {
     #[doc = "Run. The RTC 1 kHz timer is running. Writing a 0 has no effect."]
-    RUN = 0x0,
+    Run = 0x0,
     #[doc = "Time-out. The 1 kHz high-resolution/wake-up timer has timed out. This flag generates an RTC wake-up interrupt request RTC-WAKE which can also wake up the part from any low power mode. Writing a 1 clears this bit."]
-    TIMEOUT = 0x01,
+    Timeout = 0x01,
 }
 impl Wake1khz {
     #[inline(always)]

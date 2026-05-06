@@ -88,6 +88,18 @@ impl Devcmdstat {
     pub const fn set_force_needclk(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 9usize)) | (((val as u32) & 0x01) << 9usize);
     }
+    #[doc = "When set, VBUS voltage indicators from the PHY are overruled for connect detection (FORCE_VBUS)."]
+    #[must_use]
+    #[inline(always)]
+    pub const fn force_vbus(&self) -> bool {
+        let val = (self.0 >> 10usize) & 0x01;
+        val != 0
+    }
+    #[doc = "When set, VBUS voltage indicators from the PHY are overruled for connect detection (FORCE_VBUS)."]
+    #[inline(always)]
+    pub const fn set_force_vbus(&mut self, val: bool) {
+        self.0 = (self.0 & !(0x01 << 10usize)) | (((val as u32) & 0x01) << 10usize);
+    }
     #[doc = "LPM Supported:."]
     #[must_use]
     #[inline(always)]
@@ -196,6 +208,18 @@ impl Devcmdstat {
     pub const fn set_lpm_rewp(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val as u32) & 0x01) << 20usize);
     }
+    #[doc = "Force full-speed device operation on a high-speed-capable port (FORCE_FS)."]
+    #[must_use]
+    #[inline(always)]
+    pub const fn force_fs(&self) -> bool {
+        let val = (self.0 >> 21usize) & 0x01;
+        val != 0
+    }
+    #[doc = "Force full-speed device operation on a high-speed-capable port (FORCE_FS)."]
+    #[inline(always)]
+    pub const fn set_force_fs(&mut self, val: bool) {
+        self.0 = (self.0 & !(0x01 << 21usize)) | (((val as u32) & 0x01) << 21usize);
+    }
     #[doc = "This field indicates the speed at which the device operates: 00b: reserved 01b: full-speed 10b: high-speed 11b: super-speed (reserved for future use)."]
     #[must_use]
     #[inline(always)]
@@ -282,6 +306,7 @@ impl core::fmt::Debug for Devcmdstat {
             .field("dev_en", &self.dev_en())
             .field("setup", &self.setup())
             .field("force_needclk", &self.force_needclk())
+            .field("force_vbus", &self.force_vbus())
             .field("lpm_sup", &self.lpm_sup())
             .field("intonnak_ao", &self.intonnak_ao())
             .field("intonnak_ai", &self.intonnak_ai())
@@ -291,6 +316,7 @@ impl core::fmt::Debug for Devcmdstat {
             .field("dsus", &self.dsus())
             .field("lpm_sus", &self.lpm_sus())
             .field("lpm_rewp", &self.lpm_rewp())
+            .field("force_fs", &self.force_fs())
             .field("speed", &self.speed())
             .field("dcon_c", &self.dcon_c())
             .field("dsus_c", &self.dsus_c())
@@ -305,11 +331,12 @@ impl defmt::Format for Devcmdstat {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Devcmdstat {{ dev_addr: {=u8:?}, dev_en: {=bool:?}, setup: {=bool:?}, force_needclk: {=bool:?}, lpm_sup: {=bool:?}, intonnak_ao: {=bool:?}, intonnak_ai: {=bool:?}, intonnak_co: {=bool:?}, intonnak_ci: {=bool:?}, dcon: {=bool:?}, dsus: {=bool:?}, lpm_sus: {=bool:?}, lpm_rewp: {=bool:?}, speed: {=u8:?}, dcon_c: {=bool:?}, dsus_c: {=bool:?}, dres_c: {=bool:?}, vbus_debounced: {=bool:?}, phy_test_mode: {:?} }}",
+            "Devcmdstat {{ dev_addr: {=u8:?}, dev_en: {=bool:?}, setup: {=bool:?}, force_needclk: {=bool:?}, force_vbus: {=bool:?}, lpm_sup: {=bool:?}, intonnak_ao: {=bool:?}, intonnak_ai: {=bool:?}, intonnak_co: {=bool:?}, intonnak_ci: {=bool:?}, dcon: {=bool:?}, dsus: {=bool:?}, lpm_sus: {=bool:?}, lpm_rewp: {=bool:?}, force_fs: {=bool:?}, speed: {=u8:?}, dcon_c: {=bool:?}, dsus_c: {=bool:?}, dres_c: {=bool:?}, vbus_debounced: {=bool:?}, phy_test_mode: {:?} }}",
             self.dev_addr(),
             self.dev_en(),
             self.setup(),
             self.force_needclk(),
+            self.force_vbus(),
             self.lpm_sup(),
             self.intonnak_ao(),
             self.intonnak_ai(),
@@ -319,6 +346,7 @@ impl defmt::Format for Devcmdstat {
             self.dsus(),
             self.lpm_sus(),
             self.lpm_rewp(),
+            self.force_fs(),
             self.speed(),
             self.dcon_c(),
             self.dsus_c(),

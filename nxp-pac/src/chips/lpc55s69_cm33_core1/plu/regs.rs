@@ -6,13 +6,13 @@ impl LutInpMux {
     #[doc = "Selects the input source to be connected to LUT0 input0. For each LUT, the slot associated with the output from LUTn itself is tied low."]
     #[must_use]
     #[inline(always)]
-    pub const fn lutn_inpx(&self) -> super::vals::LutnInpx {
+    pub const fn lu_tn_in_px(&self) -> super::vals::LuTnInPx {
         let val = (self.0 >> 0usize) & 0x3f;
-        super::vals::LutnInpx::from_bits(val as u8)
+        super::vals::LuTnInPx::from_bits(val as u8)
     }
     #[doc = "Selects the input source to be connected to LUT0 input0. For each LUT, the slot associated with the output from LUTn itself is tied low."]
     #[inline(always)]
-    pub const fn set_lutn_inpx(&mut self, val: super::vals::LutnInpx) {
+    pub const fn set_lu_tn_in_px(&mut self, val: super::vals::LuTnInPx) {
         self.0 = (self.0 & !(0x3f << 0usize)) | (((val.to_bits() as u32) & 0x3f) << 0usize);
     }
 }
@@ -25,14 +25,14 @@ impl Default for LutInpMux {
 impl core::fmt::Debug for LutInpMux {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LutInpMux")
-            .field("lutn_inpx", &self.lutn_inpx())
+            .field("lu_tn_in_px", &self.lu_tn_in_px())
             .finish()
     }
 }
 #[cfg(feature = "defmt")]
 impl defmt::Format for LutInpMux {
     fn format(&self, f: defmt::Formatter) {
-        defmt::write!(f, "LutInpMux {{ lutn_inpx: {:?} }}", self.lutn_inpx())
+        defmt::write!(f, "LutInpMux {{ lu_tn_in_px: {:?} }}", self.lu_tn_in_px())
     }
 }
 #[doc = "Specifies the Truth Table contents for LUTLUTn."]
@@ -43,13 +43,13 @@ impl LutTruth {
     #[doc = "Specifies the Truth Table contents for LUT0.."]
     #[must_use]
     #[inline(always)]
-    pub const fn lutn_truth(&self) -> u32 {
+    pub const fn lu_tn_truth(&self) -> u32 {
         let val = (self.0 >> 0usize) & 0xffff_ffff;
         val as u32
     }
     #[doc = "Specifies the Truth Table contents for LUT0.."]
     #[inline(always)]
-    pub const fn set_lutn_truth(&mut self, val: u32) {
+    pub const fn set_lu_tn_truth(&mut self, val: u32) {
         self.0 = (self.0 & !(0xffff_ffff << 0usize)) | (((val as u32) & 0xffff_ffff) << 0usize);
     }
 }
@@ -62,14 +62,18 @@ impl Default for LutTruth {
 impl core::fmt::Debug for LutTruth {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("LutTruth")
-            .field("lutn_truth", &self.lutn_truth())
+            .field("lu_tn_truth", &self.lu_tn_truth())
             .finish()
     }
 }
 #[cfg(feature = "defmt")]
 impl defmt::Format for LutTruth {
     fn format(&self, f: defmt::Formatter) {
-        defmt::write!(f, "LutTruth {{ lutn_truth: {=u32:?} }}", self.lutn_truth())
+        defmt::write!(
+            f,
+            "LutTruth {{ lu_tn_truth: {=u32:?} }}",
+            self.lu_tn_truth()
+        )
     }
 }
 #[doc = "Selects the source to be connected to PLU Output OUTPUT_n."]
@@ -80,13 +84,13 @@ impl OutputMux {
     #[doc = "Selects the source to be connected to PLU Output 0."]
     #[must_use]
     #[inline(always)]
-    pub const fn outputn(&self) -> super::vals::Outputn {
+    pub const fn outpu_tn(&self) -> super::vals::OutpuTn {
         let val = (self.0 >> 0usize) & 0x1f;
-        super::vals::Outputn::from_bits(val as u8)
+        super::vals::OutpuTn::from_bits(val as u8)
     }
     #[doc = "Selects the source to be connected to PLU Output 0."]
     #[inline(always)]
-    pub const fn set_outputn(&mut self, val: super::vals::Outputn) {
+    pub const fn set_outpu_tn(&mut self, val: super::vals::OutpuTn) {
         self.0 = (self.0 & !(0x1f << 0usize)) | (((val.to_bits() as u32) & 0x1f) << 0usize);
     }
 }
@@ -99,14 +103,14 @@ impl Default for OutputMux {
 impl core::fmt::Debug for OutputMux {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
         f.debug_struct("OutputMux")
-            .field("outputn", &self.outputn())
+            .field("outpu_tn", &self.outpu_tn())
             .finish()
     }
 }
 #[cfg(feature = "defmt")]
 impl defmt::Format for OutputMux {
     fn format(&self, f: defmt::Formatter) {
-        defmt::write!(f, "OutputMux {{ outputn: {:?} }}", self.outputn())
+        defmt::write!(f, "OutputMux {{ outpu_tn: {:?} }}", self.outpu_tn())
     }
 }
 #[doc = "Provides the current state of the 8 designated PLU Outputs."]

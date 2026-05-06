@@ -3,13 +3,13 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AdcRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AdcRule {
     #[inline(always)]
@@ -38,13 +38,13 @@ impl From<AdcRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AhbSecCtrlRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AhbSecCtrlRule {
     #[inline(always)]
@@ -73,13 +73,13 @@ impl From<AhbSecCtrlRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AhbSecCtrlSect0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AhbSecCtrlSect0Rule {
     #[inline(always)]
@@ -108,13 +108,13 @@ impl From<AhbSecCtrlSect0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AhbSecCtrlSect1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AhbSecCtrlSect1Rule {
     #[inline(always)]
@@ -143,13 +143,13 @@ impl From<AhbSecCtrlSect1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AhbSecCtrlSect2Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AhbSecCtrlSect2Rule {
     #[inline(always)]
@@ -178,13 +178,13 @@ impl From<AhbSecCtrlSect2Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AhbSecCtrlSect3Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AhbSecCtrlSect3Rule {
     #[inline(always)]
@@ -213,13 +213,13 @@ impl From<AhbSecCtrlSect3Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AnactrlRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl AnactrlRule {
     #[inline(always)]
@@ -248,13 +248,13 @@ impl From<AnactrlRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Apbbridge0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Apbbridge0Rule {
     #[inline(always)]
@@ -283,13 +283,13 @@ impl From<Apbbridge0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Apbbridge1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Apbbridge1Rule {
     #[inline(always)]
@@ -318,13 +318,13 @@ impl From<Apbbridge1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CasperRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl CasperRule {
     #[inline(always)]
@@ -354,9 +354,9 @@ impl From<CasperRule> for u8 {
 pub enum Cpu0LockRegLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu0LockRegLock {
@@ -387,9 +387,9 @@ impl From<Cpu0LockRegLock> for u8 {
 pub enum Cpu0LockRegLockNsMpu {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu0LockRegLockNsMpu {
@@ -420,9 +420,9 @@ impl From<Cpu0LockRegLockNsMpu> for u8 {
 pub enum Cpu0LockRegLockNsVtor {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu0LockRegLockNsVtor {
@@ -453,9 +453,9 @@ impl From<Cpu0LockRegLockNsVtor> for u8 {
 pub enum Cpu1LockRegLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu1LockRegLock {
@@ -486,9 +486,9 @@ impl From<Cpu1LockRegLock> for u8 {
 pub enum Cpu1LockRegLockNsMpu {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu1LockRegLockNsMpu {
@@ -519,9 +519,9 @@ impl From<Cpu1LockRegLockNsMpu> for u8 {
 pub enum Cpu1LockRegLockNsVtor {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Cpu1LockRegLockNsVtor {
@@ -551,13 +551,13 @@ impl From<Cpu1LockRegLockNsVtor> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CrcRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl CrcRule {
     #[inline(always)]
@@ -586,13 +586,13 @@ impl From<CrcRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ctimer0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ctimer0Rule {
     #[inline(always)]
@@ -621,13 +621,13 @@ impl From<Ctimer0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ctimer1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ctimer1Rule {
     #[inline(always)]
@@ -656,13 +656,13 @@ impl From<Ctimer1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ctimer2Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ctimer2Rule {
     #[inline(always)]
@@ -691,13 +691,13 @@ impl From<Ctimer2Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ctimer3Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ctimer3Rule {
     #[inline(always)]
@@ -726,13 +726,13 @@ impl From<Ctimer3Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ctimer4Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ctimer4Rule {
     #[inline(always)]
@@ -761,13 +761,13 @@ impl From<Ctimer4Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DbgMailboxRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl DbgMailboxRule {
     #[inline(always)]
@@ -796,13 +796,13 @@ impl From<DbgMailboxRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dma0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Dma0Rule {
     #[inline(always)]
@@ -831,13 +831,13 @@ impl From<Dma0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Dma1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Dma1Rule {
     #[inline(always)]
@@ -866,13 +866,13 @@ impl From<Dma1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FlashCtrlRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl FlashCtrlRule {
     #[inline(always)]
@@ -901,13 +901,13 @@ impl From<FlashCtrlRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FlashRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl FlashRule {
     #[inline(always)]
@@ -936,13 +936,13 @@ impl From<FlashRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm0Rule {
     #[inline(always)]
@@ -971,13 +971,13 @@ impl From<Flexcomm0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm1Rule {
     #[inline(always)]
@@ -1006,13 +1006,13 @@ impl From<Flexcomm1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm2Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm2Rule {
     #[inline(always)]
@@ -1041,13 +1041,13 @@ impl From<Flexcomm2Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm3Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm3Rule {
     #[inline(always)]
@@ -1076,13 +1076,13 @@ impl From<Flexcomm3Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm4Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm4Rule {
     #[inline(always)]
@@ -1111,13 +1111,13 @@ impl From<Flexcomm4Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm5Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm5Rule {
     #[inline(always)]
@@ -1146,13 +1146,13 @@ impl From<Flexcomm5Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm6Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm6Rule {
     #[inline(always)]
@@ -1181,13 +1181,13 @@ impl From<Flexcomm6Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Flexcomm7Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Flexcomm7Rule {
     #[inline(always)]
@@ -1216,13 +1216,13 @@ impl From<Flexcomm7Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FsUsbDevRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl FsUsbDevRule {
     #[inline(always)]
@@ -1251,13 +1251,13 @@ impl From<FsUsbDevRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gint0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Gint0Rule {
     #[inline(always)]
@@ -1286,13 +1286,13 @@ impl From<Gint0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gint1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Gint1Rule {
     #[inline(always)]
@@ -1321,13 +1321,13 @@ impl From<Gint1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gpio0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Gpio0Rule {
     #[inline(always)]
@@ -1356,13 +1356,13 @@ impl From<Gpio0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Gpio1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Gpio1Rule {
     #[inline(always)]
@@ -1391,13 +1391,13 @@ impl From<Gpio1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HashRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl HashRule {
     #[inline(always)]
@@ -1426,13 +1426,13 @@ impl From<HashRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HsLspiRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl HsLspiRule {
     #[inline(always)]
@@ -1461,13 +1461,13 @@ impl From<HsLspiRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum InputmuxRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl InputmuxRule {
     #[inline(always)]
@@ -1496,13 +1496,13 @@ impl From<InputmuxRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum IoconRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl IoconRule {
     #[inline(always)]
@@ -1532,9 +1532,9 @@ impl From<IoconRule> for u8 {
 pub enum LockSMpu {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl LockSMpu {
@@ -1565,9 +1565,9 @@ impl From<LockSMpu> for u8 {
 pub enum LockSVtaircr {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl LockSVtaircr {
@@ -1598,9 +1598,9 @@ impl From<LockSVtaircr> for u8 {
 pub enum LockSau {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl LockSau {
@@ -1630,13 +1630,13 @@ impl From<LockSau> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MailboxRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MailboxRule {
     #[inline(always)]
@@ -1665,13 +1665,13 @@ impl From<MailboxRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegCpu1c {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegCpu1c {
     #[inline(always)]
@@ -1700,13 +1700,13 @@ impl From<MasterSecAntiPolRegCpu1c> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegCpu1s {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegCpu1s {
     #[inline(always)]
@@ -1735,13 +1735,13 @@ impl From<MasterSecAntiPolRegCpu1s> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegHash {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegHash {
     #[inline(always)]
@@ -1770,13 +1770,13 @@ impl From<MasterSecAntiPolRegHash> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegPq {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegPq {
     #[inline(always)]
@@ -1805,13 +1805,13 @@ impl From<MasterSecAntiPolRegPq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegSdio {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegSdio {
     #[inline(always)]
@@ -1840,13 +1840,13 @@ impl From<MasterSecAntiPolRegSdio> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegSdma0 {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegSdma0 {
     #[inline(always)]
@@ -1875,13 +1875,13 @@ impl From<MasterSecAntiPolRegSdma0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegSdma1 {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegSdma1 {
     #[inline(always)]
@@ -1910,13 +1910,13 @@ impl From<MasterSecAntiPolRegSdma1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegUsbfsd {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegUsbfsd {
     #[inline(always)]
@@ -1945,13 +1945,13 @@ impl From<MasterSecAntiPolRegUsbfsd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecAntiPolRegUsbfsh {
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x0,
+    EnumSP = 0x0,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x01,
+    EnumSNp = 0x01,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x02,
+    EnumNsP = 0x02,
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x03,
+    EnumNsNp = 0x03,
 }
 impl MasterSecAntiPolRegUsbfsh {
     #[inline(always)]
@@ -1981,9 +1981,9 @@ impl From<MasterSecAntiPolRegUsbfsh> for u8 {
 pub enum MasterSecLevelAntipolLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MasterSecLevelAntipolLock {
@@ -2013,13 +2013,13 @@ impl From<MasterSecLevelAntipolLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelCpu1c {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelCpu1c {
     #[inline(always)]
@@ -2048,13 +2048,13 @@ impl From<MasterSecLevelCpu1c> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelCpu1s {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelCpu1s {
     #[inline(always)]
@@ -2083,13 +2083,13 @@ impl From<MasterSecLevelCpu1s> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelHash {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelHash {
     #[inline(always)]
@@ -2119,9 +2119,9 @@ impl From<MasterSecLevelHash> for u8 {
 pub enum MasterSecLevelLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MasterSecLevelLock {
@@ -2151,13 +2151,13 @@ impl From<MasterSecLevelLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelPq {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelPq {
     #[inline(always)]
@@ -2186,13 +2186,13 @@ impl From<MasterSecLevelPq> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelSdio {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelSdio {
     #[inline(always)]
@@ -2221,13 +2221,13 @@ impl From<MasterSecLevelSdio> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelSdma0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelSdma0 {
     #[inline(always)]
@@ -2256,13 +2256,13 @@ impl From<MasterSecLevelSdma0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelSdma1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelSdma1 {
     #[inline(always)]
@@ -2291,13 +2291,13 @@ impl From<MasterSecLevelSdma1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelUsbfsd {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelUsbfsd {
     #[inline(always)]
@@ -2326,13 +2326,13 @@ impl From<MasterSecLevelUsbfsd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MasterSecLevelUsbfsh {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MasterSecLevelUsbfsh {
     #[inline(always)]
@@ -2362,9 +2362,9 @@ impl From<MasterSecLevelUsbfsh> for u8 {
 pub enum MiscCtrlDpRegDisableSimpleMasterStrictMode {
     _RESERVED_0 = 0x0,
     #[doc = "Simple master in tier mode."]
-    TIER_MODE = 0x01,
+    TierMode = 0x01,
     #[doc = "Simple master in strict mode."]
-    STRICT_MODE = 0x02,
+    StrictMode = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegDisableSimpleMasterStrictMode {
@@ -2395,9 +2395,9 @@ impl From<MiscCtrlDpRegDisableSimpleMasterStrictMode> for u8 {
 pub enum MiscCtrlDpRegDisableSmartMasterStrictMode {
     _RESERVED_0 = 0x0,
     #[doc = "Smart master in tier mode."]
-    TIER_MODE = 0x01,
+    TierMode = 0x01,
     #[doc = "Smart master in strict mode."]
-    STRICT_MODE = 0x02,
+    StrictMode = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegDisableSmartMasterStrictMode {
@@ -2428,9 +2428,9 @@ impl From<MiscCtrlDpRegDisableSmartMasterStrictMode> for u8 {
 pub enum MiscCtrlDpRegDisableViolationAbort {
     _RESERVED_0 = 0x0,
     #[doc = "Disable abort fort secure checker."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Enable abort fort secure checker."]
-    ENABLE = 0x02,
+    Enable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegDisableViolationAbort {
@@ -2461,9 +2461,9 @@ impl From<MiscCtrlDpRegDisableViolationAbort> for u8 {
 pub enum MiscCtrlDpRegEnableNsPrivCheck {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegEnableNsPrivCheck {
@@ -2494,9 +2494,9 @@ impl From<MiscCtrlDpRegEnableNsPrivCheck> for u8 {
 pub enum MiscCtrlDpRegEnableSPrivCheck {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegEnableSPrivCheck {
@@ -2527,9 +2527,9 @@ impl From<MiscCtrlDpRegEnableSPrivCheck> for u8 {
 pub enum MiscCtrlDpRegEnableSecureChecking {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegEnableSecureChecking {
@@ -2560,9 +2560,9 @@ impl From<MiscCtrlDpRegEnableSecureChecking> for u8 {
 pub enum MiscCtrlDpRegIdauAllNs {
     _RESERVED_0 = 0x0,
     #[doc = "IDAU is disable."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "IDAU is enabled."]
-    ENABLE = 0x02,
+    Enable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegIdauAllNs {
@@ -2593,9 +2593,9 @@ impl From<MiscCtrlDpRegIdauAllNs> for u8 {
 pub enum MiscCtrlDpRegWriteLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    RESTRICTED = 0x01,
+    Restricted = 0x01,
     #[doc = "Secure control registers can be written."]
-    ACCESSIBLE = 0x02,
+    Accessible = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlDpRegWriteLock {
@@ -2626,9 +2626,9 @@ impl From<MiscCtrlDpRegWriteLock> for u8 {
 pub enum MiscCtrlRegDisableSimpleMasterStrictMode {
     _RESERVED_0 = 0x0,
     #[doc = "Simple master in tier mode."]
-    TIER_MODE = 0x01,
+    TierMode = 0x01,
     #[doc = "Simple master in strict mode."]
-    STRICT_MODE = 0x02,
+    StrictMode = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegDisableSimpleMasterStrictMode {
@@ -2659,9 +2659,9 @@ impl From<MiscCtrlRegDisableSimpleMasterStrictMode> for u8 {
 pub enum MiscCtrlRegDisableSmartMasterStrictMode {
     _RESERVED_0 = 0x0,
     #[doc = "Smart master in tier mode."]
-    TIER_MODE = 0x01,
+    TierMode = 0x01,
     #[doc = "Smart master in strict mode."]
-    STRICT_MODE = 0x02,
+    StrictMode = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegDisableSmartMasterStrictMode {
@@ -2692,9 +2692,9 @@ impl From<MiscCtrlRegDisableSmartMasterStrictMode> for u8 {
 pub enum MiscCtrlRegDisableViolationAbort {
     _RESERVED_0 = 0x0,
     #[doc = "Disable abort fort secure checker."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "Enable abort fort secure checker."]
-    ENABLE = 0x02,
+    Enable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegDisableViolationAbort {
@@ -2725,9 +2725,9 @@ impl From<MiscCtrlRegDisableViolationAbort> for u8 {
 pub enum MiscCtrlRegEnableNsPrivCheck {
     _RESERVED_0 = 0x0,
     #[doc = "Enabled (restricted mode)."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegEnableNsPrivCheck {
@@ -2758,9 +2758,9 @@ impl From<MiscCtrlRegEnableNsPrivCheck> for u8 {
 pub enum MiscCtrlRegEnableSPrivCheck {
     _RESERVED_0 = 0x0,
     #[doc = "Enabled (restricted mode)."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegEnableSPrivCheck {
@@ -2791,9 +2791,9 @@ impl From<MiscCtrlRegEnableSPrivCheck> for u8 {
 pub enum MiscCtrlRegEnableSecureChecking {
     _RESERVED_0 = 0x0,
     #[doc = "Enabled (restricted mode)."]
-    ENABLE = 0x01,
+    Enable = 0x01,
     #[doc = "Disable check."]
-    DISABLE = 0x02,
+    Disable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegEnableSecureChecking {
@@ -2824,9 +2824,9 @@ impl From<MiscCtrlRegEnableSecureChecking> for u8 {
 pub enum MiscCtrlRegIdauAllNs {
     _RESERVED_0 = 0x0,
     #[doc = "IDAU is disable."]
-    DISABLE = 0x01,
+    Disable = 0x01,
     #[doc = "IDAU is enabled."]
-    ENABLE = 0x02,
+    Enable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegIdauAllNs {
@@ -2857,9 +2857,9 @@ impl From<MiscCtrlRegIdauAllNs> for u8 {
 pub enum MiscCtrlRegWriteLock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    RESTRICTED = 0x01,
+    Restricted = 0x01,
     #[doc = "Secure control registers can be written."]
-    ACCESSIBLE = 0x02,
+    Accessible = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl MiscCtrlRegWriteLock {
@@ -2889,13 +2889,13 @@ impl From<MiscCtrlRegWriteLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum MrtRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl MrtRule {
     #[inline(always)]
@@ -2924,13 +2924,13 @@ impl From<MrtRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum OseventRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl OseventRule {
     #[inline(always)]
@@ -2959,13 +2959,13 @@ impl From<OseventRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PintRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PintRule {
     #[inline(always)]
@@ -2994,9 +2994,9 @@ impl From<PintRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin0SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin0SecMask {
     #[inline(always)]
@@ -3025,9 +3025,9 @@ impl From<Pio0Pin0SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin10SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin10SecMask {
     #[inline(always)]
@@ -3056,9 +3056,9 @@ impl From<Pio0Pin10SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin11SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin11SecMask {
     #[inline(always)]
@@ -3087,9 +3087,9 @@ impl From<Pio0Pin11SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin12SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin12SecMask {
     #[inline(always)]
@@ -3118,9 +3118,9 @@ impl From<Pio0Pin12SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin13SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin13SecMask {
     #[inline(always)]
@@ -3149,9 +3149,9 @@ impl From<Pio0Pin13SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin14SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin14SecMask {
     #[inline(always)]
@@ -3180,9 +3180,9 @@ impl From<Pio0Pin14SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin15SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin15SecMask {
     #[inline(always)]
@@ -3211,9 +3211,9 @@ impl From<Pio0Pin15SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin16SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin16SecMask {
     #[inline(always)]
@@ -3242,9 +3242,9 @@ impl From<Pio0Pin16SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin17SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin17SecMask {
     #[inline(always)]
@@ -3273,9 +3273,9 @@ impl From<Pio0Pin17SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin18SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin18SecMask {
     #[inline(always)]
@@ -3304,9 +3304,9 @@ impl From<Pio0Pin18SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin19SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin19SecMask {
     #[inline(always)]
@@ -3335,9 +3335,9 @@ impl From<Pio0Pin19SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin1SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin1SecMask {
     #[inline(always)]
@@ -3366,9 +3366,9 @@ impl From<Pio0Pin1SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin20SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin20SecMask {
     #[inline(always)]
@@ -3397,9 +3397,9 @@ impl From<Pio0Pin20SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin21SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin21SecMask {
     #[inline(always)]
@@ -3428,9 +3428,9 @@ impl From<Pio0Pin21SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin22SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin22SecMask {
     #[inline(always)]
@@ -3459,9 +3459,9 @@ impl From<Pio0Pin22SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin23SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin23SecMask {
     #[inline(always)]
@@ -3490,9 +3490,9 @@ impl From<Pio0Pin23SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin24SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin24SecMask {
     #[inline(always)]
@@ -3521,9 +3521,9 @@ impl From<Pio0Pin24SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin25SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin25SecMask {
     #[inline(always)]
@@ -3552,9 +3552,9 @@ impl From<Pio0Pin25SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin26SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin26SecMask {
     #[inline(always)]
@@ -3583,9 +3583,9 @@ impl From<Pio0Pin26SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin27SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin27SecMask {
     #[inline(always)]
@@ -3614,9 +3614,9 @@ impl From<Pio0Pin27SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin28SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin28SecMask {
     #[inline(always)]
@@ -3645,9 +3645,9 @@ impl From<Pio0Pin28SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin29SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin29SecMask {
     #[inline(always)]
@@ -3676,9 +3676,9 @@ impl From<Pio0Pin29SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin2SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin2SecMask {
     #[inline(always)]
@@ -3707,9 +3707,9 @@ impl From<Pio0Pin2SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin30SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin30SecMask {
     #[inline(always)]
@@ -3738,9 +3738,9 @@ impl From<Pio0Pin30SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin31SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin31SecMask {
     #[inline(always)]
@@ -3769,9 +3769,9 @@ impl From<Pio0Pin31SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin3SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin3SecMask {
     #[inline(always)]
@@ -3800,9 +3800,9 @@ impl From<Pio0Pin3SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin4SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin4SecMask {
     #[inline(always)]
@@ -3831,9 +3831,9 @@ impl From<Pio0Pin4SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin5SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin5SecMask {
     #[inline(always)]
@@ -3862,9 +3862,9 @@ impl From<Pio0Pin5SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin6SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin6SecMask {
     #[inline(always)]
@@ -3893,9 +3893,9 @@ impl From<Pio0Pin6SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin7SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin7SecMask {
     #[inline(always)]
@@ -3924,9 +3924,9 @@ impl From<Pio0Pin7SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin8SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin8SecMask {
     #[inline(always)]
@@ -3955,9 +3955,9 @@ impl From<Pio0Pin8SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio0Pin9SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio0Pin9SecMask {
     #[inline(always)]
@@ -3986,9 +3986,9 @@ impl From<Pio0Pin9SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin0SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin0SecMask {
     #[inline(always)]
@@ -4017,9 +4017,9 @@ impl From<Pio1Pin0SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin10SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin10SecMask {
     #[inline(always)]
@@ -4048,9 +4048,9 @@ impl From<Pio1Pin10SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin11SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin11SecMask {
     #[inline(always)]
@@ -4079,9 +4079,9 @@ impl From<Pio1Pin11SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin12SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin12SecMask {
     #[inline(always)]
@@ -4110,9 +4110,9 @@ impl From<Pio1Pin12SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin13SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin13SecMask {
     #[inline(always)]
@@ -4141,9 +4141,9 @@ impl From<Pio1Pin13SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin14SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin14SecMask {
     #[inline(always)]
@@ -4172,9 +4172,9 @@ impl From<Pio1Pin14SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin15SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin15SecMask {
     #[inline(always)]
@@ -4203,9 +4203,9 @@ impl From<Pio1Pin15SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin16SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin16SecMask {
     #[inline(always)]
@@ -4234,9 +4234,9 @@ impl From<Pio1Pin16SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin17SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin17SecMask {
     #[inline(always)]
@@ -4265,9 +4265,9 @@ impl From<Pio1Pin17SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin18SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin18SecMask {
     #[inline(always)]
@@ -4296,9 +4296,9 @@ impl From<Pio1Pin18SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin19SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin19SecMask {
     #[inline(always)]
@@ -4327,9 +4327,9 @@ impl From<Pio1Pin19SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin1SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin1SecMask {
     #[inline(always)]
@@ -4358,9 +4358,9 @@ impl From<Pio1Pin1SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin20SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin20SecMask {
     #[inline(always)]
@@ -4389,9 +4389,9 @@ impl From<Pio1Pin20SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin21SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin21SecMask {
     #[inline(always)]
@@ -4420,9 +4420,9 @@ impl From<Pio1Pin21SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin22SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin22SecMask {
     #[inline(always)]
@@ -4451,9 +4451,9 @@ impl From<Pio1Pin22SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin23SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin23SecMask {
     #[inline(always)]
@@ -4482,9 +4482,9 @@ impl From<Pio1Pin23SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin24SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin24SecMask {
     #[inline(always)]
@@ -4513,9 +4513,9 @@ impl From<Pio1Pin24SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin25SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin25SecMask {
     #[inline(always)]
@@ -4544,9 +4544,9 @@ impl From<Pio1Pin25SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin26SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin26SecMask {
     #[inline(always)]
@@ -4575,9 +4575,9 @@ impl From<Pio1Pin26SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin27SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin27SecMask {
     #[inline(always)]
@@ -4606,9 +4606,9 @@ impl From<Pio1Pin27SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin28SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin28SecMask {
     #[inline(always)]
@@ -4637,9 +4637,9 @@ impl From<Pio1Pin28SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin29SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin29SecMask {
     #[inline(always)]
@@ -4668,9 +4668,9 @@ impl From<Pio1Pin29SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin2SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin2SecMask {
     #[inline(always)]
@@ -4699,9 +4699,9 @@ impl From<Pio1Pin2SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin30SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin30SecMask {
     #[inline(always)]
@@ -4730,9 +4730,9 @@ impl From<Pio1Pin30SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin31SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin31SecMask {
     #[inline(always)]
@@ -4761,9 +4761,9 @@ impl From<Pio1Pin31SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin3SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin3SecMask {
     #[inline(always)]
@@ -4792,9 +4792,9 @@ impl From<Pio1Pin3SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin4SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin4SecMask {
     #[inline(always)]
@@ -4823,9 +4823,9 @@ impl From<Pio1Pin4SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin5SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin5SecMask {
     #[inline(always)]
@@ -4854,9 +4854,9 @@ impl From<Pio1Pin5SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin6SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin6SecMask {
     #[inline(always)]
@@ -4885,9 +4885,9 @@ impl From<Pio1Pin6SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin7SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin7SecMask {
     #[inline(always)]
@@ -4916,9 +4916,9 @@ impl From<Pio1Pin7SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin8SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin8SecMask {
     #[inline(always)]
@@ -4947,9 +4947,9 @@ impl From<Pio1Pin8SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Pio1Pin9SecMask {
     #[doc = "Pin state is blocked to non-secure world."]
-    BLOCKED = 0x0,
+    Blocked = 0x0,
     #[doc = "Pin state is readable by non-secure world."]
-    READABLE = 0x01,
+    Readable = 0x01,
 }
 impl Pio1Pin9SecMask {
     #[inline(always)]
@@ -4978,13 +4978,13 @@ impl From<Pio1Pin9SecMask> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PluRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PluRule {
     #[inline(always)]
@@ -5013,13 +5013,13 @@ impl From<PluRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PmcRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PmcRule {
     #[inline(always)]
@@ -5048,13 +5048,13 @@ impl From<PmcRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PqRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PqRule {
     #[inline(always)]
@@ -5083,13 +5083,13 @@ impl From<PqRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PrinceRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PrinceRule {
     #[inline(always)]
@@ -5118,13 +5118,13 @@ impl From<PrinceRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PufRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl PufRule {
     #[inline(always)]
@@ -5153,13 +5153,13 @@ impl From<PufRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ram0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ram0Rule {
     #[inline(always)]
@@ -5188,13 +5188,13 @@ impl From<Ram0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ram1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ram1Rule {
     #[inline(always)]
@@ -5223,13 +5223,13 @@ impl From<Ram1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ram2Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ram2Rule {
     #[inline(always)]
@@ -5258,13 +5258,13 @@ impl From<Ram2Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ram3Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ram3Rule {
     #[inline(always)]
@@ -5293,13 +5293,13 @@ impl From<Ram3Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ram4Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl Ram4Rule {
     #[inline(always)]
@@ -5328,13 +5328,13 @@ impl From<Ram4Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RamUsbHsRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl RamUsbHsRule {
     #[inline(always)]
@@ -5363,13 +5363,13 @@ impl From<RamUsbHsRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RamxRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl RamxRule {
     #[inline(always)]
@@ -5398,13 +5398,13 @@ impl From<RamxRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RngRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl RngRule {
     #[inline(always)]
@@ -5433,13 +5433,13 @@ impl From<RngRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RomRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl RomRule {
     #[inline(always)]
@@ -5468,13 +5468,13 @@ impl From<RomRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RtcRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl RtcRule {
     #[inline(always)]
@@ -5503,13 +5503,13 @@ impl From<RtcRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SctRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SctRule {
     #[inline(always)]
@@ -5538,13 +5538,13 @@ impl From<SctRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SdioRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SdioRule {
     #[inline(always)]
@@ -5574,9 +5574,9 @@ impl From<SdioRule> for u8 {
 pub enum SecCpu1IntMask0Lock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SecCpu1IntMask0Lock {
@@ -5607,9 +5607,9 @@ impl From<SecCpu1IntMask0Lock> for u8 {
 pub enum SecCpu1IntMask1Lock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SecCpu1IntMask1Lock {
@@ -5639,13 +5639,13 @@ impl From<SecCpu1IntMask1Lock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule0 {
     #[inline(always)]
@@ -5674,13 +5674,13 @@ impl From<SecCtrlFlashMemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule1 {
     #[inline(always)]
@@ -5709,13 +5709,13 @@ impl From<SecCtrlFlashMemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule2 {
     #[inline(always)]
@@ -5744,13 +5744,13 @@ impl From<SecCtrlFlashMemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule3 {
     #[inline(always)]
@@ -5779,13 +5779,13 @@ impl From<SecCtrlFlashMemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule4 {
     #[inline(always)]
@@ -5814,13 +5814,13 @@ impl From<SecCtrlFlashMemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule5 {
     #[inline(always)]
@@ -5849,13 +5849,13 @@ impl From<SecCtrlFlashMemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule6 {
     #[inline(always)]
@@ -5884,13 +5884,13 @@ impl From<SecCtrlFlashMemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule0Rule7 {
     #[inline(always)]
@@ -5919,13 +5919,13 @@ impl From<SecCtrlFlashMemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule0 {
     #[inline(always)]
@@ -5954,13 +5954,13 @@ impl From<SecCtrlFlashMemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule1 {
     #[inline(always)]
@@ -5989,13 +5989,13 @@ impl From<SecCtrlFlashMemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule2 {
     #[inline(always)]
@@ -6024,13 +6024,13 @@ impl From<SecCtrlFlashMemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule3 {
     #[inline(always)]
@@ -6059,13 +6059,13 @@ impl From<SecCtrlFlashMemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule4 {
     #[inline(always)]
@@ -6094,13 +6094,13 @@ impl From<SecCtrlFlashMemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule5 {
     #[inline(always)]
@@ -6129,13 +6129,13 @@ impl From<SecCtrlFlashMemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule6 {
     #[inline(always)]
@@ -6164,13 +6164,13 @@ impl From<SecCtrlFlashMemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule1Rule7 {
     #[inline(always)]
@@ -6199,13 +6199,13 @@ impl From<SecCtrlFlashMemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule0 {
     #[inline(always)]
@@ -6234,13 +6234,13 @@ impl From<SecCtrlFlashMemRule2Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule1 {
     #[inline(always)]
@@ -6269,13 +6269,13 @@ impl From<SecCtrlFlashMemRule2Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule2 {
     #[inline(always)]
@@ -6304,13 +6304,13 @@ impl From<SecCtrlFlashMemRule2Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule3 {
     #[inline(always)]
@@ -6339,13 +6339,13 @@ impl From<SecCtrlFlashMemRule2Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule4 {
     #[inline(always)]
@@ -6374,13 +6374,13 @@ impl From<SecCtrlFlashMemRule2Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule5 {
     #[inline(always)]
@@ -6409,13 +6409,13 @@ impl From<SecCtrlFlashMemRule2Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule6 {
     #[inline(always)]
@@ -6444,13 +6444,13 @@ impl From<SecCtrlFlashMemRule2Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlFlashMemRule2Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlFlashMemRule2Rule7 {
     #[inline(always)]
@@ -6479,13 +6479,13 @@ impl From<SecCtrlFlashMemRule2Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule0 {
     #[inline(always)]
@@ -6514,13 +6514,13 @@ impl From<SecCtrlRam0MemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule1 {
     #[inline(always)]
@@ -6549,13 +6549,13 @@ impl From<SecCtrlRam0MemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule2 {
     #[inline(always)]
@@ -6584,13 +6584,13 @@ impl From<SecCtrlRam0MemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule3 {
     #[inline(always)]
@@ -6619,13 +6619,13 @@ impl From<SecCtrlRam0MemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule4 {
     #[inline(always)]
@@ -6654,13 +6654,13 @@ impl From<SecCtrlRam0MemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule5 {
     #[inline(always)]
@@ -6689,13 +6689,13 @@ impl From<SecCtrlRam0MemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule6 {
     #[inline(always)]
@@ -6724,13 +6724,13 @@ impl From<SecCtrlRam0MemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule0Rule7 {
     #[inline(always)]
@@ -6759,13 +6759,13 @@ impl From<SecCtrlRam0MemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule0 {
     #[inline(always)]
@@ -6794,13 +6794,13 @@ impl From<SecCtrlRam0MemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule1 {
     #[inline(always)]
@@ -6829,13 +6829,13 @@ impl From<SecCtrlRam0MemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule2 {
     #[inline(always)]
@@ -6864,13 +6864,13 @@ impl From<SecCtrlRam0MemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule3 {
     #[inline(always)]
@@ -6899,13 +6899,13 @@ impl From<SecCtrlRam0MemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule4 {
     #[inline(always)]
@@ -6934,13 +6934,13 @@ impl From<SecCtrlRam0MemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule5 {
     #[inline(always)]
@@ -6969,13 +6969,13 @@ impl From<SecCtrlRam0MemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule6 {
     #[inline(always)]
@@ -7004,13 +7004,13 @@ impl From<SecCtrlRam0MemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam0MemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam0MemRule1Rule7 {
     #[inline(always)]
@@ -7039,13 +7039,13 @@ impl From<SecCtrlRam0MemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule0 {
     #[inline(always)]
@@ -7074,13 +7074,13 @@ impl From<SecCtrlRam1MemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule1 {
     #[inline(always)]
@@ -7109,13 +7109,13 @@ impl From<SecCtrlRam1MemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule2 {
     #[inline(always)]
@@ -7144,13 +7144,13 @@ impl From<SecCtrlRam1MemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule3 {
     #[inline(always)]
@@ -7179,13 +7179,13 @@ impl From<SecCtrlRam1MemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule4 {
     #[inline(always)]
@@ -7214,13 +7214,13 @@ impl From<SecCtrlRam1MemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule5 {
     #[inline(always)]
@@ -7249,13 +7249,13 @@ impl From<SecCtrlRam1MemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule6 {
     #[inline(always)]
@@ -7284,13 +7284,13 @@ impl From<SecCtrlRam1MemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule0Rule7 {
     #[inline(always)]
@@ -7319,13 +7319,13 @@ impl From<SecCtrlRam1MemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule0 {
     #[inline(always)]
@@ -7354,13 +7354,13 @@ impl From<SecCtrlRam1MemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule1 {
     #[inline(always)]
@@ -7389,13 +7389,13 @@ impl From<SecCtrlRam1MemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule2 {
     #[inline(always)]
@@ -7424,13 +7424,13 @@ impl From<SecCtrlRam1MemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule3 {
     #[inline(always)]
@@ -7459,13 +7459,13 @@ impl From<SecCtrlRam1MemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule4 {
     #[inline(always)]
@@ -7494,13 +7494,13 @@ impl From<SecCtrlRam1MemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule5 {
     #[inline(always)]
@@ -7529,13 +7529,13 @@ impl From<SecCtrlRam1MemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule6 {
     #[inline(always)]
@@ -7564,13 +7564,13 @@ impl From<SecCtrlRam1MemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam1MemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam1MemRule1Rule7 {
     #[inline(always)]
@@ -7599,13 +7599,13 @@ impl From<SecCtrlRam1MemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule0 {
     #[inline(always)]
@@ -7634,13 +7634,13 @@ impl From<SecCtrlRam2MemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule1 {
     #[inline(always)]
@@ -7669,13 +7669,13 @@ impl From<SecCtrlRam2MemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule2 {
     #[inline(always)]
@@ -7704,13 +7704,13 @@ impl From<SecCtrlRam2MemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule3 {
     #[inline(always)]
@@ -7739,13 +7739,13 @@ impl From<SecCtrlRam2MemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule4 {
     #[inline(always)]
@@ -7774,13 +7774,13 @@ impl From<SecCtrlRam2MemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule5 {
     #[inline(always)]
@@ -7809,13 +7809,13 @@ impl From<SecCtrlRam2MemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule6 {
     #[inline(always)]
@@ -7844,13 +7844,13 @@ impl From<SecCtrlRam2MemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule0Rule7 {
     #[inline(always)]
@@ -7879,13 +7879,13 @@ impl From<SecCtrlRam2MemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule0 {
     #[inline(always)]
@@ -7914,13 +7914,13 @@ impl From<SecCtrlRam2MemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule1 {
     #[inline(always)]
@@ -7949,13 +7949,13 @@ impl From<SecCtrlRam2MemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule2 {
     #[inline(always)]
@@ -7984,13 +7984,13 @@ impl From<SecCtrlRam2MemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule3 {
     #[inline(always)]
@@ -8019,13 +8019,13 @@ impl From<SecCtrlRam2MemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule4 {
     #[inline(always)]
@@ -8054,13 +8054,13 @@ impl From<SecCtrlRam2MemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule5 {
     #[inline(always)]
@@ -8089,13 +8089,13 @@ impl From<SecCtrlRam2MemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule6 {
     #[inline(always)]
@@ -8124,13 +8124,13 @@ impl From<SecCtrlRam2MemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam2MemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam2MemRule1Rule7 {
     #[inline(always)]
@@ -8159,13 +8159,13 @@ impl From<SecCtrlRam2MemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule0 {
     #[inline(always)]
@@ -8194,13 +8194,13 @@ impl From<SecCtrlRam3MemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule1 {
     #[inline(always)]
@@ -8229,13 +8229,13 @@ impl From<SecCtrlRam3MemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule2 {
     #[inline(always)]
@@ -8264,13 +8264,13 @@ impl From<SecCtrlRam3MemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule3 {
     #[inline(always)]
@@ -8299,13 +8299,13 @@ impl From<SecCtrlRam3MemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule4 {
     #[inline(always)]
@@ -8334,13 +8334,13 @@ impl From<SecCtrlRam3MemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule5 {
     #[inline(always)]
@@ -8369,13 +8369,13 @@ impl From<SecCtrlRam3MemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule6 {
     #[inline(always)]
@@ -8404,13 +8404,13 @@ impl From<SecCtrlRam3MemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule0Rule7 {
     #[inline(always)]
@@ -8439,13 +8439,13 @@ impl From<SecCtrlRam3MemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule0 {
     #[inline(always)]
@@ -8474,13 +8474,13 @@ impl From<SecCtrlRam3MemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule1 {
     #[inline(always)]
@@ -8509,13 +8509,13 @@ impl From<SecCtrlRam3MemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule2 {
     #[inline(always)]
@@ -8544,13 +8544,13 @@ impl From<SecCtrlRam3MemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule3 {
     #[inline(always)]
@@ -8579,13 +8579,13 @@ impl From<SecCtrlRam3MemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule4 {
     #[inline(always)]
@@ -8614,13 +8614,13 @@ impl From<SecCtrlRam3MemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule5 {
     #[inline(always)]
@@ -8649,13 +8649,13 @@ impl From<SecCtrlRam3MemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule6 {
     #[inline(always)]
@@ -8684,13 +8684,13 @@ impl From<SecCtrlRam3MemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam3MemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam3MemRule1Rule7 {
     #[inline(always)]
@@ -8719,13 +8719,13 @@ impl From<SecCtrlRam3MemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam4MemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam4MemRule0Rule0 {
     #[inline(always)]
@@ -8754,13 +8754,13 @@ impl From<SecCtrlRam4MemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam4MemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam4MemRule0Rule1 {
     #[inline(always)]
@@ -8789,13 +8789,13 @@ impl From<SecCtrlRam4MemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam4MemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam4MemRule0Rule2 {
     #[inline(always)]
@@ -8824,13 +8824,13 @@ impl From<SecCtrlRam4MemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRam4MemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRam4MemRule0Rule3 {
     #[inline(always)]
@@ -8859,13 +8859,13 @@ impl From<SecCtrlRam4MemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule0 {
     #[inline(always)]
@@ -8894,13 +8894,13 @@ impl From<SecCtrlRamxMemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule1 {
     #[inline(always)]
@@ -8929,13 +8929,13 @@ impl From<SecCtrlRamxMemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule2 {
     #[inline(always)]
@@ -8964,13 +8964,13 @@ impl From<SecCtrlRamxMemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule3 {
     #[inline(always)]
@@ -8999,13 +8999,13 @@ impl From<SecCtrlRamxMemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule4 {
     #[inline(always)]
@@ -9034,13 +9034,13 @@ impl From<SecCtrlRamxMemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule5 {
     #[inline(always)]
@@ -9069,13 +9069,13 @@ impl From<SecCtrlRamxMemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule6 {
     #[inline(always)]
@@ -9104,13 +9104,13 @@ impl From<SecCtrlRamxMemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRamxMemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRamxMemRule0Rule7 {
     #[inline(always)]
@@ -9139,13 +9139,13 @@ impl From<SecCtrlRamxMemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule0 {
     #[inline(always)]
@@ -9174,13 +9174,13 @@ impl From<SecCtrlRomMemRule0Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule1 {
     #[inline(always)]
@@ -9209,13 +9209,13 @@ impl From<SecCtrlRomMemRule0Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule2 {
     #[inline(always)]
@@ -9244,13 +9244,13 @@ impl From<SecCtrlRomMemRule0Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule3 {
     #[inline(always)]
@@ -9279,13 +9279,13 @@ impl From<SecCtrlRomMemRule0Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule4 {
     #[inline(always)]
@@ -9314,13 +9314,13 @@ impl From<SecCtrlRomMemRule0Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule5 {
     #[inline(always)]
@@ -9349,13 +9349,13 @@ impl From<SecCtrlRomMemRule0Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule6 {
     #[inline(always)]
@@ -9384,13 +9384,13 @@ impl From<SecCtrlRomMemRule0Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule0Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule0Rule7 {
     #[inline(always)]
@@ -9419,13 +9419,13 @@ impl From<SecCtrlRomMemRule0Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule0 {
     #[inline(always)]
@@ -9454,13 +9454,13 @@ impl From<SecCtrlRomMemRule1Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule1 {
     #[inline(always)]
@@ -9489,13 +9489,13 @@ impl From<SecCtrlRomMemRule1Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule2 {
     #[inline(always)]
@@ -9524,13 +9524,13 @@ impl From<SecCtrlRomMemRule1Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule3 {
     #[inline(always)]
@@ -9559,13 +9559,13 @@ impl From<SecCtrlRomMemRule1Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule4 {
     #[inline(always)]
@@ -9594,13 +9594,13 @@ impl From<SecCtrlRomMemRule1Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule5 {
     #[inline(always)]
@@ -9629,13 +9629,13 @@ impl From<SecCtrlRomMemRule1Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule6 {
     #[inline(always)]
@@ -9664,13 +9664,13 @@ impl From<SecCtrlRomMemRule1Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule1Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule1Rule7 {
     #[inline(always)]
@@ -9699,13 +9699,13 @@ impl From<SecCtrlRomMemRule1Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule0 {
     #[inline(always)]
@@ -9734,13 +9734,13 @@ impl From<SecCtrlRomMemRule2Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule1 {
     #[inline(always)]
@@ -9769,13 +9769,13 @@ impl From<SecCtrlRomMemRule2Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule2 {
     #[inline(always)]
@@ -9804,13 +9804,13 @@ impl From<SecCtrlRomMemRule2Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule3 {
     #[inline(always)]
@@ -9839,13 +9839,13 @@ impl From<SecCtrlRomMemRule2Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule4 {
     #[inline(always)]
@@ -9874,13 +9874,13 @@ impl From<SecCtrlRomMemRule2Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule5 {
     #[inline(always)]
@@ -9909,13 +9909,13 @@ impl From<SecCtrlRomMemRule2Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule6 {
     #[inline(always)]
@@ -9944,13 +9944,13 @@ impl From<SecCtrlRomMemRule2Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule2Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule2Rule7 {
     #[inline(always)]
@@ -9979,13 +9979,13 @@ impl From<SecCtrlRomMemRule2Rule7> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule0 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule0 {
     #[inline(always)]
@@ -10014,13 +10014,13 @@ impl From<SecCtrlRomMemRule3Rule0> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule1 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule1 {
     #[inline(always)]
@@ -10049,13 +10049,13 @@ impl From<SecCtrlRomMemRule3Rule1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule2 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule2 {
     #[inline(always)]
@@ -10084,13 +10084,13 @@ impl From<SecCtrlRomMemRule3Rule2> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule3 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule3 {
     #[inline(always)]
@@ -10119,13 +10119,13 @@ impl From<SecCtrlRomMemRule3Rule3> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule4 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule4 {
     #[inline(always)]
@@ -10154,13 +10154,13 @@ impl From<SecCtrlRomMemRule3Rule4> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule5 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule5 {
     #[inline(always)]
@@ -10189,13 +10189,13 @@ impl From<SecCtrlRomMemRule3Rule5> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule6 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule6 {
     #[inline(always)]
@@ -10224,13 +10224,13 @@ impl From<SecCtrlRomMemRule3Rule6> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecCtrlRomMemRule3Rule7 {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecCtrlRomMemRule3Rule7 {
     #[inline(always)]
@@ -10260,9 +10260,9 @@ impl From<SecCtrlRomMemRule3Rule7> for u8 {
 pub enum SecGpioMask0Lock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SecGpioMask0Lock {
@@ -10293,9 +10293,9 @@ impl From<SecGpioMask0Lock> for u8 {
 pub enum SecGpioMask1Lock {
     _RESERVED_0 = 0x0,
     #[doc = "Restricted mode."]
-    BLOCKED = 0x01,
+    Blocked = 0x01,
     #[doc = "Writable."]
-    WRITABLE = 0x02,
+    Writable = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl SecGpioMask1Lock {
@@ -10325,13 +10325,13 @@ impl From<SecGpioMask1Lock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecPintRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SecPintRule {
     #[inline(always)]
@@ -10360,9 +10360,9 @@ impl From<SecPintRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecVioInfoDataAccess {
     #[doc = "Code access."]
-    CODE = 0x0,
+    Code = 0x0,
     #[doc = "Data access."]
-    DATA = 0x01,
+    Data = 0x01,
 }
 impl SecVioInfoDataAccess {
     #[inline(always)]
@@ -10391,29 +10391,29 @@ impl From<SecVioInfoDataAccess> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecVioInfoMaster {
     #[doc = "CPU0 Code."]
-    VALUE_0 = 0x0,
+    Value0 = 0x0,
     #[doc = "CPU0 System."]
-    VALUE_1 = 0x01,
+    Value1 = 0x01,
     #[doc = "CPU1 Data."]
-    VALUE_2 = 0x02,
+    Value2 = 0x02,
     #[doc = "CPU1 System."]
-    VALUE_3 = 0x03,
+    Value3 = 0x03,
     #[doc = "USB-HS Device."]
-    VALUE_4 = 0x04,
+    Value4 = 0x04,
     #[doc = "SDMA0."]
-    VALUE_5 = 0x05,
+    Value5 = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
     #[doc = "SDIO."]
-    VALUE_8 = 0x08,
+    Value8 = 0x08,
     #[doc = "PowerQuad."]
-    VALUE_9 = 0x09,
+    Value9 = 0x09,
     #[doc = "HASH."]
-    VALUE_10 = 0x0a,
+    Value10 = 0x0a,
     #[doc = "USB-FS Host."]
-    VALUE_11 = 0x0b,
+    Value11 = 0x0b,
     #[doc = "SDMA1."]
-    VALUE_12 = 0x0c,
+    Value12 = 0x0c,
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     _RESERVED_f = 0x0f,
@@ -10445,9 +10445,9 @@ impl From<SecVioInfoMaster> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SecVioInfoWrite {
     #[doc = "Read access."]
-    READ = 0x0,
+    Read = 0x0,
     #[doc = "Write access."]
-    WRITE = 0x01,
+    Write = 0x01,
 }
 impl SecVioInfoWrite {
     #[inline(always)]
@@ -10476,13 +10476,13 @@ impl From<SecVioInfoWrite> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SramSect0Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SramSect0Rule {
     #[inline(always)]
@@ -10511,13 +10511,13 @@ impl From<SramSect0Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SramSect1Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SramSect1Rule {
     #[inline(always)]
@@ -10546,13 +10546,13 @@ impl From<SramSect1Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SramSect2Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SramSect2Rule {
     #[inline(always)]
@@ -10581,13 +10581,13 @@ impl From<SramSect2Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SramSect3Rule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SramSect3Rule {
     #[inline(always)]
@@ -10616,13 +10616,13 @@ impl From<SramSect3Rule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysconRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SysconRule {
     #[inline(always)]
@@ -10651,13 +10651,13 @@ impl From<SysconRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SysctrlRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl SysctrlRule {
     #[inline(always)]
@@ -10686,13 +10686,13 @@ impl From<SysctrlRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbFsHostRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl UsbFsHostRule {
     #[inline(always)]
@@ -10721,13 +10721,13 @@ impl From<UsbFsHostRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbHsDevRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl UsbHsDevRule {
     #[inline(always)]
@@ -10756,13 +10756,13 @@ impl From<UsbHsDevRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbHsHostRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl UsbHsHostRule {
     #[inline(always)]
@@ -10791,13 +10791,13 @@ impl From<UsbHsHostRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UsbhphyRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl UsbhphyRule {
     #[inline(always)]
@@ -10826,13 +10826,13 @@ impl From<UsbhphyRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum UtickRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl UtickRule {
     #[inline(always)]
@@ -10861,13 +10861,13 @@ impl From<UtickRule> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum WwdtRule {
     #[doc = "Non-secure and Non-priviledge user access allowed."]
-    ENUM_NS_NP = 0x0,
+    EnumNsNp = 0x0,
     #[doc = "Non-secure and Privilege access allowed."]
-    ENUM_NS_P = 0x01,
+    EnumNsP = 0x01,
     #[doc = "Secure and Non-priviledge user access allowed."]
-    ENUM_S_NP = 0x02,
+    EnumSNp = 0x02,
     #[doc = "Secure and Priviledge user access allowed."]
-    ENUM_S_P = 0x03,
+    EnumSP = 0x03,
 }
 impl WwdtRule {
     #[inline(always)]

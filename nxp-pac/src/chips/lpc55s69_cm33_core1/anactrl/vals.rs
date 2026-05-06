@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum FlashPwrdwn {
     #[doc = "Flash is not in power down mode."]
-    PWRUP = 0x0,
+    Pwrup = 0x0,
     #[doc = "Flash is in power down mode."]
-    PWRDWN = 0x01,
+    Pwrdwn = 0x01,
 }
 impl FlashPwrdwn {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<FlashPwrdwn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Fro192mTrimSrc {
     #[doc = "FRO192M trimming and 'Enable' comes from eFUSE."]
-    EFUSE = 0x0,
+    Efuse = 0x0,
     #[doc = "FRO192M trimming and 'Enable' comes from FRO192M_CTRL registers."]
-    FRO192MCTRL = 0x01,
+    Fro192mctrl = 0x01,
 }
 impl Fro192mTrimSrc {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<Fro192mTrimSrc> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Highz {
     #[doc = "Output in High normal state."]
-    NORMALMPEDANCE = 0x0,
+    Normalmpedance = 0x0,
     #[doc = "Output in High Impedance state."]
-    HIGHIMPEDANCE = 0x01,
+    Highimpedance = 0x01,
 }
 impl Highz {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<Highz> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo0CtrlFs {
     #[doc = "High frequency output (frequency lower than 100 MHz)."]
-    FAST = 0x0,
+    Fast = 0x0,
     #[doc = "Low frequency output (frequency lower than 10 MHz)."]
-    SLOW = 0x01,
+    Slow = 0x01,
 }
 impl Ringo0CtrlFs {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<Ringo0CtrlFs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo0CtrlPd {
     #[doc = "The Ringo module is enabled."]
-    POWERED_ON = 0x0,
+    PoweredOn = 0x0,
     #[doc = "The Ringo module is disabled."]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl Ringo0CtrlPd {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Ringo0CtrlPd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo1CtrlFs {
     #[doc = "High frequency output (frequency lower than 100 MHz)."]
-    FAST = 0x0,
+    Fast = 0x0,
     #[doc = "Low frequency output (frequency lower than 10 MHz)."]
-    SLOW = 0x01,
+    Slow = 0x01,
 }
 impl Ringo1CtrlFs {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Ringo1CtrlFs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo1CtrlPd {
     #[doc = "The Ringo module is enabled."]
-    POWERED_ON = 0x0,
+    PoweredOn = 0x0,
     #[doc = "The Ringo module is disabled."]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl Ringo1CtrlPd {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<Ringo1CtrlPd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo1CtrlS {
     #[doc = "Select short ringo (few elements)."]
-    SHORT = 0x0,
+    Short = 0x0,
     #[doc = "Select long ringo (many elements)."]
-    LONG = 0x01,
+    Long = 0x01,
 }
 impl Ringo1CtrlS {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<Ringo1CtrlS> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo2CtrlFs {
     #[doc = "High frequency output (frequency lower than 100 MHz)."]
-    FAST = 0x0,
+    Fast = 0x0,
     #[doc = "Low frequency output (frequency lower than 10 MHz)."]
-    SLOW = 0x01,
+    Slow = 0x01,
 }
 impl Ringo2CtrlFs {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<Ringo2CtrlFs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo2CtrlPd {
     #[doc = "The Ringo module is enabled."]
-    POWERED_ON = 0x0,
+    PoweredOn = 0x0,
     #[doc = "The Ringo module is disabled."]
-    POWERED_DOWN = 0x01,
+    PoweredDown = 0x01,
 }
 impl Ringo2CtrlPd {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<Ringo2CtrlPd> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Ringo2CtrlS {
     #[doc = "Select short ringo (few elements)."]
-    SHORT = 0x0,
+    Short = 0x0,
     #[doc = "Select long ringo (many elements)."]
-    LONG = 0x01,
+    Long = 0x01,
 }
 impl Ringo2CtrlS {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<Ringo2CtrlS> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sl {
     #[doc = "Select short ringo (few elements)."]
-    SHORT = 0x0,
+    Short = 0x0,
     #[doc = "Select long ringo (many elements)."]
-    LONG = 0x01,
+    Long = 0x01,
 }
 impl Sl {
     #[inline(always)]
@@ -375,13 +375,13 @@ impl From<Sl> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum SwnSwp {
     #[doc = "Normal mode."]
-    NORMAL = 0x0,
+    Normal = 0x0,
     #[doc = "P-Monitor mode. Measure with weak P transistor."]
-    P_MONITOR = 0x01,
+    PMonitor = 0x01,
     #[doc = "P-Monitor mode. Measure with weak N transistor."]
-    N_MONITOR = 0x02,
+    NMonitor = 0x02,
     #[doc = "Don't use."]
-    FORBIDDEN = 0x03,
+    Forbidden = 0x03,
 }
 impl SwnSwp {
     #[inline(always)]
@@ -410,21 +410,21 @@ impl From<SwnSwp> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Vout {
     #[doc = "0.750 V."]
-    V_0P750 = 0x0,
+    V0p750 = 0x0,
     #[doc = "0.775 V."]
-    V_0P775 = 0x01,
+    V0p775 = 0x01,
     #[doc = "0.800 V."]
-    V_0P800 = 0x02,
+    V0p800 = 0x02,
     #[doc = "0.825 V."]
-    V_0P825 = 0x03,
+    V0p825 = 0x03,
     #[doc = "0.850 V."]
-    V_0P850 = 0x04,
+    V0p850 = 0x04,
     #[doc = "0.875 V."]
-    V_0P875 = 0x05,
+    V0p875 = 0x05,
     #[doc = "0.900 V."]
-    V_0P900 = 0x06,
+    V0p900 = 0x06,
     #[doc = "0.925 V."]
-    V_0P925 = 0x07,
+    V0p925 = 0x07,
 }
 impl Vout {
     #[inline(always)]
