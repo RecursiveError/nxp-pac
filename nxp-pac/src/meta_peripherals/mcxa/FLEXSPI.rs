@@ -127,23 +127,14 @@ impl Flexspi {
     }
     #[doc = "Flash Control 0."]
     #[inline(always)]
-    pub const fn flsha1cr0(self) -> crate::pac::common::Reg<Flsha1cr0, crate::pac::common::RW> {
-        unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x60usize) as _) }
-    }
-    #[doc = "Flash Control 0."]
-    #[inline(always)]
-    pub const fn flsha2cr0(self) -> crate::pac::common::Reg<Flsha2cr0, crate::pac::common::RW> {
-        unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x64usize) as _) }
-    }
-    #[doc = "Flash Control 0."]
-    #[inline(always)]
-    pub const fn flshb1cr0(self) -> crate::pac::common::Reg<Flshb1cr0, crate::pac::common::RW> {
-        unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x68usize) as _) }
-    }
-    #[doc = "Flash Control 0."]
-    #[inline(always)]
-    pub const fn flshb2cr0(self) -> crate::pac::common::Reg<Flshb2cr0, crate::pac::common::RW> {
-        unsafe { crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x6cusize) as _) }
+    pub const fn flshcr0(
+        self,
+        n: usize,
+    ) -> crate::pac::common::Reg<Flshcr0, crate::pac::common::RW> {
+        assert!(n < 4usize);
+        unsafe {
+            crate::pac::common::Reg::from_ptr(self.ptr.wrapping_add(0x60usize + n * 4usize) as _)
+        }
     }
     #[doc = "Flash Control 1."]
     #[inline(always)]
@@ -2141,8 +2132,8 @@ impl defmt::Format for Dlpr {
 #[doc = "Flash Control 0."]
 #[repr(transparent)]
 #[derive(Copy, Clone, Eq, PartialEq)]
-pub struct Flsha1cr0(pub u32);
-impl Flsha1cr0 {
+pub struct Flshcr0(pub u32);
+impl Flshcr0 {
     #[doc = "Flash Size in KB."]
     #[must_use]
     #[inline(always)]
@@ -2168,191 +2159,26 @@ impl Flsha1cr0 {
         self.0 = (self.0 & !(0x01 << 29usize)) | (((val as u32) & 0x01) << 29usize);
     }
 }
-impl Default for Flsha1cr0 {
+impl Default for Flshcr0 {
     #[inline(always)]
-    fn default() -> Flsha1cr0 {
-        Flsha1cr0(0)
+    fn default() -> Flshcr0 {
+        Flshcr0(0)
     }
 }
-impl core::fmt::Debug for Flsha1cr0 {
+impl core::fmt::Debug for Flshcr0 {
     fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Flsha1cr0")
+        f.debug_struct("Flshcr0")
             .field("flshsz", &self.flshsz())
             .field("addrshift", &self.addrshift())
             .finish()
     }
 }
 #[cfg(feature = "defmt")]
-impl defmt::Format for Flsha1cr0 {
+impl defmt::Format for Flshcr0 {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Flsha1cr0 {{ flshsz: {=u32:?}, addrshift: {=bool:?} }}",
-            self.flshsz(),
-            self.addrshift()
-        )
-    }
-}
-#[doc = "Flash Control 0."]
-#[repr(transparent)]
-#[derive(Copy, Clone, Eq, PartialEq)]
-pub struct Flsha2cr0(pub u32);
-impl Flsha2cr0 {
-    #[doc = "Flash Size in KB."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn flshsz(&self) -> u32 {
-        let val = (self.0 >> 0usize) & 0x007f_ffff;
-        val as u32
-    }
-    #[doc = "Flash Size in KB."]
-    #[inline(always)]
-    pub const fn set_flshsz(&mut self, val: u32) {
-        self.0 = (self.0 & !(0x007f_ffff << 0usize)) | (((val as u32) & 0x007f_ffff) << 0usize);
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn addrshift(&self) -> bool {
-        let val = (self.0 >> 29usize) & 0x01;
-        val != 0
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[inline(always)]
-    pub const fn set_addrshift(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 29usize)) | (((val as u32) & 0x01) << 29usize);
-    }
-}
-impl Default for Flsha2cr0 {
-    #[inline(always)]
-    fn default() -> Flsha2cr0 {
-        Flsha2cr0(0)
-    }
-}
-impl core::fmt::Debug for Flsha2cr0 {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Flsha2cr0")
-            .field("flshsz", &self.flshsz())
-            .field("addrshift", &self.addrshift())
-            .finish()
-    }
-}
-#[cfg(feature = "defmt")]
-impl defmt::Format for Flsha2cr0 {
-    fn format(&self, f: defmt::Formatter) {
-        defmt::write!(
-            f,
-            "Flsha2cr0 {{ flshsz: {=u32:?}, addrshift: {=bool:?} }}",
-            self.flshsz(),
-            self.addrshift()
-        )
-    }
-}
-#[doc = "Flash Control 0."]
-#[repr(transparent)]
-#[derive(Copy, Clone, Eq, PartialEq)]
-pub struct Flshb1cr0(pub u32);
-impl Flshb1cr0 {
-    #[doc = "Flash Size in KB."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn flshsz(&self) -> u32 {
-        let val = (self.0 >> 0usize) & 0x007f_ffff;
-        val as u32
-    }
-    #[doc = "Flash Size in KB."]
-    #[inline(always)]
-    pub const fn set_flshsz(&mut self, val: u32) {
-        self.0 = (self.0 & !(0x007f_ffff << 0usize)) | (((val as u32) & 0x007f_ffff) << 0usize);
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn addrshift(&self) -> bool {
-        let val = (self.0 >> 29usize) & 0x01;
-        val != 0
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[inline(always)]
-    pub const fn set_addrshift(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 29usize)) | (((val as u32) & 0x01) << 29usize);
-    }
-}
-impl Default for Flshb1cr0 {
-    #[inline(always)]
-    fn default() -> Flshb1cr0 {
-        Flshb1cr0(0)
-    }
-}
-impl core::fmt::Debug for Flshb1cr0 {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Flshb1cr0")
-            .field("flshsz", &self.flshsz())
-            .field("addrshift", &self.addrshift())
-            .finish()
-    }
-}
-#[cfg(feature = "defmt")]
-impl defmt::Format for Flshb1cr0 {
-    fn format(&self, f: defmt::Formatter) {
-        defmt::write!(
-            f,
-            "Flshb1cr0 {{ flshsz: {=u32:?}, addrshift: {=bool:?} }}",
-            self.flshsz(),
-            self.addrshift()
-        )
-    }
-}
-#[doc = "Flash Control 0."]
-#[repr(transparent)]
-#[derive(Copy, Clone, Eq, PartialEq)]
-pub struct Flshb2cr0(pub u32);
-impl Flshb2cr0 {
-    #[doc = "Flash Size in KB."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn flshsz(&self) -> u32 {
-        let val = (self.0 >> 0usize) & 0x007f_ffff;
-        val as u32
-    }
-    #[doc = "Flash Size in KB."]
-    #[inline(always)]
-    pub const fn set_flshsz(&mut self, val: u32) {
-        self.0 = (self.0 & !(0x007f_ffff << 0usize)) | (((val as u32) & 0x007f_ffff) << 0usize);
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[must_use]
-    #[inline(always)]
-    pub const fn addrshift(&self) -> bool {
-        let val = (self.0 >> 29usize) & 0x01;
-        val != 0
-    }
-    #[doc = "AHB Address Shift Function control."]
-    #[inline(always)]
-    pub const fn set_addrshift(&mut self, val: bool) {
-        self.0 = (self.0 & !(0x01 << 29usize)) | (((val as u32) & 0x01) << 29usize);
-    }
-}
-impl Default for Flshb2cr0 {
-    #[inline(always)]
-    fn default() -> Flshb2cr0 {
-        Flshb2cr0(0)
-    }
-}
-impl core::fmt::Debug for Flshb2cr0 {
-    fn fmt(&self, f: &mut core::fmt::Formatter) -> core::fmt::Result {
-        f.debug_struct("Flshb2cr0")
-            .field("flshsz", &self.flshsz())
-            .field("addrshift", &self.addrshift())
-            .finish()
-    }
-}
-#[cfg(feature = "defmt")]
-impl defmt::Format for Flshb2cr0 {
-    fn format(&self, f: defmt::Formatter) {
-        defmt::write!(
-            f,
-            "Flshb2cr0 {{ flshsz: {=u32:?}, addrshift: {=bool:?} }}",
+            "Flshcr0 {{ flshsz: {=u32:?}, addrshift: {=bool:?} }}",
             self.flshsz(),
             self.addrshift()
         )
