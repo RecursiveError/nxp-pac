@@ -387,16 +387,21 @@ pub fn extract_peripherals(
         }
     }
 
-    let original_dir = &output_dir.join("original");
+    let post_transforms_dir = &output_dir.join("post-transforms");
 
-    if !fs::exists(original_dir).context("checking output original subdirectory existance")? {
-        fs::create_dir(original_dir).with_context(|| {
-            format!("creating original subdirectory {}", original_dir.display())
+    if !fs::exists(post_transforms_dir)
+        .context("checking output post-transforms subdirectory existance")?
+    {
+        fs::create_dir(post_transforms_dir).with_context(|| {
+            format!(
+                "creating post-transforms subdirectory {}",
+                post_transforms_dir.display()
+            )
         })?;
     }
 
     chiptool::commands::extract_all::extract_all(ExtractAll {
-        output: original_dir.canonicalize()?,
+        output: post_transforms_dir.canonicalize()?,
         extract_shared: ExtractShared {
             svd: svd.canonicalize()?,
             transform,
@@ -407,7 +412,7 @@ pub fn extract_peripherals(
     .with_context(|| format!("Error generating peripheral yamls for {core}"))?;
 
     let path_regex = regex::Regex::new("^(.+)__.+$")?;
-    for entry in fs::read_dir(original_dir).context("reading original subdir")? {
+    for entry in fs::read_dir(post_transforms_dir).context("reading post-transforms subdir")? {
         let entry = entry?;
 
         let filename: String = entry.file_name().to_string_lossy().into_owned();
