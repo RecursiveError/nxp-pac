@@ -226,6 +226,18 @@ impl Devcmdstat {
     pub const fn set_lpm_rewp(&mut self, val: bool) {
         self.0 = (self.0 & !(0x01 << 20usize)) | (((val as u32) & 0x01) << 20usize);
     }
+    #[doc = "Force full-speed device operation on a high-speed-capable port (FORCE_FS)."]
+    #[must_use]
+    #[inline(always)]
+    pub const fn force_fs(&self) -> bool {
+        let val = (self.0 >> 21usize) & 0x01;
+        val != 0
+    }
+    #[doc = "Force full-speed device operation on a high-speed-capable port (FORCE_FS)."]
+    #[inline(always)]
+    pub const fn set_force_fs(&mut self, val: bool) {
+        self.0 = (self.0 & !(0x01 << 21usize)) | (((val as u32) & 0x01) << 21usize);
+    }
     #[doc = "This field indicates the speed at which the device operates: 00b: reserved 01b: full-speed 10b: high-speed 11b: super-speed (reserved for future use)."]
     #[must_use]
     #[inline(always)]
@@ -322,6 +334,7 @@ impl core::fmt::Debug for Devcmdstat {
             .field("dsus", &self.dsus())
             .field("lpm_sus", &self.lpm_sus())
             .field("lpm_rewp", &self.lpm_rewp())
+            .field("force_fs", &self.force_fs())
             .field("speed", &self.speed())
             .field("dcon_c", &self.dcon_c())
             .field("dsus_c", &self.dsus_c())
@@ -336,7 +349,7 @@ impl defmt::Format for Devcmdstat {
     fn format(&self, f: defmt::Formatter) {
         defmt::write!(
             f,
-            "Devcmdstat {{ dev_addr: {=u8:?}, dev_en: {=bool:?}, setup: {=bool:?}, force_needclk: {=bool:?}, force_vbus: {=bool:?}, lpm_sup: {=bool:?}, intonnak_ao: {=bool:?}, intonnak_ai: {=bool:?}, intonnak_co: {=bool:?}, intonnak_ci: {=bool:?}, dcon: {=bool:?}, dsus: {=bool:?}, lpm_sus: {=bool:?}, lpm_rewp: {=bool:?}, speed: {=u8:?}, dcon_c: {=bool:?}, dsus_c: {=bool:?}, dres_c: {=bool:?}, vbus_debounced: {=bool:?}, phy_test_mode: {=u8:?} }}",
+            "Devcmdstat {{ dev_addr: {=u8:?}, dev_en: {=bool:?}, setup: {=bool:?}, force_needclk: {=bool:?}, force_vbus: {=bool:?}, lpm_sup: {=bool:?}, intonnak_ao: {=bool:?}, intonnak_ai: {=bool:?}, intonnak_co: {=bool:?}, intonnak_ci: {=bool:?}, dcon: {=bool:?}, dsus: {=bool:?}, lpm_sus: {=bool:?}, lpm_rewp: {=bool:?}, force_fs: {=bool:?}, speed: {=u8:?}, dcon_c: {=bool:?}, dsus_c: {=bool:?}, dres_c: {=bool:?}, vbus_debounced: {=bool:?}, phy_test_mode: {=u8:?} }}",
             self.dev_addr(),
             self.dev_en(),
             self.setup(),
@@ -351,6 +364,7 @@ impl defmt::Format for Devcmdstat {
             self.dsus(),
             self.lpm_sus(),
             self.lpm_rewp(),
+            self.force_fs(),
             self.speed(),
             self.dcon_c(),
             self.dsus_c(),

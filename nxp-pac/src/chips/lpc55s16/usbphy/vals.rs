@@ -3,9 +3,9 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AnactrlClrDevPulldown {
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare disabled in device mode."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare enabled in device mode."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl AnactrlClrDevPulldown {
     #[inline(always)]
@@ -34,9 +34,9 @@ impl From<AnactrlClrDevPulldown> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AnactrlDevPulldown {
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare disabled in device mode."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare enabled in device mode."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl AnactrlDevPulldown {
     #[inline(always)]
@@ -65,9 +65,9 @@ impl From<AnactrlDevPulldown> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AnactrlSetDevPulldown {
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare disabled in device mode."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare enabled in device mode."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl AnactrlSetDevPulldown {
     #[inline(always)]
@@ -96,9 +96,9 @@ impl From<AnactrlSetDevPulldown> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum AnactrlTogDevPulldown {
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare disabled in device mode."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The 15kohm nominal pulldowns on the USB_DP and USB_DM pinsare enabled in device mode."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl AnactrlTogDevPulldown {
     #[inline(always)]
@@ -127,9 +127,9 @@ impl From<AnactrlTogDevPulldown> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Avalid {
     #[doc = "The VBUS voltage is below the Session Valid threshold."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The VBUS voltage is above the Session Valid threshold."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Avalid {
     #[inline(always)]
@@ -158,9 +158,9 @@ impl From<Avalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Bvalid {
     #[doc = "The VBUS voltage is below the Session Valid threshold."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The VBUS voltage is above the Session Valid threshold."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Bvalid {
     #[inline(always)]
@@ -189,9 +189,9 @@ impl From<Bvalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CtrlClrEndevplugindet {
     #[doc = "Disables 200kohm pullup resistors on USB_DP and USB_DM pins (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Enables 200kohm pullup resistors on USB_DP and USB_DM pins."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl CtrlClrEndevplugindet {
     #[inline(always)]
@@ -220,9 +220,9 @@ impl From<CtrlClrEndevplugindet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CtrlEndevplugindet {
     #[doc = "Disables 200kohm pullup resistors on USB_DP and USB_DM pins (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Enables 200kohm pullup resistors on USB_DP and USB_DM pins."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl CtrlEndevplugindet {
     #[inline(always)]
@@ -251,9 +251,9 @@ impl From<CtrlEndevplugindet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CtrlSetEndevplugindet {
     #[doc = "Disables 200kohm pullup resistors on USB_DP and USB_DM pins (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Enables 200kohm pullup resistors on USB_DP and USB_DM pins."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl CtrlSetEndevplugindet {
     #[inline(always)]
@@ -282,9 +282,9 @@ impl From<CtrlSetEndevplugindet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum CtrlTogEndevplugindet {
     #[doc = "Disables 200kohm pullup resistors on USB_DP and USB_DM pins (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Enables 200kohm pullup resistors on USB_DP and USB_DM pins."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl CtrlTogEndevplugindet {
     #[inline(always)]
@@ -313,9 +313,9 @@ impl From<CtrlTogEndevplugindet> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum DevpluginStatus {
     #[doc = "No attachment to a USB host is detected."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Cable attachment to a USB host is detected."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl DevpluginStatus {
     #[inline(always)]
@@ -344,9 +344,9 @@ impl From<DevpluginStatus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum HostdiscondetectStatus {
     #[doc = "USB cable disconnect has not been detected at the local host."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "USB cable disconnect has been detected at the local host."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl HostdiscondetectStatus {
     #[inline(always)]
@@ -375,21 +375,21 @@ impl From<HostdiscondetectStatus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicClrPllDivSel {
     #[doc = "Divide by 13."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Divide by 15."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Divide by 16."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Divide by 20."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "Divide by 22."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "Divide by 25."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "Divide by 30."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "Divide by 240."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl PllSicClrPllDivSel {
     #[inline(always)]
@@ -418,9 +418,9 @@ impl From<PllSicClrPllDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicClrPllLock {
     #[doc = "PLL is not currently locked."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "PLL is currently locked."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicClrPllLock {
     #[inline(always)]
@@ -449,9 +449,9 @@ impl From<PllSicClrPllLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicClrRefbiasPwdSel {
     #[doc = "Selects PLL_POWER to control the reference bias."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Selects REFBIAS_PWD to control the reference bias."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicClrRefbiasPwdSel {
     #[inline(always)]
@@ -480,21 +480,21 @@ impl From<PllSicClrRefbiasPwdSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicPllDivSel {
     #[doc = "Divide by 13."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Divide by 15."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Divide by 16."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Divide by 20."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "Divide by 22."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "Divide by 25."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "Divide by 30."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "Divide by 240."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl PllSicPllDivSel {
     #[inline(always)]
@@ -523,9 +523,9 @@ impl From<PllSicPllDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicPllLock {
     #[doc = "PLL is not currently locked."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "PLL is currently locked."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicPllLock {
     #[inline(always)]
@@ -554,9 +554,9 @@ impl From<PllSicPllLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicRefbiasPwdSel {
     #[doc = "Selects PLL_POWER to control the reference bias."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Selects REFBIAS_PWD to control the reference bias."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicRefbiasPwdSel {
     #[inline(always)]
@@ -585,21 +585,21 @@ impl From<PllSicRefbiasPwdSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicSetPllDivSel {
     #[doc = "Divide by 13."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Divide by 15."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Divide by 16."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Divide by 20."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "Divide by 22."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "Divide by 25."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "Divide by 30."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "Divide by 240."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl PllSicSetPllDivSel {
     #[inline(always)]
@@ -628,9 +628,9 @@ impl From<PllSicSetPllDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicSetPllLock {
     #[doc = "PLL is not currently locked."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "PLL is currently locked."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicSetPllLock {
     #[inline(always)]
@@ -659,9 +659,9 @@ impl From<PllSicSetPllLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicSetRefbiasPwdSel {
     #[doc = "Selects PLL_POWER to control the reference bias."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Selects REFBIAS_PWD to control the reference bias."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicSetRefbiasPwdSel {
     #[inline(always)]
@@ -690,21 +690,21 @@ impl From<PllSicSetRefbiasPwdSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicTogPllDivSel {
     #[doc = "Divide by 13."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Divide by 15."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Divide by 16."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Divide by 20."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "Divide by 22."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "Divide by 25."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "Divide by 30."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "Divide by 240."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl PllSicTogPllDivSel {
     #[inline(always)]
@@ -733,9 +733,9 @@ impl From<PllSicTogPllDivSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicTogPllLock {
     #[doc = "PLL is not currently locked."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "PLL is currently locked."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicTogPllLock {
     #[inline(always)]
@@ -764,9 +764,9 @@ impl From<PllSicTogPllLock> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PllSicTogRefbiasPwdSel {
     #[doc = "Selects PLL_POWER to control the reference bias."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Selects REFBIAS_PWD to control the reference bias."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PllSicTogRefbiasPwdSel {
     #[inline(always)]
@@ -795,9 +795,9 @@ impl From<PllSicTogRefbiasPwdSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrRxpwd1pt1 {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrRxpwd1pt1 {
     #[inline(always)]
@@ -826,9 +826,9 @@ impl From<PwdClrRxpwd1pt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrRxpwddiff {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed differential receive."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrRxpwddiff {
     #[inline(always)]
@@ -857,9 +857,9 @@ impl From<PwdClrRxpwddiff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrRxpwdenv {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed receiver envelope detector (squelch signal)."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrRxpwdenv {
     #[inline(always)]
@@ -888,9 +888,9 @@ impl From<PwdClrRxpwdenv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrRxpwdrx {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the entire USB PHY receiver block except for the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrRxpwdrx {
     #[inline(always)]
@@ -919,9 +919,9 @@ impl From<PwdClrRxpwdrx> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrTxpwdfs {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed drivers. This turns off the current starvation sources and puts the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrTxpwdfs {
     #[inline(always)]
@@ -950,9 +950,9 @@ impl From<PwdClrTxpwdfs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrTxpwdibias {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY current bias block for the transmitter. This bit should be set only when the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrTxpwdibias {
     #[inline(always)]
@@ -981,9 +981,9 @@ impl From<PwdClrTxpwdibias> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdClrTxpwdv2i {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY transmit V-to-I converter and the current mirror."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdClrTxpwdv2i {
     #[inline(always)]
@@ -1012,9 +1012,9 @@ impl From<PwdClrTxpwdv2i> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdRxpwd1pt1 {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdRxpwd1pt1 {
     #[inline(always)]
@@ -1043,9 +1043,9 @@ impl From<PwdRxpwd1pt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdRxpwddiff {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed differential receive."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdRxpwddiff {
     #[inline(always)]
@@ -1074,9 +1074,9 @@ impl From<PwdRxpwddiff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdRxpwdenv {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed receiver envelope detector (squelch signal)."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdRxpwdenv {
     #[inline(always)]
@@ -1105,9 +1105,9 @@ impl From<PwdRxpwdenv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdRxpwdrx {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the entire USB PHY receiver block except for the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdRxpwdrx {
     #[inline(always)]
@@ -1136,9 +1136,9 @@ impl From<PwdRxpwdrx> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetRxpwd1pt1 {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetRxpwd1pt1 {
     #[inline(always)]
@@ -1167,9 +1167,9 @@ impl From<PwdSetRxpwd1pt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetRxpwddiff {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed differential receive."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetRxpwddiff {
     #[inline(always)]
@@ -1198,9 +1198,9 @@ impl From<PwdSetRxpwddiff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetRxpwdenv {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed receiver envelope detector (squelch signal)."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetRxpwdenv {
     #[inline(always)]
@@ -1229,9 +1229,9 @@ impl From<PwdSetRxpwdenv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetRxpwdrx {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the entire USB PHY receiver block except for the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetRxpwdrx {
     #[inline(always)]
@@ -1260,9 +1260,9 @@ impl From<PwdSetRxpwdrx> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetTxpwdfs {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed drivers. This turns off the current starvation sources and puts the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetTxpwdfs {
     #[inline(always)]
@@ -1291,9 +1291,9 @@ impl From<PwdSetTxpwdfs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetTxpwdibias {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY current bias block for the transmitter. This bit should be set only when the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetTxpwdibias {
     #[inline(always)]
@@ -1322,9 +1322,9 @@ impl From<PwdSetTxpwdibias> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdSetTxpwdv2i {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY transmit V-to-I converter and the current mirror."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdSetTxpwdv2i {
     #[inline(always)]
@@ -1353,9 +1353,9 @@ impl From<PwdSetTxpwdv2i> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogRxpwd1pt1 {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogRxpwd1pt1 {
     #[inline(always)]
@@ -1384,9 +1384,9 @@ impl From<PwdTogRxpwd1pt1> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogRxpwddiff {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed differential receive."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogRxpwddiff {
     #[inline(always)]
@@ -1415,9 +1415,9 @@ impl From<PwdTogRxpwddiff> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogRxpwdenv {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB high-speed receiver envelope detector (squelch signal)."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogRxpwdenv {
     #[inline(always)]
@@ -1446,9 +1446,9 @@ impl From<PwdTogRxpwdenv> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogRxpwdrx {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the entire USB PHY receiver block except for the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogRxpwdrx {
     #[inline(always)]
@@ -1477,9 +1477,9 @@ impl From<PwdTogRxpwdrx> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogTxpwdfs {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed drivers. This turns off the current starvation sources and puts the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogTxpwdfs {
     #[inline(always)]
@@ -1508,9 +1508,9 @@ impl From<PwdTogTxpwdfs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogTxpwdibias {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY current bias block for the transmitter. This bit should be set only when the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogTxpwdibias {
     #[inline(always)]
@@ -1539,9 +1539,9 @@ impl From<PwdTogTxpwdibias> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTogTxpwdv2i {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY transmit V-to-I converter and the current mirror."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTogTxpwdv2i {
     #[inline(always)]
@@ -1570,9 +1570,9 @@ impl From<PwdTogTxpwdv2i> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTxpwdfs {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB full-speed drivers. This turns off the current starvation sources and puts the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTxpwdfs {
     #[inline(always)]
@@ -1601,9 +1601,9 @@ impl From<PwdTxpwdfs> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTxpwdibias {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY current bias block for the transmitter. This bit should be set only when the."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTxpwdibias {
     #[inline(always)]
@@ -1632,9 +1632,9 @@ impl From<PwdTxpwdibias> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PwdTxpwdv2i {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Power-down the USB PHY transmit V-to-I converter and the current mirror."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl PwdTxpwdv2i {
     #[inline(always)]
@@ -1663,13 +1663,13 @@ impl From<PwdTxpwdv2i> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxClrDisconadj {
     #[doc = "Trip-Level Voltage is 0.56875 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.55000 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.58125 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.60000 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1702,13 +1702,13 @@ impl From<RxClrDisconadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxClrEnvadj {
     #[doc = "Trip-Level Voltage is 0.1000 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.1125 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.1250 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.0875 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1741,9 +1741,9 @@ impl From<RxClrEnvadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxClrRxdbypass {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the output of the USB_DP single-ended receiver in place of the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl RxClrRxdbypass {
     #[inline(always)]
@@ -1772,13 +1772,13 @@ impl From<RxClrRxdbypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxDisconadj {
     #[doc = "Trip-Level Voltage is 0.56875 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.55000 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.58125 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.60000 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1811,13 +1811,13 @@ impl From<RxDisconadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxEnvadj {
     #[doc = "Trip-Level Voltage is 0.1000 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.1125 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.1250 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.0875 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1850,9 +1850,9 @@ impl From<RxEnvadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxRxdbypass {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the output of the USB_DP single-ended receiver in place of the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl RxRxdbypass {
     #[inline(always)]
@@ -1881,13 +1881,13 @@ impl From<RxRxdbypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxSetDisconadj {
     #[doc = "Trip-Level Voltage is 0.56875 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.55000 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.58125 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.60000 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1920,13 +1920,13 @@ impl From<RxSetDisconadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxSetEnvadj {
     #[doc = "Trip-Level Voltage is 0.1000 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.1125 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.1250 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.0875 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -1959,9 +1959,9 @@ impl From<RxSetEnvadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxSetRxdbypass {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the output of the USB_DP single-ended receiver in place of the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl RxSetRxdbypass {
     #[inline(always)]
@@ -1990,13 +1990,13 @@ impl From<RxSetRxdbypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxTogDisconadj {
     #[doc = "Trip-Level Voltage is 0.56875 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.55000 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.58125 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.60000 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2029,13 +2029,13 @@ impl From<RxTogDisconadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxTogEnvadj {
     #[doc = "Trip-Level Voltage is 0.1000 V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Trip-Level Voltage is 0.1125 V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Trip-Level Voltage is 0.1250 V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "Trip-Level Voltage is 0.0875 V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     _RESERVED_4 = 0x04,
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
@@ -2068,9 +2068,9 @@ impl From<RxTogEnvadj> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum RxTogRxdbypass {
     #[doc = "Normal operation."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the output of the USB_DP single-ended receiver in place of the full-speed differential receiver."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl RxTogRxdbypass {
     #[inline(always)]
@@ -2099,9 +2099,9 @@ impl From<RxTogRxdbypass> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Sessend {
     #[doc = "The VBUS voltage is above the Session Valid threshold."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "The VBUS voltage is below the Session Valid threshold."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Sessend {
     #[inline(always)]
@@ -2130,7 +2130,7 @@ impl From<Sessend> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TxClrDCal {
     #[doc = "Maximum current, approximately 19% above nominal."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2138,7 +2138,7 @@ pub enum TxClrDCal {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Nominal."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
@@ -2147,7 +2147,7 @@ pub enum TxClrDCal {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Minimum current, approximately 19% below nominal."]
-    VALUE15 = 0x0f,
+    Value15 = 0x0f,
 }
 impl TxClrDCal {
     #[inline(always)]
@@ -2176,7 +2176,7 @@ impl From<TxClrDCal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TxDCal {
     #[doc = "Maximum current, approximately 19% above nominal."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2184,7 +2184,7 @@ pub enum TxDCal {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Nominal."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
@@ -2193,7 +2193,7 @@ pub enum TxDCal {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Minimum current, approximately 19% below nominal."]
-    VALUE15 = 0x0f,
+    Value15 = 0x0f,
 }
 impl TxDCal {
     #[inline(always)]
@@ -2222,7 +2222,7 @@ impl From<TxDCal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TxSetDCal {
     #[doc = "Maximum current, approximately 19% above nominal."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2230,7 +2230,7 @@ pub enum TxSetDCal {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Nominal."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
@@ -2239,7 +2239,7 @@ pub enum TxSetDCal {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Minimum current, approximately 19% below nominal."]
-    VALUE15 = 0x0f,
+    Value15 = 0x0f,
 }
 impl TxSetDCal {
     #[inline(always)]
@@ -2268,7 +2268,7 @@ impl From<TxSetDCal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum TxTogDCal {
     #[doc = "Maximum current, approximately 19% above nominal."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2276,7 +2276,7 @@ pub enum TxTogDCal {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Nominal."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
     _RESERVED_8 = 0x08,
     _RESERVED_9 = 0x09,
     _RESERVED_a = 0x0a,
@@ -2285,7 +2285,7 @@ pub enum TxTogDCal {
     _RESERVED_d = 0x0d,
     _RESERVED_e = 0x0e,
     #[doc = "Minimum current, approximately 19% below nominal."]
-    VALUE15 = 0x0f,
+    Value15 = 0x0f,
 }
 impl TxTogDCal {
     #[inline(always)]
@@ -2314,9 +2314,9 @@ impl From<TxTogDCal> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrDischargeVbus {
     #[doc = "VBUS discharge resistor is disabled (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS discharge resistor is enabled."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrDischargeVbus {
     #[inline(always)]
@@ -2345,9 +2345,9 @@ impl From<Usb1VbusDetectClrDischargeVbus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrExtIdOverrideEn {
     #[doc = "Select the Muxed value chosen using ID_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external ID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrExtIdOverrideEn {
     #[inline(always)]
@@ -2376,9 +2376,9 @@ impl From<Usb1VbusDetectClrExtIdOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrExtVbusOverrideEn {
     #[doc = "Select the muxed value chosen using VBUS_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external VBUS VALID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrExtVbusOverrideEn {
     #[inline(always)]
@@ -2407,7 +2407,7 @@ impl From<Usb1VbusDetectClrExtVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrPwrupCmps {
     #[doc = "Powers down the VBUS_VALID comparator."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2415,7 +2415,7 @@ pub enum Usb1VbusDetectClrPwrupCmps {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Enables the VBUS_VALID comparator (default)."]
-    VALUE1 = 0x07,
+    Value1 = 0x07,
 }
 impl Usb1VbusDetectClrPwrupCmps {
     #[inline(always)]
@@ -2444,9 +2444,9 @@ impl From<Usb1VbusDetectClrPwrupCmps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrVbusOverrideEn {
     #[doc = "Use the results of the internal VBUS_VALID and Session Valid comparators for VBUS_VALID, AVALID, BVALID, and SESSEND (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the override values for VBUS_VALID, AVALID, BVALID, and SESSEND."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrVbusOverrideEn {
     #[inline(always)]
@@ -2475,11 +2475,11 @@ impl From<Usb1VbusDetectClrVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrVbusSourceSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Usb1VbusDetectClrVbusSourceSel {
@@ -2509,9 +2509,9 @@ impl From<Usb1VbusDetectClrVbusSourceSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrVbusvalidSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the VBUS_VALID_3V detector results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrVbusvalidSel {
     #[inline(always)]
@@ -2540,21 +2540,21 @@ impl From<Usb1VbusDetectClrVbusvalidSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrVbusvalidThresh {
     #[doc = "4.0V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "4.1V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "4.2V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "4.3V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "4.4V(Default)."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "4.5V."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "4.6V."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "4.7V."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl Usb1VbusDetectClrVbusvalidThresh {
     #[inline(always)]
@@ -2583,9 +2583,9 @@ impl From<Usb1VbusDetectClrVbusvalidThresh> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectClrVbusvalidToSessvalid {
     #[doc = "Use the VBUS_VALID comparator for VBUS_VALID results."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectClrVbusvalidToSessvalid {
     #[inline(always)]
@@ -2614,9 +2614,9 @@ impl From<Usb1VbusDetectClrVbusvalidToSessvalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectDischargeVbus {
     #[doc = "VBUS discharge resistor is disabled (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS discharge resistor is enabled."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectDischargeVbus {
     #[inline(always)]
@@ -2645,9 +2645,9 @@ impl From<Usb1VbusDetectDischargeVbus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectExtIdOverrideEn {
     #[doc = "Select the Muxed value chosen using ID_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external ID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectExtIdOverrideEn {
     #[inline(always)]
@@ -2676,9 +2676,9 @@ impl From<Usb1VbusDetectExtIdOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectExtVbusOverrideEn {
     #[doc = "Select the Muxed value chosen using VBUS_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external VBUS VALID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectExtVbusOverrideEn {
     #[inline(always)]
@@ -2707,7 +2707,7 @@ impl From<Usb1VbusDetectExtVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectPwrupCmps {
     #[doc = "Powers down the VBUS_VALID comparator."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2715,7 +2715,7 @@ pub enum Usb1VbusDetectPwrupCmps {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Enables the VBUS_VALID comparator (default)."]
-    VALUE1 = 0x07,
+    Value1 = 0x07,
 }
 impl Usb1VbusDetectPwrupCmps {
     #[inline(always)]
@@ -2744,9 +2744,9 @@ impl From<Usb1VbusDetectPwrupCmps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetDischargeVbus {
     #[doc = "VBUS discharge resistor is disabled (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS discharge resistor is enabled."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetDischargeVbus {
     #[inline(always)]
@@ -2775,9 +2775,9 @@ impl From<Usb1VbusDetectSetDischargeVbus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetExtIdOverrideEn {
     #[doc = "Select the Muxed value chosen using ID_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external ID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetExtIdOverrideEn {
     #[inline(always)]
@@ -2806,9 +2806,9 @@ impl From<Usb1VbusDetectSetExtIdOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetExtVbusOverrideEn {
     #[doc = "Select the Muxed value chosen using VBUS_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external VBUS VALID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetExtVbusOverrideEn {
     #[inline(always)]
@@ -2837,7 +2837,7 @@ impl From<Usb1VbusDetectSetExtVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetPwrupCmps {
     #[doc = "Powers down the VBUS_VALID comparator."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -2845,7 +2845,7 @@ pub enum Usb1VbusDetectSetPwrupCmps {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Enables the VBUS_VALID comparator (default)."]
-    VALUE1 = 0x07,
+    Value1 = 0x07,
 }
 impl Usb1VbusDetectSetPwrupCmps {
     #[inline(always)]
@@ -2874,9 +2874,9 @@ impl From<Usb1VbusDetectSetPwrupCmps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetVbusOverrideEn {
     #[doc = "Use the results of the internal VBUS_VALID and Session Valid comparators for VBUS_VALID, AVALID, BVALID, and SESSEND (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the override values for VBUS_VALID, AVALID, BVALID, and SESSEND."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetVbusOverrideEn {
     #[inline(always)]
@@ -2905,11 +2905,11 @@ impl From<Usb1VbusDetectSetVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetVbusSourceSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Usb1VbusDetectSetVbusSourceSel {
@@ -2939,9 +2939,9 @@ impl From<Usb1VbusDetectSetVbusSourceSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetVbusvalidSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the VBUS_VALID_3V detector results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetVbusvalidSel {
     #[inline(always)]
@@ -2970,21 +2970,21 @@ impl From<Usb1VbusDetectSetVbusvalidSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetVbusvalidThresh {
     #[doc = "4.0V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "4.1V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "4.2V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "4.3V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "4.4V(Default)."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "4.5V."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "4.6V."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "4.7V."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl Usb1VbusDetectSetVbusvalidThresh {
     #[inline(always)]
@@ -3013,9 +3013,9 @@ impl From<Usb1VbusDetectSetVbusvalidThresh> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectSetVbusvalidToSessvalid {
     #[doc = "Use the VBUS_VALID comparator for VBUS_VALID results."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectSetVbusvalidToSessvalid {
     #[inline(always)]
@@ -3044,9 +3044,9 @@ impl From<Usb1VbusDetectSetVbusvalidToSessvalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogDischargeVbus {
     #[doc = "VBUS discharge resistor is disabled (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS discharge resistor is enabled."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogDischargeVbus {
     #[inline(always)]
@@ -3075,9 +3075,9 @@ impl From<Usb1VbusDetectTogDischargeVbus> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogExtIdOverrideEn {
     #[doc = "Select the muxed value chosen using ID_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external ID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogExtIdOverrideEn {
     #[inline(always)]
@@ -3106,9 +3106,9 @@ impl From<Usb1VbusDetectTogExtIdOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogExtVbusOverrideEn {
     #[doc = "Select the Muxed value chosen using VBUS_OVERRIDE_EN."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Select the external VBUS VALID value."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogExtVbusOverrideEn {
     #[inline(always)]
@@ -3137,7 +3137,7 @@ impl From<Usb1VbusDetectTogExtVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogPwrupCmps {
     #[doc = "Powers down the VBUS_VALID comparator."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     _RESERVED_1 = 0x01,
     _RESERVED_2 = 0x02,
     _RESERVED_3 = 0x03,
@@ -3145,7 +3145,7 @@ pub enum Usb1VbusDetectTogPwrupCmps {
     _RESERVED_5 = 0x05,
     _RESERVED_6 = 0x06,
     #[doc = "Enables the VBUS_VALID comparator (default)."]
-    VALUE1 = 0x07,
+    Value1 = 0x07,
 }
 impl Usb1VbusDetectTogPwrupCmps {
     #[inline(always)]
@@ -3174,9 +3174,9 @@ impl From<Usb1VbusDetectTogPwrupCmps> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogVbusOverrideEn {
     #[doc = "Use the results of the internal VBUS_VALID and Session Valid comparators for VBUS_VALID, AVALID, BVALID, and SESSEND (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the override values for VBUS_VALID, AVALID, BVALID, and SESSEND."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogVbusOverrideEn {
     #[inline(always)]
@@ -3205,11 +3205,11 @@ impl From<Usb1VbusDetectTogVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogVbusSourceSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Usb1VbusDetectTogVbusSourceSel {
@@ -3239,9 +3239,9 @@ impl From<Usb1VbusDetectTogVbusSourceSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogVbusvalidSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the VBUS_VALID_3V detector results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogVbusvalidSel {
     #[inline(always)]
@@ -3270,21 +3270,21 @@ impl From<Usb1VbusDetectTogVbusvalidSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogVbusvalidThresh {
     #[doc = "4.0V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "4.1V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "4.2V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "4.3V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "4.4V(Default)."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "4.5V."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "4.6V."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "4.7V."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl Usb1VbusDetectTogVbusvalidThresh {
     #[inline(always)]
@@ -3313,9 +3313,9 @@ impl From<Usb1VbusDetectTogVbusvalidThresh> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectTogVbusvalidToSessvalid {
     #[doc = "Use the VBUS_VALID comparator for VBUS_VALID results."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectTogVbusvalidToSessvalid {
     #[inline(always)]
@@ -3344,9 +3344,9 @@ impl From<Usb1VbusDetectTogVbusvalidToSessvalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectVbusOverrideEn {
     #[doc = "Use the results of the internal VBUS_VALID and Session Valid comparators for VBUS_VALID, AVALID, BVALID, and SESSEND (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the override values for VBUS_VALID, AVALID, BVALID, and SESSEND."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectVbusOverrideEn {
     #[inline(always)]
@@ -3375,11 +3375,11 @@ impl From<Usb1VbusDetectVbusOverrideEn> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectVbusSourceSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "Use the Session Valid comparator results for signal reported to the USB controller."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     _RESERVED_3 = 0x03,
 }
 impl Usb1VbusDetectVbusSourceSel {
@@ -3409,9 +3409,9 @@ impl From<Usb1VbusDetectVbusSourceSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectVbusvalidSel {
     #[doc = "Use the VBUS_VALID comparator results for signal reported to the USB controller (Default)."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the VBUS_VALID_3V detector results for signal reported to the USB controller."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectVbusvalidSel {
     #[inline(always)]
@@ -3440,21 +3440,21 @@ impl From<Usb1VbusDetectVbusvalidSel> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectVbusvalidThresh {
     #[doc = "4.0V."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "4.1V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
     #[doc = "4.2V."]
-    VALUE2 = 0x02,
+    Value2 = 0x02,
     #[doc = "4.3V."]
-    VALUE3 = 0x03,
+    Value3 = 0x03,
     #[doc = "4.4V(Default)."]
-    VALUE4 = 0x04,
+    Value4 = 0x04,
     #[doc = "4.5V."]
-    VALUE5 = 0x05,
+    Value5 = 0x05,
     #[doc = "4.6V."]
-    VALUE6 = 0x06,
+    Value6 = 0x06,
     #[doc = "4.7V."]
-    VALUE7 = 0x07,
+    Value7 = 0x07,
 }
 impl Usb1VbusDetectVbusvalidThresh {
     #[inline(always)]
@@ -3483,9 +3483,9 @@ impl From<Usb1VbusDetectVbusvalidThresh> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum Usb1VbusDetectVbusvalidToSessvalid {
     #[doc = "Use the VBUS_VALID comparator for VBUS_VALID results."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "Use the Session End comparator for VBUS_VALID results. The Session End threshold is >0.8V and <4.0V."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl Usb1VbusDetectVbusvalidToSessvalid {
     #[inline(always)]
@@ -3514,9 +3514,9 @@ impl From<Usb1VbusDetectVbusvalidToSessvalid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum VbusValid {
     #[doc = "VBUS is below the comparator threshold."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS is above the comparator threshold."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl VbusValid {
     #[inline(always)]
@@ -3545,9 +3545,9 @@ impl From<VbusValid> for u8 {
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum VbusValid3v {
     #[doc = "VBUS voltage is below VBUS_VALID_3V threshold."]
-    VALUE0 = 0x0,
+    Value0 = 0x0,
     #[doc = "VBUS voltage is above VBUS_VALID_3V threshold."]
-    VALUE1 = 0x01,
+    Value1 = 0x01,
 }
 impl VbusValid3v {
     #[inline(always)]

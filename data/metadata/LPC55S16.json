@@ -510,6 +510,11 @@
           "pins": [{ "pin": "PIO0_30", "alt": 4 }]
         }
       ]
+    },
+    {
+      "name": "USBHSD",
+      "address": "0x4009_4000",
+      "signals": []
     }
   ]
 }

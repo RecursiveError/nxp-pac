@@ -1,0 +1,14 @@
+# SVD omits usbhsd::regs::Devcmdstat bits (FORCE_VBUS @10, FORCE_FS @21)
+# These are described in UM11126 Table 817
+transforms:
+  - !AddFields
+    fieldset: usbhsd::regs::Devcmdstat
+    fields:
+      - name: force_vbus
+        description: When set, VBUS voltage indicators from the PHY are overruled for connect detection (FORCE_VBUS).
+        bit_offset: 10
+        bit_size: 1
+      - name: force_fs
+        description: Force full-speed device operation on a high-speed-capable port (FORCE_FS).
+        bit_offset: 21
+        bit_size: 1

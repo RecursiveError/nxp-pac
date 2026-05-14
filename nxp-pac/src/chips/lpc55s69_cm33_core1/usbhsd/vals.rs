@@ -3,17 +3,17 @@
 #[cfg_attr(feature = "defmt", derive(defmt::Format))]
 pub enum PhyTestMode {
     #[doc = "Test mode disabled."]
-    DISABLE = 0x0,
+    Disable = 0x0,
     #[doc = "Test_J."]
-    TEST_J = 0x01,
+    TestJ = 0x01,
     #[doc = "Test_K."]
-    TEST_K = 0x02,
+    TestK = 0x02,
     #[doc = "Test_SE0_NAK."]
-    TEST_SE0_NAK = 0x03,
+    TestSe0Nak = 0x03,
     #[doc = "Test_Packet."]
-    TEST_PACKET = 0x04,
+    TestPacket = 0x04,
     #[doc = "Test_Force_Enable."]
-    TEST_FORCE_ENABLE = 0x05,
+    TestForceEnable = 0x05,
     _RESERVED_6 = 0x06,
     _RESERVED_7 = 0x07,
 }
