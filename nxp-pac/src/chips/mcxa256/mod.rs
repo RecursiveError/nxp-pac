@@ -212,6 +212,7 @@ pub const CTIMER3: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40007000
 pub const CTIMER4: ctimer::Ctimer = unsafe { ctimer::Ctimer::from_ptr(0x40008000 as _) };
 pub const DAC0: dac::Dac = unsafe { dac::Dac::from_ptr(0x400B4000 as _) };
 pub const DMA0: dma::Dma8 = unsafe { dma::Dma8::from_ptr(0x40080000 as _) };
+pub const FLEXIO0: flexio::Flexio = unsafe { flexio::Flexio::from_ptr(0x40099000 as _) };
 pub const FMU0: fmu::Fmu = unsafe { fmu::Fmu::from_ptr(0x40095000 as _) };
 pub const FLEX_PWM0: flexpwm::Flexpwm = unsafe { flexpwm::Flexpwm::from_ptr(0x400A9000 as _) };
 pub const FLEX_PWM1: flexpwm::Flexpwm = unsafe { flexpwm::Flexpwm::from_ptr(0x400AA000 as _) };
@@ -246,6 +247,7 @@ pub const SGI0: sgi::Sgi = unsafe { sgi::Sgi::from_ptr(0x400EB000 as _) };
 pub const SPC0: spc::Spc = unsafe { spc::Spc::from_ptr(0x40090000 as _) };
 pub const SYSCON: syscon::Syscon = unsafe { syscon::Syscon::from_ptr(0x40091000 as _) };
 pub const TRNG0: trng::Trng = unsafe { trng::Trng::from_ptr(0x400EC000 as _) };
+pub const USB0: usb::Usb = unsafe { usb::Usb::from_ptr(0x400A4000 as _) };
 pub const VBAT0: vbat::Vbat = unsafe { vbat::Vbat::from_ptr(0x40093000 as _) };
 pub const WWDT0: wwdt::Wwdt = unsafe { wwdt::Wwdt::from_ptr(0x4000C000 as _) };
 pub const EDMA_0_TCD: edma_tcd::Tcd8 = unsafe { edma_tcd::Tcd8::from_ptr(0x40081000 as _) };
@@ -267,6 +269,8 @@ pub mod dac;
 pub mod dma;
 #[path = "../../meta_peripherals/mcxa/EDMA_TCD.rs"]
 pub mod edma_tcd;
+#[path = "../../meta_peripherals/mcxa/FLEXIO.rs"]
+pub mod flexio;
 #[path = "../../meta_peripherals/mcxa/FLEXPWM.rs"]
 pub mod flexpwm;
 #[path = "../../meta_peripherals/mcxa/FMU.rs"]
@@ -301,6 +305,8 @@ pub mod spc;
 pub mod syscon;
 #[path = "../../meta_peripherals/mcxa/TRNG.rs"]
 pub mod trng;
+#[path = "../../meta_peripherals/mcxa/USB.rs"]
+pub mod usb;
 #[path = "../../meta_peripherals/mcxa/VBAT.rs"]
 pub mod vbat;
 #[path = "../../meta_peripherals/mcxa/WWDT.rs"]

@@ -4165,7 +4165,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "FLEXIO0",
         address: 0x40099000,
-        driver_name: "mcxa/FLEXIO0",
+        driver_name: "mcxa/FLEXIO",
         signals: &[
             Signal {
                 name: "D0",
@@ -10354,7 +10354,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "USB0",
         address: 0x400A4000,
-        driver_name: "mcxa/USB0",
+        driver_name: "mcxa/USB",
         signals: &[Signal {
             name: "VBUS_DET",
             pins: &[SignalPin {
