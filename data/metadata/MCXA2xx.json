@@ -3634,7 +3634,7 @@
     {
       "name": "FLEXIO0",
       "address": "0x40099000",
-      "block": "mcxa/FLEXIO0",
+      "block": "mcxa/FLEXIO",
       "signals": [
         {
           "name": "D0",
@@ -8945,7 +8945,7 @@
     {
       "name": "USB0",
       "address": "0x400A4000",
-      "block": "mcxa/USB0",
+      "block": "mcxa/USB",
       "signals": [
         {
           "name": "VBUS_DET",
