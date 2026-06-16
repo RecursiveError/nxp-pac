@@ -201,6 +201,7 @@ pub use Interrupt as interrupt;
 pub use cortex_m_rt::interrupt;
 pub const ADC0: adc::Adc = unsafe { adc::Adc::from_ptr(0x400AF000 as _) };
 pub const ADC1: adc::Adc = unsafe { adc::Adc::from_ptr(0x400B0000 as _) };
+pub const CAN0: can::Can = unsafe { can::Can::from_ptr(0x400CC000 as _) };
 pub const CDOG0: cdog::Cdog = unsafe { cdog::Cdog::from_ptr(0x40100000 as _) };
 pub const CDOG1: cdog::Cdog = unsafe { cdog::Cdog::from_ptr(0x40107000 as _) };
 pub const CMC: cmc::Cmc = unsafe { cmc::Cmc::from_ptr(0x4008B000 as _) };
@@ -254,6 +255,8 @@ pub const EDMA_0_TCD: edma_tcd::Tcd8 = unsafe { edma_tcd::Tcd8::from_ptr(0x40081
 pub const MRCC0: mrcc::Mrcc = unsafe { mrcc::Mrcc::from_ptr(0x40091000 as _) };
 #[path = "../../meta_peripherals/mcxa/ADC.rs"]
 pub mod adc;
+#[path = "../../meta_peripherals/mcxa/CAN.rs"]
+pub mod can;
 #[path = "../../meta_peripherals/mcxa/CDOG.rs"]
 pub mod cdog;
 #[path = "../../meta_peripherals/mcxa/CMC.rs"]
