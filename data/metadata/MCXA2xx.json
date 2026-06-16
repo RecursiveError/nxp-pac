@@ -1076,7 +1076,7 @@
     {
       "name": "CAN0",
       "address": "0x400CC000",
-      "block": "mcxa/CAN",
+      "block": "mcxa/CAN2xx",
       "signals": [
         {
           "name": "RXD",
@@ -1132,7 +1132,7 @@
     {
       "name": "CAN1",
       "address": "0x400D0000",
-      "block": "mcxa/CAN",
+      "block": "mcxa/CAN2xx",
       "signals": [
         {
           "name": "RXD",

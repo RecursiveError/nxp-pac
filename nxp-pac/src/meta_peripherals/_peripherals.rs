@@ -2,7 +2,8 @@
 pub const META_PERIPHERALS: &[&str] = &[
     "mcxa/ADC",
     "mcxa/AHBSC",
-    "mcxa/CAN",
+    "mcxa/CAN2xx",
+    "mcxa/CAN5xx",
     "mcxa/CDOG",
     "mcxa/CMC",
     "mcxa/CRC",
