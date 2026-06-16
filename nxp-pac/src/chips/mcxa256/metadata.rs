@@ -1066,7 +1066,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "CAN0",
         address: 0x400CC000,
-        driver_name: "mcxa/CAN2xx",
+        driver_name: "mcxa/CAN2xx::Can",
         signals: &[
             Signal {
                 name: "RXD",
@@ -1132,7 +1132,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "CAN1",
         address: 0x400D0000,
-        driver_name: "mcxa/CAN2xx",
+        driver_name: "mcxa/CAN2xx::Can",
         signals: &[
             Signal {
                 name: "RXD",
