@@ -224,6 +224,8 @@ pub use cortex_m_rt::interrupt;
 pub const AHBSC: ahbsc::Ahbsc = unsafe { ahbsc::Ahbsc::from_ptr(0x40044000 as _) };
 pub const ADC0: adc::Adc = unsafe { adc::Adc::from_ptr(0x400AF000 as _) };
 pub const ADC1: adc::Adc = unsafe { adc::Adc::from_ptr(0x400B0000 as _) };
+pub const CAN0: can::Can = unsafe { can::Can::from_ptr(0x400CC000 as _) };
+pub const CAN1: can::Can = unsafe { can::Can::from_ptr(0x400D0000 as _) };
 pub const CDOG0: cdog::Cdog = unsafe { cdog::Cdog::from_ptr(0x40040000 as _) };
 pub const CDOG1: cdog::Cdog = unsafe { cdog::Cdog::from_ptr(0x40041000 as _) };
 pub const CMC: cmc::Cmc = unsafe { cmc::Cmc::from_ptr(0x400C6000 as _) };
@@ -290,6 +292,8 @@ pub const MRCC0: mrcc::Mrcc = unsafe { mrcc::Mrcc::from_ptr(0x40091800 as _) };
 pub mod adc;
 #[path = "../../meta_peripherals/mcxa/AHBSC.rs"]
 pub mod ahbsc;
+#[path = "../../meta_peripherals/mcxa/CAN.rs"]
+pub mod can;
 #[path = "../../meta_peripherals/mcxa/CDOG.rs"]
 pub mod cdog;
 #[path = "../../meta_peripherals/mcxa/CMC.rs"]
