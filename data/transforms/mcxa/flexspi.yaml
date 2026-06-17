@@ -1,0 +1,8 @@
+transforms:
+  - !MergeFieldsets
+    from: flexspi0::Flsh(a|b)(\d+)cr0
+    to: flexspi::Flshcr0
+  - !MakeRegisterArray
+    blocks: flexspi0::Flexspi0
+    from: flsh(a|b)(\d+)cr0
+    to: flshcr0

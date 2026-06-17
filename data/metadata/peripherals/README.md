@@ -17,7 +17,7 @@ Anything in this folder is not used directly, but can be used by you as a start 
 This is per device:
 
 - A YAML per peripheral, with transforms applied and namespaces stripped. These files are suitable to base your metapac peripheral definition files on.
-- Everything in the `raw/original` folder, which are the same files but without the namespaces stripped. These files are the direct output of the transforms, and thus useful when developing the transforms.
+- Everything in the `raw/post-transforms` folder, which are the same files but without the namespaces stripped. These files are the direct output of the transforms, and thus useful when developing the transforms.
 - `_addresses.json`: A list of all peripherals and their addresses, taken from the SVD. Handy for adding it to the metadata.
 - `_interrupts.json`: A list of all interrupts and their numbers, taken from the SVD. Handy for adding it to the metadata.
 
