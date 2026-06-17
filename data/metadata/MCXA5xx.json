@@ -8647,6 +8647,10 @@
       "address": "0x400EB000",
       "block": "mcxa/SGI",
       "signals": [],
+      "gate": {
+        "enable": "mrcc_glb_cc4",
+        "config": "Clk1MConfig"
+      },
       "dma_muxing": [
         {
           "signal": "SGI0ReqIdat",

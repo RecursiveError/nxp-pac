@@ -9898,7 +9898,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 120,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc4",
+            reset: None,
+            config: Some("Clk1MConfig"),
+        }),
     },
     Peripheral {
         name: "SPC0",
