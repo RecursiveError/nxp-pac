@@ -36,6 +36,7 @@ includes:
   - mcxa/spc.yaml
   - mcxa/trng.yaml
   - mcxa/wwdt.yaml
+  - mcxa/flexspi.yaml
 
   - remove-suffix.yaml
 transforms:

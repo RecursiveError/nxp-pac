@@ -72,22 +72,13 @@ block/Flexspi:
       stride: 4
     byte_offset: 64
     access: Read
-  - name: flsha1cr0
+  - name: flshcr0
     description: Flash Control 0.
+    array:
+      len: 4
+      stride: 4
     byte_offset: 96
-    fieldset: Flsha1cr0
-  - name: flsha2cr0
-    description: Flash Control 0.
-    byte_offset: 100
-    fieldset: Flsha2cr0
-  - name: flshb1cr0
-    description: Flash Control 0.
-    byte_offset: 104
-    fieldset: Flshb1cr0
-  - name: flshb2cr0
-    description: Flash Control 0.
-    byte_offset: 108
-    fieldset: Flshb2cr0
+    fieldset: Flshcr0
   - name: flshcr1
     description: Flash Control 1.
     array:
@@ -788,40 +779,7 @@ fieldset/Dlpr:
     description: Data Learning Pattern.
     bit_offset: 0
     bit_size: 32
-fieldset/Flsha1cr0:
-  description: Flash Control 0.
-  fields:
-  - name: flshsz
-    description: Flash Size in KB.
-    bit_offset: 0
-    bit_size: 23
-  - name: addrshift
-    description: AHB Address Shift Function control.
-    bit_offset: 29
-    bit_size: 1
-fieldset/Flsha2cr0:
-  description: Flash Control 0.
-  fields:
-  - name: flshsz
-    description: Flash Size in KB.
-    bit_offset: 0
-    bit_size: 23
-  - name: addrshift
-    description: AHB Address Shift Function control.
-    bit_offset: 29
-    bit_size: 1
-fieldset/Flshb1cr0:
-  description: Flash Control 0.
-  fields:
-  - name: flshsz
-    description: Flash Size in KB.
-    bit_offset: 0
-    bit_size: 23
-  - name: addrshift
-    description: AHB Address Shift Function control.
-    bit_offset: 29
-    bit_size: 1
-fieldset/Flshb2cr0:
+fieldset/Flshcr0:
   description: Flash Control 0.
   fields:
   - name: flshsz

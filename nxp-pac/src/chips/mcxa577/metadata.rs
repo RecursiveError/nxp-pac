@@ -1189,7 +1189,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "CAN0",
         address: 0x400CC000,
-        driver_name: "",
+        driver_name: "mcxa/CAN::Can",
         signals: &[
             Signal {
                 name: "RXD",
@@ -1255,7 +1255,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "CAN1",
         address: 0x400D0000,
-        driver_name: "",
+        driver_name: "mcxa/CAN::Can",
         signals: &[
             Signal {
                 name: "RXD",
@@ -9898,7 +9898,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 120,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc4",
+            reset: None,
+            config: Some("Clk1MConfig"),
+        }),
     },
     Peripheral {
         name: "SPC0",

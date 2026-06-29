@@ -1066,7 +1066,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "CAN0",
         address: 0x400CC000,
-        driver_name: "",
+        driver_name: "mcxa/CAN::Can",
         signals: &[
             Signal {
                 name: "RXD",
@@ -1131,8 +1131,8 @@ pub const PERIPHERALS: &[Peripheral] = &[
     },
     Peripheral {
         name: "CAN1",
-        address: 0,
-        driver_name: "",
+        address: 0x400D0000,
+        driver_name: "mcxa/CAN::Can",
         signals: &[
             Signal {
                 name: "RXD",
@@ -4165,7 +4165,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "FLEXIO0",
         address: 0x40099000,
-        driver_name: "mcxa/FLEXIO0",
+        driver_name: "mcxa/FLEXIO",
         signals: &[
             Signal {
                 name: "D0",
@@ -8752,7 +8752,11 @@ pub const PERIPHERALS: &[Peripheral] = &[
                 request: 120,
             },
         ],
-        gate: None,
+        gate: Some(Gate {
+            enable: "mrcc_glb_cc1",
+            reset: None,
+            config: Some("Clk1MConfig"),
+        }),
     },
     Peripheral {
         name: "SLCD0",
@@ -10354,7 +10358,7 @@ pub const PERIPHERALS: &[Peripheral] = &[
     Peripheral {
         name: "USB0",
         address: 0x400A4000,
-        driver_name: "mcxa/USB0",
+        driver_name: "mcxa/USB",
         signals: &[Signal {
             name: "VBUS_DET",
             pins: &[SignalPin {
